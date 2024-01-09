@@ -1,0 +1,28 @@
+{
+  "unpublishedCollection": {
+    "name": "Variables",
+    "pageId": "Solutions",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [
+      {
+        "name": "subscriptionDetailsFlag",
+        "value": "true"
+      },
+      {
+        "name": "usageDetailsFlag",
+        "value": "false"
+      },
+      {
+        "name": "licenseDetailsFlag",
+        "value": "true"
+      }
+    ],
+    "userPermissions": []
+  },
+  "id": "Solutions_Variables",
+  "deleted": false,
+  "gitSyncId": "655b663c44c3196dff1b331d_6597e662e03db34443d543f5"
+}

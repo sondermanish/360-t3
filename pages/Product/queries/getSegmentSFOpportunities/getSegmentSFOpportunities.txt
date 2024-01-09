@@ -1,0 +1,1 @@
+SELECT {{Constants.OpportunityQueryFields.join(", ")}} FROM salesforce.opportunities  where product_dependency_detail_c IS NOT NULL

@@ -1,0 +1,1 @@
+SELECT {{Constants.OpportunityQueryFields.join(", ")}} FROM salesforce.opportunities ORDER BY created_date DESC;

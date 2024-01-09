@@ -1,0 +1,9 @@
+SELECT {{Constants.OpportunityQueryFields.join(", ")}} FROM salesforce.opportunities where 
+{{Select2.selectedOptionValues?.length > 0
+	? `stage_name in ('${Select2.selectedOptionValues.join(`', '`)}')`
+		: Select1.selectedOptionValue === "All"
+			? `stage_name LIKE '%'`
+			: Select1.selectedOptionValue === "Pipeline"
+				? `stage_name NOT LIKE 'Closed%'`
+				: `stage_name LIKE '${Select1.selectedOptionValue}%'`
+}} ORDER BY created_date DESC;

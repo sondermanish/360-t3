@@ -1,0 +1,1 @@
+SELECT {{Constants.ContactQueryFields.join(", ")}} FROM salesforce.contacts where account_id in ({{`'${Utils.getAllAccountIds()?.join(`', '`)}'`}})

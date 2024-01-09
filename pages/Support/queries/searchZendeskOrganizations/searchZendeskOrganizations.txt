@@ -1,0 +1,33 @@
+query searchSupportOrganizations($query: String!, $limit: Int, $pageNumber: Int) {
+  search(
+    type: ORGANIZATION
+    limit: $limit
+    query: $query
+    pageNumber: $pageNumber
+  ) {
+    edges {
+      node {
+        ...SupportOrganizationFragment
+        __typename
+      }
+      __typename
+    }
+    pageInfo {
+      hasNextPage
+      hasPreviousPage
+      __typename
+    }
+    count
+    __typename
+  }
+}
+
+fragment SupportOrganizationFragment on SupportOrganization {
+  id
+  name
+  domainNames
+  tags
+  createdAt
+  updatedAt
+  __typename
+}

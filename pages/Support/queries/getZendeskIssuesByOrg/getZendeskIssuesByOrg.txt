@@ -1,0 +1,27 @@
+{
+    "view": {
+        "all": [
+            {
+                "field": "organization",
+                "operator": "is",
+                "value": {{searchZendeskOrganizations.data?.data.search.edges[0]?.node.id}}
+            }
+        ],
+        "output": {
+            "columns": [
+                "status",
+                "id",
+                "subject",
+                "requester",
+                "created",
+                "updated",
+                "group",
+                "assignee"
+            ],
+            "group_by": "status",
+            "group_order": "asc",
+            "sort_by": "updated",
+            "sort_order": "desc"
+        }
+    }
+}

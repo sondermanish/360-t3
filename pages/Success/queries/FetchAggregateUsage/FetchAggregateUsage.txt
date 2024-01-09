@@ -1,0 +1,28 @@
+{{
+{
+  "startTime": Stats_v2.getUsageInputs().startDate, 
+  "endTime": Stats_v2.getUsageInputs().currentDate,
+  "metricQueries": [
+    {
+      "id": "m1",
+      "name": Stats_v2.getUsageInputs().usage_metric,
+      "aggregationPeriod": "MONTH",
+      "groupBy": "ACCOUNT_ID",
+      "filters": [
+        /* {
+          "fieldName": "USAGE_METER_ID",
+          "fieldValues": [
+            "um.1zquF6Ny3Z2.AOODs"
+          ]
+        }, */
+				{
+          "fieldName": "CUSTOMER_ID",
+          "fieldValues": [
+            SFTableData.selectedRow.stripe_id_c
+          ]
+        }
+      ]
+    }
+  ]
+}
+}}
