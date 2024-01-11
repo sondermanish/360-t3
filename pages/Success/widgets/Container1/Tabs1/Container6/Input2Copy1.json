@@ -3,14 +3,14 @@
     "widgetName": "Input2Copy1",
     "iconSVG": "/static/media/icon.f2c34197dbcf03595098986de898928f.svg",
     "displayName": "Input",
-    "topRow": 15.596875,
+    "topRow": 14.401562499999997,
     "searchTags": [
         "form",
         "text input",
         "number",
         "textarea"
     ],
-    "bottomRow": 22.195312500000004,
+    "bottomRow": 21,
     "tooltip": "Total hours used by anonymous users since start of subscription",
     "parentRowSpace": 10,
     "labelWidth": 5,
@@ -44,7 +44,7 @@
     "showStepArrows": false,
     "minWidth": 450,
     "isVisible": true,
-    "label": "Anonymous Usage",
+    "label": "Total Anonymous Usage",
     "version": 2,
     "parentId": "sl99xriy3o",
     "tags": [

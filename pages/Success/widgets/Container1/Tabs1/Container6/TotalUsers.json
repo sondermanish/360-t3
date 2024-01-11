@@ -52,7 +52,7 @@
     "rightColumn": 32,
     "widgetId": "dr1kptfxs0",
     "minWidth": 450,
-    "label": "Total Users",
+    "label": "Total All Time Users",
     "parentId": "sl99xriy3o",
     "labelAlignment": "left",
     "renderMode": "CANVAS",

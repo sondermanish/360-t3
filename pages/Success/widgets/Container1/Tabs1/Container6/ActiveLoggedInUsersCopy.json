@@ -1,7 +1,7 @@
 {
     "boxShadow": "none",
     "iconSVG": "/static/media/icon.f2c34197dbcf03595098986de898928f.svg",
-    "topRow": 54.592187500004414,
+    "topRow": 52,
     "tooltip": "# logged-in users with at least 1 hour of usage in last 30 days",
     "labelWidth": 5,
     "type": "INPUT_WIDGET_V2",
@@ -38,7 +38,7 @@
         "number",
         "textarea"
     ],
-    "bottomRow": 61.190625000000736,
+    "bottomRow": 59,
     "parentRowSpace": 10,
     "autoFocus": false,
     "hideCard": false,

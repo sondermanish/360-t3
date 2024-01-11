@@ -52,7 +52,7 @@
     "rightColumn": 64,
     "widgetId": "o4pea1nn3v",
     "minWidth": 450,
-    "label": "Total Hours Used",
+    "label": "Total All Time Hours Used",
     "parentId": "sl99xriy3o",
     "labelAlignment": "left",
     "renderMode": "CANVAS",
