@@ -76,7 +76,7 @@
         }
     },
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "columnUpdatedAt": 1703767428441,
+    "columnUpdatedAt": 1704974260685,
     "originalBottomRow": 83,
     "defaultSelectedRowIndices": [0],
     "widgetName": "SFTableData",
