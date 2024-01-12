@@ -37,7 +37,9 @@
               "pluginType": "DB",
               "jsonPathKeys": [],
               "timeoutInMillisecond": 10000
-            },
+            }
+          ],
+          [
             {
               "id": "Solutions_getSegmentSFOpportunities",
               "name": "getSegmentSFOpportunities",
@@ -45,18 +47,6 @@
               "pluginType": "DB",
               "jsonPathKeys": [
                 "Constants.OpportunityQueryFields.join(\", \")"
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
-              "id": "Solutions_getSegmentSFUsers",
-              "name": "getSegmentSFUsers",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "Constants.UserQueryFields.join(\", \")"
               ],
               "timeoutInMillisecond": 10000
             }
@@ -81,6 +71,16 @@
               "pluginType": "DB",
               "jsonPathKeys": [
                 "SFTableData.selectedRow.Id"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Solutions_getSegmentSFUsers",
+              "name": "getSegmentSFUsers",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "Constants.UserQueryFields.join(\", \")"
               ],
               "timeoutInMillisecond": 10000
             }
