@@ -4,7 +4,7 @@
     "borderColor": "#E0DEDE",
     "isVisibleDownload": true,
     "iconSVG": "/static/media/icon.e6911f8bb94dc6c4a102a74740c41763.svg",
-    "topRow": 5.2,
+    "topRow": 5,
     "isSortable": true,
     "type": "TABLE_WIDGET_V2",
     "inlineEditingSaveOption": "ROW_LEVEL",
@@ -61,7 +61,7 @@
     "columnUpdatedAt": 1704694250339,
     "originalBottomRow": 151,
     "defaultSelectedRowIndices": [0],
-    "widgetName": "Table1Copy",
+    "widgetName": "Table11",
     "defaultPageSize": 0,
     "columnOrder": [
         "groupedBy",
@@ -71,7 +71,7 @@
     ],
     "dynamicPropertyPathList": [{"key": "tableData"}],
     "displayName": "Table",
-    "bottomRow": 54.199999999999946,
+    "bottomRow": 54,
     "columnWidthMap": {
         "timestamps": 371,
         "groupedBy": 516,
@@ -84,7 +84,7 @@
     "borderWidth": "1",
     "primaryColumns": {
         "timestamps": {
-            "computedValue": "{{Table1Copy.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"timestamps\"]))}}",
+            "computedValue": "{{Table11.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"timestamps\"]))}}",
             "isEditable": false,
             "notation": "standard",
             "alias": "timestamps",
@@ -115,7 +115,7 @@
             "verticalAlignment": "CENTER"
         },
         "groupedBy": {
-            "computedValue": "{{Table1Copy.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"groupedBy\"].fieldValue.slice(19)))}}",
+            "computedValue": "{{Table11.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"groupedBy\"].fieldValue.slice(19)))}}",
             "isEditable": false,
             "notation": "standard",
             "alias": "groupedBy",
@@ -146,7 +146,7 @@
             "verticalAlignment": "CENTER"
         },
         "customColumn1": {
-            "computedValue": "{{Table1Copy.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"groupedBy\"].fieldValue.slice(19).length == 64 ? \"Logged-in\":\"Anonymous\"))}}",
+            "computedValue": "{{Table11.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"groupedBy\"].fieldValue.slice(19).length == 64 ? \"Logged-in\":\"Anonymous\"))}}",
             "isEditable": false,
             "notation": "standard",
             "alias": "User type",
@@ -179,7 +179,7 @@
             "verticalAlignment": "CENTER"
         },
         "metricValues": {
-            "computedValue": "{{Table1Copy.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"metricValues\"].reduce((total,item)=>total + item,0)))}}",
+            "computedValue": "{{Table11.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"metricValues\"].reduce((total,item)=>total + item,0)))}}",
             "isEditable": false,
             "notation": "standard",
             "alias": "metricValues",
@@ -217,7 +217,7 @@
     "textSize": "0.875rem",
     "widgetId": "1gp5cixf59",
     "minWidth": 450,
-    "tableData": "{{FetchActiveUsage.data.results[0].data}}",
+    "tableData": "{{FetchAggregateUsage.data.results[0].data}}",
     "label": "Data",
     "searchKey": "",
     "parentId": "90m8m1npzl",

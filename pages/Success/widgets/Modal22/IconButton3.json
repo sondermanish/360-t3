@@ -1,7 +1,7 @@
 {
     "boxShadow": "none",
     "widgetName": "IconButton3",
-    "onClick": "{{closeModal('Modal2')}}",
+    "onClick": "{{closeModal('Modal22');}}",
     "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
     "displayName": "Icon button",
     "iconSVG": "/static/media/icon.b08054586989b185a0801e9a34f8ad49.svg",
@@ -14,6 +14,7 @@
     "type": "ICON_BUTTON_WIDGET",
     "hideCard": false,
     "animateLoading": true,
+    "dynamicTriggerPathList": [{"key": "onClick"}],
     "leftColumn": 60,
     "dynamicBindingPathList": [
         {"key": "buttonColor"},

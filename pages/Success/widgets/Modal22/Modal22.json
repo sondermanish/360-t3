@@ -1,7 +1,7 @@
 {
     "mobileWidthInPercentage": 0,
     "boxShadow": "none",
-    "widgetName": "Modal2",
+    "widgetName": "Modal22",
     "isCanvas": true,
     "displayName": "Modal",
     "iconSVG": "/static/media/icon.b374721fa8e1aeab7cf326c2d865506f.svg",
@@ -11,7 +11,7 @@
         "notification"
     ],
     "topRow": 219.19531249999773,
-    "bottomRow": 781.195312500005,
+    "bottomRow": 779.1953124999977,
     "parentRowSpace": 1,
     "type": "MODAL_WIDGET",
     "hideCard": false,
@@ -32,7 +32,7 @@
         "canExtend": true,
         "hideCard": true,
         "shouldScrollContents": false,
-        "minHeight": 549.9999999999994,
+        "minHeight": 560,
         "mobileRightColumn": 64,
         "useAutoLayout": false,
         "parentColumnSpace": 1,
@@ -139,7 +139,7 @@
         "minDynamicHeight": 4
     }],
     "key": "u7133gf41r",
-    "height": 562.0000000000073,
+    "height": 560,
     "isDeprecated": false,
     "rightColumn": 32,
     "detachFromLayout": true,
