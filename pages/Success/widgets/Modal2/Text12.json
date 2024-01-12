@@ -24,7 +24,7 @@
     ],
     "shouldTruncate": false,
     "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-    "text": "{{SFTableData.selectedRow.name}} - User Breakdown",
+    "text": "{{SFTableData.selectedRow.name}} - User Breakdown (Last 30 days)",
     "key": "fu28987v0b",
     "isDeprecated": false,
     "rightColumn": 60,

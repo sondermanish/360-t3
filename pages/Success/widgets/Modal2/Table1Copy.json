@@ -217,7 +217,7 @@
     "textSize": "0.875rem",
     "widgetId": "1gp5cixf59",
     "minWidth": 450,
-    "tableData": "{{FetchAggregateUsage.data.results[0].data}}",
+    "tableData": "{{FetchActiveUsage.data.results[0].data}}",
     "label": "Data",
     "searchKey": "",
     "parentId": "90m8m1npzl",

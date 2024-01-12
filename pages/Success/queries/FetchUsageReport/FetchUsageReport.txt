@@ -1,7 +1,7 @@
 {{
 {
-  "startTime": Stats_v2.calculateDateRange.data.reportDate,
-  "endTime": Stats_v2.calculateDateRange.data.currentDate,
+  "startTime": Stats_v2.getUsageInputs().reportDate,
+  "endTime": Stats_v2.getUsageInputs().currentDate,
   "metricQueries": [
     {
       "id": "m1",

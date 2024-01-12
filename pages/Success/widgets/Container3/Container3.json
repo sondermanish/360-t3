@@ -11,8 +11,8 @@
         "parent",
         "group"
     ],
-    "topRow": 99.20000000000952,
-    "bottomRow": 139.59999999999349,
+    "topRow": 96.79843750001027,
+    "bottomRow": 137.19843749999134,
     "parentRowSpace": 10,
     "type": "CONTAINER_WIDGET",
     "hideCard": false,
@@ -27,7 +27,7 @@
         "rightColumn": 542.65625,
         "detachFromLayout": true,
         "widgetId": "pb2yefbdz1",
-        "bottomRow": 403.9999999998396,
+        "bottomRow": 403.99999999981077,
         "topRow": 0,
         "containerStyle": "none",
         "parentRowSpace": 1,
@@ -65,8 +65,8 @@
     "tags": ["Layout"],
     "renderMode": "CANVAS",
     "isLoading": false,
-    "originalTopRow": 99.20000000000952,
+    "originalTopRow": 102.00000000001171,
     "maxDynamicHeight": 9000,
-    "originalBottomRow": 139.5999999999949,
+    "originalBottomRow": 142.39999999999418,
     "minDynamicHeight": 10
 }

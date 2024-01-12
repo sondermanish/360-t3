@@ -27,7 +27,7 @@
       ],
       "encodeParamsToggle": true,
       "queryParameters": [],
-      "body": "{{\n{\n  \"startTime\": Stats_v2.calculateDateRange.data.reportDate,\n  \"endTime\": Stats_v2.calculateDateRange.data.currentDate,\n  \"metricQueries\": [\n    {\n      \"id\": \"m1\",\n      \"name\": \"USAGE\",\n      \"aggregationPeriod\": ReportFrequency.selectedOptionValue,\n      \"filters\": [\n        {\n          \"fieldName\": \"USAGE_METER_ID\",\n          \"fieldValues\": [\n            \"um.1zquF6Ny3Z2.AOODs\"\n          ]\n        },\n\t\t\t\t{\n          \"fieldName\": \"CUSTOMER_ID\",\n          \"fieldValues\": [\n            SFTableData.selectedRow.stripe_id_c\n          ]\n        }\n      ]\n    }\n  ]\n}\n}}",
+      "body": "{{\n{\n  \"startTime\": Stats_v2.getUsageInputs().reportDate,\n  \"endTime\": Stats_v2.getUsageInputs().currentDate,\n  \"metricQueries\": [\n    {\n      \"id\": \"m1\",\n      \"name\": \"USAGE\",\n      \"aggregationPeriod\": ReportFrequency.selectedOptionValue,\n      \"filters\": [\n        {\n          \"fieldName\": \"USAGE_METER_ID\",\n          \"fieldValues\": [\n            \"um.1zquF6Ny3Z2.AOODs\"\n          ]\n        },\n\t\t\t\t{\n          \"fieldName\": \"CUSTOMER_ID\",\n          \"fieldValues\": [\n            SFTableData.selectedRow.stripe_id_c\n          ]\n        }\n      ]\n    }\n  ]\n}\n}}",
       "bodyFormData": [],
       "httpMethod": "POST",
       "selfReferencingDataPaths": [],
@@ -50,7 +50,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "\n{\n  \"startTime\": Stats_v2.calculateDateRange.data.reportDate,\n  \"endTime\": Stats_v2.calculateDateRange.data.currentDate,\n  \"metricQueries\": [\n    {\n      \"id\": \"m1\",\n      \"name\": \"USAGE\",\n      \"aggregationPeriod\": ReportFrequency.selectedOptionValue,\n      \"filters\": [\n        {\n          \"fieldName\": \"USAGE_METER_ID\",\n          \"fieldValues\": [\n            \"um.1zquF6Ny3Z2.AOODs\"\n          ]\n        },\n\t\t\t\t{\n          \"fieldName\": \"CUSTOMER_ID\",\n          \"fieldValues\": [\n            SFTableData.selectedRow.stripe_id_c\n          ]\n        }\n      ]\n    }\n  ]\n}\n"
+      "\n{\n  \"startTime\": Stats_v2.getUsageInputs().reportDate,\n  \"endTime\": Stats_v2.getUsageInputs().currentDate,\n  \"metricQueries\": [\n    {\n      \"id\": \"m1\",\n      \"name\": \"USAGE\",\n      \"aggregationPeriod\": ReportFrequency.selectedOptionValue,\n      \"filters\": [\n        {\n          \"fieldName\": \"USAGE_METER_ID\",\n          \"fieldValues\": [\n            \"um.1zquF6Ny3Z2.AOODs\"\n          ]\n        },\n\t\t\t\t{\n          \"fieldName\": \"CUSTOMER_ID\",\n          \"fieldValues\": [\n            SFTableData.selectedRow.stripe_id_c\n          ]\n        }\n      ]\n    }\n  ]\n}\n"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,

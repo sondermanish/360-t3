@@ -101,7 +101,7 @@
         {"key": "primaryColumns.name.cellBackground"}
     ],
     "displayName": "Table",
-    "bottomRow": 96,
+    "bottomRow": 90,
     "columnWidthMap": {
         "amount": 104,
         "total": 124.78125,
