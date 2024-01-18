@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 1361.9843749997392,
+          "bottomRow": 1371.984374999565,
           "containerStyle": "none",
           "snapRows": 124,
           "parentRowSpace": 1,
@@ -37,7 +37,9 @@
               "pluginType": "DB",
               "jsonPathKeys": [],
               "timeoutInMillisecond": 10000
-            },
+            }
+          ],
+          [
             {
               "id": "Success_getSegmentSFOpportunities",
               "name": "getSegmentSFOpportunities",
@@ -45,30 +47,6 @@
               "pluginType": "DB",
               "jsonPathKeys": [
                 "Constants.OpportunityQueryFields.join(\", \")"
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
-              "id": "Success_getSegmentSFUsers",
-              "name": "getSegmentSFUsers",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "Constants.UserQueryFields.join(\", \")"
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
-              "id": "Success_getSegmentSFEventsByOppId",
-              "name": "getSegmentSFEventsByOppId",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "SFTableData.selectedRow.Id"
               ],
               "timeoutInMillisecond": 10000
             }
@@ -83,6 +61,26 @@
                 "`'${Utils.getAllAccountIds()?.join(`', '`)}'`",
                 "Constants.AccountQueryFields.join(\", \")",
                 "CustomerSegment.selectedOptionValues.length > 0 ? `'${CustomerSegment.selectedOptionValues.join(`', '`)}'` : `'${CustomerSegment.options.map(item => item.value).join(`', '`)}'`"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Success_getSegmentSFEventsByOppId",
+              "name": "getSegmentSFEventsByOppId",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "SFTableData.selectedRow.Id"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Success_getSegmentSFUsers",
+              "name": "getSegmentSFUsers",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "Constants.UserQueryFields.join(\", \")"
               ],
               "timeoutInMillisecond": 10000
             }
