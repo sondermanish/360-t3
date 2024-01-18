@@ -28,7 +28,7 @@
     ],
     "isLoading": false,
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "originalBottomRow": 14,
+    "originalBottomRow": 15.200000000000728,
     "widgetName": "AccountType",
     "displayName": "Input",
     "searchTags": [
@@ -37,7 +37,7 @@
         "number",
         "textarea"
     ],
-    "bottomRow": 15.2,
+    "bottomRow": 15.200000000000728,
     "parentRowSpace": 10,
     "autoFocus": false,
     "hideCard": false,
@@ -55,7 +55,7 @@
     "parentId": "higfmbyjud",
     "labelAlignment": "left",
     "renderMode": "CANVAS",
-    "originalTopRow": 7,
+    "originalTopRow": 8.2,
     "maxDynamicHeight": 9000,
     "shouldAllowAutofill": false,
     "iconAlign": "left",
