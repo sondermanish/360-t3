@@ -19,6 +19,10 @@
     {
       "id": "Solutions",
       "isDefault": false
+    },
+    {
+      "id": "Customer Revenue",
+      "isDefault": false
     }
   ],
   "viewMode": false,
