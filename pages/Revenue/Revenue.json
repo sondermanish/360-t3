@@ -1,7 +1,7 @@
 {
   "unpublishedPage": {
-    "name": "Customer Revenue",
-    "slug": "customer-revenue",
+    "name": "Revenue",
+    "slug": "revenue",
     "layouts": [
       {
         "viewMode": false,
@@ -28,20 +28,7 @@
         "layoutOnLoadActions": [
           [
             {
-              "id": "Customer Revenue_Utils.writeToStore",
-              "name": "Utils.writeToStore",
-              "collectionId": "Customer Revenue_Utils",
-              "confirmBeforeExecute": false,
-              "pluginType": "JS",
-              "jsonPathKeys": [
-                "() => {\n  const currentARR = Utils.getMRRARRChartData(moment().format(\"MMMM YYYY\"));\n  storeValue(\"EnterpriseARR\", currentARR);\n}"
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
-              "id": "Customer Revenue_getSegmentSFOpportunities",
+              "id": "Revenue_getSegmentSFOpportunities",
               "name": "getSegmentSFOpportunities",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
@@ -50,11 +37,24 @@
               ],
               "timeoutInMillisecond": 10000
             }
+          ],
+          [
+            {
+              "id": "Revenue_Utils.writeToStore",
+              "name": "Utils.writeToStore",
+              "collectionId": "Revenue_Utils",
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "() => {\n  const currentARR = Utils.getMRRARRChartData(moment().format(\"MMMM YYYY\"));\n  storeValue(\"EnterpriseARR\", currentARR);\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            }
           ]
         ],
         "layoutOnLoadActionErrors": [],
         "validOnPageLoadActions": true,
-        "id": "Customer Revenue",
+        "id": "Revenue",
         "deleted": false,
         "policies": [],
         "userPermissions": []

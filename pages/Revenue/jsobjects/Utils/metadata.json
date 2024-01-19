@@ -1,7 +1,7 @@
 {
   "unpublishedCollection": {
     "name": "Utils",
-    "pageId": "Customer Revenue",
+    "pageId": "Revenue",
     "pluginId": "js-plugin",
     "pluginType": "JS",
     "actions": [],
@@ -9,7 +9,7 @@
     "variables": [],
     "userPermissions": []
   },
-  "id": "Customer Revenue_Utils",
+  "id": "Revenue_Utils",
   "deleted": false,
   "gitSyncId": "655b663c44c3196dff1b331d_65a9892a647afb48db3f7429"
 }

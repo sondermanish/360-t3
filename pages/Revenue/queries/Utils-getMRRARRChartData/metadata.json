@@ -13,8 +13,8 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Customer Revenue",
-    "collectionId": "Customer Revenue_Utils",
+    "pageId": "Revenue",
+    "collectionId": "Revenue_Utils",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -41,7 +41,7 @@
     "userPermissions": [],
     "createdAt": "2024-01-18T20:25:22Z"
   },
-  "id": "Customer Revenue_Utils.getMRRARRChartData",
+  "id": "Revenue_Utils.getMRRARRChartData",
   "deleted": false,
   "gitSyncId": "655b663c44c3196dff1b331d_65a98932d363e90feeb32148"
 }

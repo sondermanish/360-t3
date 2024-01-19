@@ -13,7 +13,7 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Customer Revenue",
+    "pageId": "Revenue",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -44,7 +44,7 @@
     "userPermissions": [],
     "createdAt": "2024-01-18T20:26:21Z"
   },
-  "id": "Customer Revenue_getSegmentSFOpportunities",
+  "id": "Revenue_getSegmentSFOpportunities",
   "deleted": false,
   "gitSyncId": "655b663c44c3196dff1b331d_65a9896dd363e90feeb3216e"
 }

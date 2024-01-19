@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "writeToStore",
-    "fullyQualifiedName": "Utils.writeToStore",
+    "name": "getAllMonths",
+    "fullyQualifiedName": "Variables.getAllMonths",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -13,8 +13,8 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Customer Revenue",
-    "collectionId": "Customer Revenue_Utils",
+    "pageId": "Revenue",
+    "collectionId": "Revenue_Variables",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -22,7 +22,7 @@
       "selfReferencingDataPaths": [],
       "jsArguments": []
     },
-    "executeOnLoad": true,
+    "executeOnLoad": false,
     "dynamicBindingPathList": [
       {
         "key": "body"
@@ -31,13 +31,13 @@
     "isValid": true,
     "invalids": [],
     "messages": [],
-    "userSetOnLoad": true,
+    "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": [],
-    "createdAt": "2024-01-19T11:15:30Z"
+    "createdAt": "2024-01-18T20:25:45Z"
   },
-  "id": "Customer Revenue_Utils.writeToStore",
+  "id": "Revenue_Variables.getAllMonths",
   "deleted": false,
-  "gitSyncId": "655b663c44c3196dff1b331d_65aa59d2956a320780ca8665"
+  "gitSyncId": "655b663c44c3196dff1b331d_65a98949d363e90feeb32166"
 }

@@ -69,7 +69,7 @@
     "rightColumn": 13,
     "dynamicHeight": "AUTO_HEIGHT",
     "widgetId": "yoyje9qafv",
-    "isVisible": true,
+    "isVisible": false,
     "parentId": "0",
     "tags": ["Display"],
     "renderMode": "CANVAS",
