@@ -10,7 +10,7 @@
         "visuals",
         "visualisations"
     ],
-    "bottomRow": 100.2,
+    "bottomRow": 100.20000000000073,
     "parentRowSpace": 10,
     "type": "CHART_WIDGET",
     "hideCard": false,
@@ -94,10 +94,10 @@
     "isLoading": false,
     "renderMode": "CANVAS",
     "yAxisName": "Revenue($)",
-    "originalTopRow": 57,
+    "originalTopRow": 58.2,
     "chartName": "Product Dependancies/Amount Breakup",
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
     "xAxisName": "Product Line",
-    "originalBottomRow": 99,
+    "originalBottomRow": 100.20000000000073,
     "chartType": "PIE_CHART"
 }
