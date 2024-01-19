@@ -9,5 +9,12 @@ export default {
 			} 
 			return total;
 		}, 0) * 12/1000).toFixed(0);
-	}
+	},
+	  writeToStore: () => {
+        // Calculate ARR for the current month and year
+                const currentARR = this.getMRRARRChartData(moment().format("MMMM YYYY"));
+
+        // Store the calculated ARR value under the label "EnterpriseARR"
+        storeValue("EnterpriseARR", currentARR);
+    }
 }

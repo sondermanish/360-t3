@@ -23,8 +23,8 @@
     "dynamicBindingPathList": [
         {"key": "accentColor"},
         {"key": "borderRadius"},
-        {"key": "defaultText"},
-        {"key": "labelTextColor"}
+        {"key": "labelTextColor"},
+        {"key": "defaultText"}
     ],
     "labelPosition": "Top",
     "labelStyle": "",
@@ -53,6 +53,6 @@
     "maxDynamicHeight": 9000,
     "decimals": 0,
     "iconAlign": "left",
-    "defaultText": "{{SFTableData.tableData.reduce((total, item) => item.id ?total + parseInt(item.total || 0) : total, 0)}}",
+    "defaultText": "{{appsmith.store.EnterpriseARR*1000}}",
     "minDynamicHeight": 4
 }

@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 490,
+          "bottomRow": 630,
           "containerStyle": "none",
           "snapRows": 59,
           "parentRowSpace": 1,
@@ -26,6 +26,19 @@
           "leftColumn": 0
         },
         "layoutOnLoadActions": [
+          [
+            {
+              "id": "Customer Revenue_Utils.writeToStore",
+              "name": "Utils.writeToStore",
+              "collectionId": "Customer Revenue_Utils",
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "() => {\n  const currentARR = Utils.getMRRARRChartData(moment().format(\"MMMM YYYY\"));\n  storeValue(\"EnterpriseARR\", currentARR);\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
           [
             {
               "id": "Customer Revenue_getSegmentSFOpportunities",
