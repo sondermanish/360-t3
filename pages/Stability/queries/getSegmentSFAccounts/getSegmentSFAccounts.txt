@@ -1,0 +1,1 @@
+SELECT {{Constants.AccountQueryFields.join(", ")}} FROM salesforce.accounts where id in ({{`'${Utils.getAllAccountIds()?.join(`', '`)}'`}})

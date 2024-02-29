@@ -23,6 +23,10 @@
     {
       "id": "Revenue",
       "isDefault": false
+    },
+    {
+      "id": "Stability",
+      "isDefault": false
     }
   ],
   "viewMode": false,
