@@ -112,10 +112,12 @@ export default {
     let loggedInCount = 0;
     let anonymousCount = 0;
     const accountUsageMap = {};
+		const monthlyLoggedInUsers = {};
+		const monthlyAnonymousUsers = {};
 
     if (apiResponse && apiResponse.results && apiResponse.results.length > 0) {
         const data = apiResponse.results[0].data;
-
+			
         data.forEach(item => {
             const accountID = item.groupedBy.fieldValue;
             const usage = item.metricValues.reduce((acc, value) => acc + value, 0);
@@ -130,6 +132,22 @@ export default {
                 anonymousUsage += usage;
                 anonymousCount++;
             }
+					
+						item.timestamps.forEach((timestamp) => {
+							const date = moment(timestamp);
+							const month = date.format('MMMM-YYYY');
+							if (accountID.length > 80) {
+								if (!monthlyLoggedInUsers[month]) {
+									monthlyLoggedInUsers[month] = 0;
+								}	
+								monthlyLoggedInUsers[month] += 1;
+							} else {
+								if (!monthlyAnonymousUsers[month]) {
+									monthlyAnonymousUsers[month] = 0;
+								}	
+								monthlyAnonymousUsers[month] += 1;
+							}
+						});
         });
     }
 
@@ -140,11 +158,13 @@ export default {
         },
         loggedIn: {
             userCount: loggedInCount,
-            totalUsage: loggedInUsage
+            totalUsage: loggedInUsage,
+						monthlyUsers: monthlyLoggedInUsers
         },
         anonymous: {
             userCount: anonymousCount,
-            totalUsage: anonymousUsage
+            totalUsage: anonymousUsage,
+						monthlyUsers: monthlyAnonymousUsers
         }
     };
 }
