@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 1185.9999999999927,
+          "bottomRow": 1603.999999999949,
           "containerStyle": "none",
           "snapRows": 124,
           "parentRowSpace": 1,
@@ -46,6 +46,19 @@
               "pluginType": "DB",
               "jsonPathKeys": [
                 "Constants.OpportunityQueryFields.join(\", \")"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "Stability_RevenueUtils.getRevenueMap",
+              "name": "RevenueUtils.getRevenueMap",
+              "collectionId": "Stability_RevenueUtils",
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "function () {\n  let tempData = {};\n  getSegmentSFOpportunities.data.forEach(i => {\n    tempData[i.account_id] = i.amount ? parseInt(i.amount) : 0;\n  });\n  RevenueUtils.revenueByAccount = tempData;\n  return tempData;\n}"
               ],
               "timeoutInMillisecond": 10000
             }

@@ -756,7 +756,7 @@
     "textSize": "0.875rem",
     "widgetId": "dsh6k1cuyt",
     "minWidth": 450,
-    "tableData": "{{getSegmentSFAllCases.data}}",
+    "tableData": "{{priority_filter.selectedOptionValue == \"critical\" ? getSegmentSFAllCases.data.filter(i => i.priority == \"critical\"): getSegmentSFAllCases.data}}",
     "label": "Data",
     "searchKey": "",
     "parentId": "l31jkio3f6",

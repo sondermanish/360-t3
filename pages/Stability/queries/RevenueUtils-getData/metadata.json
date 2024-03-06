@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "getAllAccountIds",
-    "fullyQualifiedName": "Utils.getAllAccountIds",
+    "name": "getData",
+    "fullyQualifiedName": "RevenueUtils.getData",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -14,7 +14,7 @@
       "userPermissions": []
     },
     "pageId": "Stability",
-    "collectionId": "Stability_Utils",
+    "collectionId": "Stability_RevenueUtils",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -35,9 +35,9 @@
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": [],
-    "createdAt": "2024-02-29T10:24:53Z"
+    "createdAt": "2024-03-06T08:17:05Z"
   },
-  "id": "Stability_Utils.getAllAccountIds",
+  "id": "Stability_RevenueUtils.getData",
   "deleted": false,
-  "gitSyncId": "655b663c44c3196dff1b331d_65e05b75a87ac00c2a5e9062"
+  "gitSyncId": "655b663c44c3196dff1b331d_65e826810c0f2851baf2c14d"
 }
