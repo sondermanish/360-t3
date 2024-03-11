@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "Select {{Constants.UserQueryFields.join(\", \")}} from salesforce.users",
+      "body": "Select {{Constants_1.Segment.UserQueryFields.join(\", \")}} from salesforce.users",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -36,7 +36,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "Constants.UserQueryFields.join(\", \")"
+      "Constants_1.Segment.UserQueryFields.join(\", \")"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,

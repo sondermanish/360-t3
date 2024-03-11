@@ -1,1 +1,1 @@
-SELECT {{Constants.OpportunityQueryFields.join(", ")}} FROM salesforce.opportunities where stage_name = 'Closed Won' ORDER BY created_date DESC;
+SELECT {{Constants_1.Segment.OpportunityQueryFields.join(", ")}} FROM salesforce.opportunities where stage_name = 'Closed Won' ORDER BY created_date DESC;

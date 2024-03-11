@@ -46,7 +46,7 @@
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [
-                "Constants.OpportunityQueryFields.join(\", \")"
+                "Constants_1.Segment.OpportunityQueryFields.join(\", \")"
               ],
               "timeoutInMillisecond": 10000
             }
@@ -59,8 +59,8 @@
               "pluginType": "DB",
               "jsonPathKeys": [
                 "`'${Utils.getAllAccountIds()?.join(`', '`)}'`",
-                "Constants.AccountQueryFields.join(\", \")",
-                "CustomerSegment.selectedOptionValues.length > 0 ? `'${CustomerSegment.selectedOptionValues.join(`', '`)}'` : `'${CustomerSegment.options.map(item => item.value).join(`', '`)}'`"
+                "CustomerSegment.selectedOptionValues.length > 0 ? `'${CustomerSegment.selectedOptionValues.join(`', '`)}'` : `'${CustomerSegment.options.map(item => item.value).join(`', '`)}'`",
+                "Constants_1.Segment.AccountQueryFields.join(\", \")"
               ],
               "timeoutInMillisecond": 10000
             },
@@ -80,7 +80,7 @@
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [
-                "Constants.UserQueryFields.join(\", \")"
+                "Constants_1.Segment.UserQueryFields.join(\", \")"
               ],
               "timeoutInMillisecond": 10000
             }

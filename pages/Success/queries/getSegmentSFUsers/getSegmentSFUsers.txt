@@ -1,1 +1,1 @@
-Select {{Constants.UserQueryFields.join(", ")}} from salesforce.users
+Select {{Constants_1.Segment.UserQueryFields.join(", ")}} from salesforce.users

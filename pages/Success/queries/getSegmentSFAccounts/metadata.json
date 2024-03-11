@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "SELECT {{Constants.AccountQueryFields.join(\", \")}} FROM salesforce.accounts where id in ({{`'${Utils.getAllAccountIds()?.join(`', '`)}'`}}) AND (customer_segmentation_c in ({{CustomerSegment.selectedOptionValues.length > 0 ? `'${CustomerSegment.selectedOptionValues.join(`', '`)}'` : `'${CustomerSegment.options.map(item => item.value).join(`', '`)}'`}}) OR customer_segmentation_c is null) ORDER BY created_date DESC\n",
+      "body": "SELECT {{Constants_1.Segment.AccountQueryFields.join(\", \")}} FROM salesforce.accounts where id in ({{`'${Utils.getAllAccountIds()?.join(`', '`)}'`}}) AND (customer_segmentation_c in ({{CustomerSegment.selectedOptionValues.length > 0 ? `'${CustomerSegment.selectedOptionValues.join(`', '`)}'` : `'${CustomerSegment.options.map(item => item.value).join(`', '`)}'`}}) OR customer_segmentation_c is null) ORDER BY created_date DESC\n",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -36,7 +36,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "Constants.AccountQueryFields.join(\", \")",
+      "Constants_1.Segment.AccountQueryFields.join(\", \")",
       "CustomerSegment.selectedOptionValues.length > 0 ? `'${CustomerSegment.selectedOptionValues.join(`', '`)}'` : `'${CustomerSegment.options.map(item => item.value).join(`', '`)}'`",
       "`'${Utils.getAllAccountIds()?.join(`', '`)}'`"
     ],

@@ -1,1 +1,1 @@
-SELECT {{Constants.ContactQueryFields.join(", ")}} FROM salesforce.contacts where account_id = '{{SFTableData.selectedRow.Id}}'
+SELECT {{Constants_1.Segment.ContactQueryFields.join(", ")}} FROM salesforce.contacts where account_id = '{{SFTableData.selectedRow.Id}}'
