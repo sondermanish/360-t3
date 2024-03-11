@@ -36,21 +36,11 @@
               "collectionId": "Stability_Actions",
               "confirmBeforeExecute": false,
               "pluginType": "JS",
-              "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "Stability_getSegmentSFOpportunities",
-              "name": "getSegmentSFOpportunities",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
               "jsonPathKeys": [
-                "Constants.OpportunityQueryFields.join(\", \")"
+                "() => {\n  getSegmentSFOpportunities.run().then(() => {\n    getSegmentSFAllCases.run();\n    getSegmentSFAccounts.run();\n    getSegmentSFContacts.run();\n  });\n}"
               ],
               "timeoutInMillisecond": 10000
-            }
-          ],
-          [
+            },
             {
               "id": "Stability_RevenueUtils.getRevenueMap",
               "name": "RevenueUtils.getRevenueMap",
@@ -59,6 +49,18 @@
               "pluginType": "JS",
               "jsonPathKeys": [
                 "function () {\n  let tempData = {};\n  getSegmentSFOpportunities.data.forEach(i => {\n    tempData[i.account_id] = i.amount ? parseInt(i.amount) : 0;\n  });\n  RevenueUtils.revenueByAccount = tempData;\n  return tempData;\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "Stability_getSegmentSFOpportunities",
+              "name": "getSegmentSFOpportunities",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "Constants.OpportunityQueryFields.join(\", \")"
               ],
               "timeoutInMillisecond": 10000
             }

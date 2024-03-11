@@ -33,6 +33,7 @@
   "appIsExample": false,
   "unreadCommentThreads": 0,
   "unpublishedApplicationDetail": {
+    "hiddenJSLibs": [],
     "appPositioning": {
       "type": "FIXED"
     },
