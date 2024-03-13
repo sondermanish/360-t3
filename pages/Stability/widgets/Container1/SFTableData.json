@@ -112,7 +112,7 @@
         {"key": "primaryColumns.created_date.cellBackground"}
     ],
     "displayName": "Table",
-    "bottomRow": 75,
+    "bottomRow": 64,
     "columnWidthMap": {
         "amount": 104,
         "owner_id": 162,

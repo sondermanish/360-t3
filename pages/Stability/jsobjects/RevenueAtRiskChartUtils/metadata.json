@@ -1,0 +1,20 @@
+{
+  "unpublishedCollection": {
+    "name": "RevenueAtRiskChartUtils",
+    "pageId": "Stability",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [
+      {
+        "name": "revenueByAccount",
+        "value": "null"
+      }
+    ],
+    "userPermissions": []
+  },
+  "id": "Stability_RevenueAtRiskChartUtils",
+  "deleted": false,
+  "gitSyncId": "655b663c44c3196dff1b331d_65f1ea7a410c3b72641526b6"
+}

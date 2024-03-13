@@ -1,0 +1,1 @@
+SELECT account_id, created_date from salesforce.cases where account_id in ({{`'${Utils.getAllAccountIds()?.join(`', '`)}'`}}) and created_date >= '2024-01-1T00:00:00Z' and priority = 'critical' ORDER BY created_date ASC
