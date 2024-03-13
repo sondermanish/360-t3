@@ -42,7 +42,7 @@
     "labelPosition": "Top",
     "key": "rap7onh0pv",
     "labelTextSize": "0.875rem",
-    "defaultDate": "{{moment().subtract(30, 'days')}}",
+    "defaultDate": "{{moment().startOf('month')}}",
     "isDeprecated": false,
     "rightColumn": 21,
     "widgetId": "s56f67s5qh",
