@@ -5,8 +5,10 @@ export default {
 		getSegmentSFAllCases.data.filter(i => i.priority == "critical").forEach(i => {
 			tempData.push(i.account_id);
 		});
-		// return tempData;
-		return Array.from(new Set(tempData)).reduce((s, acc) => s + this.revenueByAccount[acc], 0);
+		// return this.revenueByAccount;
+		const revenueData = this.getRevenueMap();
+		// return revenueData;
+		return Array.from(new Set(tempData)).reduce((s, acc) => s + revenueData[acc], 0);
 	},
 	getData() {
 		return getSegmentSFAccounts.data;
