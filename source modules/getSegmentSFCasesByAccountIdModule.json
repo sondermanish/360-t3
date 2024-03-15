@@ -1,0 +1,7 @@
+{
+  "packageUUID": "65ef3f10cda3a1187b7dc18d",
+  "packageName": "Segments Package",
+  "moduleUUID": "65f3efbdc577b61ea87bdd25",
+  "moduleName": "getSegmentSFCasesByAccountIdModule",
+  "version": "0.0.12"
+}

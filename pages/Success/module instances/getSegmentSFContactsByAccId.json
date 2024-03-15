@@ -1,0 +1,41 @@
+{
+  "packageUUID": "65ef3f10cda3a1187b7dc18d",
+  "moduleUUID": "65f3efd4c577b61ea87bdd3c",
+  "type": "QUERY_MODULE",
+  "unpublishedModuleInstance": {
+    "version": "0.0.12",
+    "name": "getSegmentSFContactsByAccId",
+    "contextType": "PAGE",
+    "pageId": "Success",
+    "inputs": {
+      "accountId": "{{SFTableData.selectedRow.Id}}",
+      "columns": "{{SegmentConstants.ContactQueryFields.join(\", \")}}"
+    },
+    "moduleInputs": {
+      "ccmovudhim": {
+        "id": "ccmovudhim",
+        "label": "accountId",
+        "propertyName": "inputs.accountId",
+        "controlType": "INPUT_TEXT",
+        "defaultValue": ""
+      },
+      "mnpcwtbjrk": {
+        "id": "mnpcwtbjrk",
+        "label": "columns",
+        "propertyName": "inputs.columns",
+        "controlType": "INPUT_TEXT",
+        "defaultValue": ""
+      }
+    },
+    "jsonPathKeys": [
+      "SFTableData.selectedRow.Id",
+      "SegmentConstants.ContactQueryFields.join(\", \")"
+    ],
+    "isValid": true,
+    "invalids": [],
+    "userPermissions": []
+  },
+  "id": "Success_getSegmentSFContactsByAccId",
+  "deleted": false,
+  "gitSyncId": "655b663c44c3196dff1b331d_65f3efd7c577b61ea87bdd5a"
+}

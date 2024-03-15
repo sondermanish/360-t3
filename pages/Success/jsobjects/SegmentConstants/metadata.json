@@ -1,9 +1,9 @@
 {
-  "moduleInstanceId": "Success_Constants_1",
+  "moduleInstanceId": "Success_SegmentConstants",
   "isPublic": true,
-  "rootModuleInstanceId": "Success_Constants_1",
+  "rootModuleInstanceId": "Success_SegmentConstants",
   "unpublishedCollection": {
-    "name": "_$Constants_1$_Constants",
+    "name": "_$SegmentConstants$_SegmentConstants",
     "pageId": "Success",
     "contextType": "PAGE",
     "pluginId": "js-plugin",
@@ -12,7 +12,7 @@
     "archivedActions": [],
     "userPermissions": []
   },
-  "id": "Success__$Constants_1$_Constants",
+  "id": "Success__$SegmentConstants$_SegmentConstants",
   "deleted": false,
   "gitSyncId": "655b663c44c3196dff1b331d_65ef248512244e5a68238b0e"
 }

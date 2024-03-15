@@ -2,6 +2,6 @@
   "packageUUID": "65eee5e9cda3a1187b7da11b",
   "packageName": "Constants Package",
   "moduleUUID": "65eee92ccda3a1187b7da34f",
-  "moduleName": "Constants",
-  "version": "0.0.28"
+  "moduleName": "SegmentConstants",
+  "version": "0.0.31"
 }

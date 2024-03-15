@@ -3,8 +3,8 @@
   "moduleUUID": "65eee92ccda3a1187b7da34f",
   "type": "JS_MODULE",
   "unpublishedModuleInstance": {
-    "version": "0.0.28",
-    "name": "Constants_1",
+    "version": "0.0.31",
+    "name": "SegmentConstants",
     "contextType": "PAGE",
     "pageId": "Success",
     "inputs": {},
@@ -13,7 +13,7 @@
     "invalids": [],
     "userPermissions": []
   },
-  "id": "Success_Constants_1",
+  "id": "Success_SegmentConstants",
   "deleted": false,
   "gitSyncId": "655b663c44c3196dff1b331d_65ef248412244e5a68238b04"
 }

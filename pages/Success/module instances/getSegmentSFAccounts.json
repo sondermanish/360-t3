@@ -1,0 +1,50 @@
+{
+  "packageUUID": "65ef3f10cda3a1187b7dc18d",
+  "moduleUUID": "65f3efc86f79c902d95404c1",
+  "type": "QUERY_MODULE",
+  "unpublishedModuleInstance": {
+    "version": "0.0.12",
+    "name": "getSegmentSFAccounts",
+    "contextType": "PAGE",
+    "pageId": "Success",
+    "inputs": {
+      "accountIds": "{{`'${Utils.getAllAccountIds()?.join(`', '`)}'`}}",
+      "columns": "{{SegmentConstants.AccountQueryFields.join(\", \")}}",
+      "customerSegment": "{{CustomerSegment.selectedOptionValues.length > 0 ? `'${CustomerSegment.selectedOptionValues.join(`', '`)}'` : `'${CustomerSegment.options.map(item => item.value).join(`', '`)}'`}}"
+    },
+    "moduleInputs": {
+      "fosnhdydnw": {
+        "id": "fosnhdydnw",
+        "label": "columns",
+        "propertyName": "inputs.columns",
+        "controlType": "INPUT_TEXT",
+        "defaultValue": ""
+      },
+      "hutkmvcocn": {
+        "id": "hutkmvcocn",
+        "label": "customerSegment",
+        "propertyName": "inputs.customerSegment",
+        "controlType": "INPUT_TEXT",
+        "defaultValue": ""
+      },
+      "ikxofexbwx": {
+        "id": "ikxofexbwx",
+        "label": "accountIds",
+        "propertyName": "inputs.accountIds",
+        "controlType": "INPUT_TEXT",
+        "defaultValue": ""
+      }
+    },
+    "jsonPathKeys": [
+      "CustomerSegment.selectedOptionValues.length > 0 ? `'${CustomerSegment.selectedOptionValues.join(`', '`)}'` : `'${CustomerSegment.options.map(item => item.value).join(`', '`)}'`",
+      "SegmentConstants.AccountQueryFields.join(\", \")",
+      "`'${Utils.getAllAccountIds()?.join(`', '`)}'`"
+    ],
+    "isValid": true,
+    "invalids": [],
+    "userPermissions": []
+  },
+  "id": "Success_getSegmentSFAccounts",
+  "deleted": false,
+  "gitSyncId": "655b663c44c3196dff1b331d_65f3efcb6f79c902d95404da"
+}
