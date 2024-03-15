@@ -1,0 +1,84 @@
+{
+  "packageUUID": "65f2bd3b044689431f7b87e4",
+  "moduleUUID": "65f2bdc9410c3b7264152c79",
+  "type": "QUERY_MODULE",
+  "unpublishedModuleInstance": {
+    "version": "0.0.6",
+    "name": "FetchUsageReport",
+    "contextType": "PAGE",
+    "pageId": "Success",
+    "inputs": {
+      "endDate": "{{Stats_v2.getUsageInputs().currentDate}}",
+      "entity": "{{undefined}}",
+      "metric": "USAGE",
+      "period": "{{ReportFrequency.selectedOptionValue}}",
+      "startDate": "{{Stats_v2.getUsageInputs().reportDate}}",
+      "stripeCustomerID": "{{SFTableData.selectedRow.stripe_id_c}}",
+      "usageMeterID": "um.1zquF6Ny3Z2.AOODs"
+    },
+    "moduleInputs": {
+      "btcdsuiojo": {
+        "id": "btcdsuiojo",
+        "label": "period",
+        "propertyName": "inputs.period",
+        "controlType": "INPUT_TEXT",
+        "defaultValue": "MONTH"
+      },
+      "eehmywrtlj": {
+        "id": "eehmywrtlj",
+        "label": "stripeCustomerID",
+        "propertyName": "inputs.stripeCustomerID",
+        "controlType": "INPUT_TEXT",
+        "defaultValue": ""
+      },
+      "mqkhranlyb": {
+        "id": "mqkhranlyb",
+        "label": "startDate",
+        "propertyName": "inputs.startDate",
+        "controlType": "INPUT_TEXT",
+        "defaultValue": "2023-12-01T00:00:00Z"
+      },
+      "phkhdigeyc": {
+        "id": "phkhdigeyc",
+        "label": "metric",
+        "propertyName": "inputs.metric",
+        "controlType": "INPUT_TEXT",
+        "defaultValue": "REVENUE"
+      },
+      "pnvniorviu": {
+        "id": "pnvniorviu",
+        "label": "entity",
+        "propertyName": "inputs.entity",
+        "controlType": "INPUT_TEXT",
+        "defaultValue": "CUSTOMER_ID"
+      },
+      "tvhrvcscmb": {
+        "id": "tvhrvcscmb",
+        "label": "endDate",
+        "propertyName": "inputs.endDate",
+        "controlType": "INPUT_TEXT",
+        "defaultValue": "2023-12-31T00:00:00Z"
+      },
+      "xfvnjsbdjh": {
+        "id": "xfvnjsbdjh",
+        "label": "usageMeterID",
+        "propertyName": "inputs.usageMeterID",
+        "controlType": "INPUT_TEXT",
+        "defaultValue": "um.1zquF6Ny3Z2.AOODs"
+      }
+    },
+    "jsonPathKeys": [
+      "ReportFrequency.selectedOptionValue",
+      "SFTableData.selectedRow.stripe_id_c",
+      "Stats_v2.getUsageInputs().currentDate",
+      "Stats_v2.getUsageInputs().reportDate",
+      "undefined"
+    ],
+    "isValid": true,
+    "invalids": [],
+    "userPermissions": []
+  },
+  "id": "Success_FetchUsageReport",
+  "deleted": false,
+  "gitSyncId": "655b663c44c3196dff1b331d_65f3bb616f79c902d953fb1e"
+}
