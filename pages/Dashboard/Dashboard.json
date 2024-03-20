@@ -1,0 +1,82 @@
+{
+  "unpublishedPage": {
+    "name": "Dashboard",
+    "slug": "dashboard",
+    "layouts": [
+      {
+        "viewMode": false,
+        "dsl": {
+          "widgetName": "MainContainer",
+          "backgroundColor": "none",
+          "rightColumn": 1224,
+          "snapColumns": 64,
+          "detachFromLayout": true,
+          "widgetId": "0",
+          "topRow": 0,
+          "bottomRow": 1930,
+          "containerStyle": "none",
+          "snapRows": 59,
+          "parentRowSpace": 1,
+          "type": "CANVAS_WIDGET",
+          "canExtend": true,
+          "version": 89,
+          "minHeight": 610,
+          "parentColumnSpace": 1,
+          "dynamicBindingPathList": [],
+          "leftColumn": 0
+        },
+        "layoutOnLoadActions": [
+          [
+            {
+              "id": "Dashboard_getSalesforceOpportunities",
+              "name": "getSalesforceOpportunities",
+              "confirmBeforeExecute": false,
+              "pluginType": "API",
+              "jsonPathKeys": [
+                "`SELECT Amount, Account.Id, Account.Name, Account.Stripe_ID__c, Owner.Name, Contract_Start_Date__c, Contract_End_Date__c, ARR__c FROM Opportunity WHERE StageName = 'Closed Won' AND \n(CALENDAR_YEAR(Contract_End_Date__c) > ${moment().format(\"YYYY\")} OR \n(CALENDAR_YEAR(Contract_End_Date__c) = ${moment().format(\"YYYY\")} AND CALENDAR_MONTH(Contract_End_Date__c) >= ${moment().format(\"M\")})) Order By LastModifiedDate Desc`"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "Dashboard_getAllUsage",
+              "name": "getAllUsage",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "From_Date.formattedDate",
+                "SalesforceUtils.getAccounts().map(item => `'${item.Account.Stripe_ID__c}'`).join(\", \")",
+                "To_Date.formattedDate"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "Dashboard_getSalesforceZendeskCases",
+              "name": "getSalesforceZendeskCases",
+              "confirmBeforeExecute": false,
+              "pluginType": "API",
+              "jsonPathKeys": [
+                "`Select ${SFConstants.CaseQueryFields.join(\", \")} from Case where status != 'Closed' and AccountId in (${SalesforceUtils.getAccounts().map(item => `'${item.Account.Id}'`).join(\", \")}) Order By Zendesk_Support_Ticket_Updated_At__c desc`"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ]
+        ],
+        "layoutOnLoadActionErrors": [],
+        "validOnPageLoadActions": true,
+        "id": "Dashboard",
+        "deleted": false,
+        "policies": [],
+        "userPermissions": []
+      }
+    ],
+    "userPermissions": [],
+    "policies": [],
+    "isHidden": false
+  },
+  "deleted": false,
+  "gitSyncId": "655b663c44c3196dff1b331d_65fabd6e5e12647ece51d868"
+}

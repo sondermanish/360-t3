@@ -1,8 +1,12 @@
 {
   "pages": [
     {
-      "id": "Success",
+      "id": "Dashboard",
       "isDefault": true
+    },
+    {
+      "id": "Success",
+      "isDefault": false
     },
     {
       "id": "Sales",

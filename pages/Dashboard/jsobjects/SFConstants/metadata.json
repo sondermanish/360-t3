@@ -1,0 +1,18 @@
+{
+  "moduleInstanceId": "Dashboard_SFConstants",
+  "isPublic": true,
+  "rootModuleInstanceId": "Dashboard_SFConstants",
+  "unpublishedCollection": {
+    "name": "_$SFConstants$_SalesforceConstants",
+    "pageId": "Dashboard",
+    "contextType": "PAGE",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "userPermissions": []
+  },
+  "id": "Dashboard__$SFConstants$_SalesforceConstants",
+  "deleted": false,
+  "gitSyncId": "655b663c44c3196dff1b331d_65fabd925e12647ece51d886"
+}
