@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "pluginId": "postgres-plugin",
   "unpublishedAction": {
-    "name": "_$getAllCustomerSegments$_getAllCustomerSegmentsModule",
+    "name": "_$getAllCustomerSegments$_getSegmentSFCustomerSegments",
     "datasource": {
       "name": "Analytics",
       "pluginId": "postgres-plugin",
@@ -27,7 +27,7 @@
     "userPermissions": [],
     "createdAt": "2023-11-29T18:33:19Z"
   },
-  "id": "Success__$getAllCustomerSegments$_getAllCustomerSegmentsModule",
+  "id": "Success__$getAllCustomerSegments$_getSegmentSFCustomerSegments",
   "deleted": false,
   "gitSyncId": "655b663c44c3196dff1b331d_65f3ee1bc577b61ea87bdbd5"
 }

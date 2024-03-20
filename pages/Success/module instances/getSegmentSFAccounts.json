@@ -3,7 +3,7 @@
   "moduleUUID": "65f3efc86f79c902d95404c1",
   "type": "QUERY_MODULE",
   "unpublishedModuleInstance": {
-    "version": "0.0.12",
+    "version": "0.0.13",
     "name": "getSegmentSFAccounts",
     "contextType": "PAGE",
     "pageId": "Success",

@@ -3,7 +3,7 @@
   "moduleUUID": "65f3ee9ec577b61ea87bdca5",
   "type": "QUERY_MODULE",
   "unpublishedModuleInstance": {
-    "version": "0.0.12",
+    "version": "0.0.13",
     "name": "getSegmentSFUsers",
     "contextType": "PAGE",
     "pageId": "Success",

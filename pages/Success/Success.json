@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 1371.984374997983,
+          "bottomRow": 1371.9843749979168,
           "containerStyle": "none",
           "snapRows": 124,
           "parentRowSpace": 1,
@@ -42,8 +42,8 @@
               "timeoutInMillisecond": 10000
             },
             {
-              "id": "Success__$getAllCustomerSegments$_getAllCustomerSegmentsModule",
-              "name": "_$getAllCustomerSegments$_getAllCustomerSegmentsModule",
+              "id": "Success__$getAllCustomerSegments$_getSegmentSFCustomerSegments",
+              "name": "_$getAllCustomerSegments$_getSegmentSFCustomerSegments",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [],
