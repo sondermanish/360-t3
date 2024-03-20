@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 1930,
+          "bottomRow": 1850,
           "containerStyle": "none",
           "snapRows": 59,
           "parentRowSpace": 1,
@@ -28,26 +28,25 @@
         "layoutOnLoadActions": [
           [
             {
-              "id": "Dashboard_getSalesforceOpportunities",
-              "name": "getSalesforceOpportunities",
+              "id": "Dashboard_Actions.onPageLoad",
+              "name": "Actions.onPageLoad",
+              "collectionId": "Dashboard_Actions",
               "confirmBeforeExecute": false,
-              "pluginType": "API",
+              "pluginType": "JS",
               "jsonPathKeys": [
-                "`SELECT Amount, Account.Id, Account.Name, Account.Stripe_ID__c, Owner.Name, Contract_Start_Date__c, Contract_End_Date__c, ARR__c FROM Opportunity WHERE StageName = 'Closed Won' AND \n(CALENDAR_YEAR(Contract_End_Date__c) > ${moment().format(\"YYYY\")} OR \n(CALENDAR_YEAR(Contract_End_Date__c) = ${moment().format(\"YYYY\")} AND CALENDAR_MONTH(Contract_End_Date__c) >= ${moment().format(\"M\")})) Order By LastModifiedDate Desc`"
+                "() => {\n  setTimeout(() => {\n    getAllUsage.run();\n  }, 1000);\n}"
               ],
               "timeoutInMillisecond": 10000
             }
           ],
           [
             {
-              "id": "Dashboard_getAllUsage",
-              "name": "getAllUsage",
+              "id": "Dashboard_getSalesforceOpportunities",
+              "name": "getSalesforceOpportunities",
               "confirmBeforeExecute": false,
-              "pluginType": "DB",
+              "pluginType": "API",
               "jsonPathKeys": [
-                "From_Date.formattedDate",
-                "SalesforceUtils.getAccounts().map(item => `'${item.Account.Stripe_ID__c}'`).join(\", \")",
-                "To_Date.formattedDate"
+                "`SELECT Amount, Account.Id, Account.Name, Account.Stripe_ID__c, Owner.Name, Contract_Start_Date__c, Contract_End_Date__c, ARR__c FROM Opportunity WHERE StageName = 'Closed Won' AND \n(CALENDAR_YEAR(Contract_End_Date__c) > ${moment().format(\"YYYY\")} OR \n(CALENDAR_YEAR(Contract_End_Date__c) = ${moment().format(\"YYYY\")} AND CALENDAR_MONTH(Contract_End_Date__c) >= ${moment().format(\"M\")})) Order By LastModifiedDate Desc`"
               ],
               "timeoutInMillisecond": 10000
             }
