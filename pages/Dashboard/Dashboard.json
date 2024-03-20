@@ -34,31 +34,7 @@
               "confirmBeforeExecute": false,
               "pluginType": "JS",
               "jsonPathKeys": [
-                "() => {\n  setTimeout(() => {\n    getAllUsage.run();\n  }, 1000);\n}"
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
-              "id": "Dashboard_getSalesforceOpportunities",
-              "name": "getSalesforceOpportunities",
-              "confirmBeforeExecute": false,
-              "pluginType": "API",
-              "jsonPathKeys": [
-                "`SELECT Amount, Account.Id, Account.Name, Account.Stripe_ID__c, Owner.Name, Contract_Start_Date__c, Contract_End_Date__c, ARR__c FROM Opportunity WHERE StageName = 'Closed Won' AND \n(CALENDAR_YEAR(Contract_End_Date__c) > ${moment().format(\"YYYY\")} OR \n(CALENDAR_YEAR(Contract_End_Date__c) = ${moment().format(\"YYYY\")} AND CALENDAR_MONTH(Contract_End_Date__c) >= ${moment().format(\"M\")})) Order By LastModifiedDate Desc`"
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
-              "id": "Dashboard_getSalesforceZendeskCases",
-              "name": "getSalesforceZendeskCases",
-              "confirmBeforeExecute": false,
-              "pluginType": "API",
-              "jsonPathKeys": [
-                "`Select ${SFConstants.CaseQueryFields.join(\", \")} from Case where status != 'Closed' and AccountId in (${SalesforceUtils.getAccounts().map(item => `'${item.Account.Id}'`).join(\", \")}) Order By Zendesk_Support_Ticket_Updated_At__c desc`"
+                "() => {\n  getSalesforceOpportunities.run().then(() => {\n    getAllUsage.run();\n    getSalesforceZendeskCases.run();\n  });\n}"
               ],
               "timeoutInMillisecond": 10000
             }

@@ -1,7 +1,8 @@
 export default {
 	onPageLoad: () => {
-		setTimeout(() => {
+		getSalesforceOpportunities.run().then(() => {
 			getAllUsage.run();
-		}, 1000)
+			getSalesforceZendeskCases.run();
+		})
 	}
 }

@@ -42,7 +42,7 @@
         "apiContentType": "none"
       }
     },
-    "executeOnLoad": true,
+    "executeOnLoad": false,
     "dynamicBindingPathList": [
       {
         "key": "path"
@@ -57,7 +57,7 @@
     "jsonPathKeys": [
       "`Select ${SFConstants.CaseQueryFields.join(\", \")} from Case where status != 'Closed' and AccountId in (${SalesforceUtils.getAccounts().map(item => `'${item.Account.Id}'`).join(\", \")}) Order By Zendesk_Support_Ticket_Updated_At__c desc`"
     ],
-    "userSetOnLoad": false,
+    "userSetOnLoad": true,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": [],

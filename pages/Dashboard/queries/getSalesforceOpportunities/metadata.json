@@ -42,7 +42,7 @@
         "apiContentType": "none"
       }
     },
-    "executeOnLoad": true,
+    "executeOnLoad": false,
     "dynamicBindingPathList": [
       {
         "key": "path"
@@ -57,7 +57,7 @@
     "jsonPathKeys": [
       "`SELECT Amount, Account.Id, Account.Name, Account.Stripe_ID__c, Owner.Name, Contract_Start_Date__c, Contract_End_Date__c, ARR__c FROM Opportunity WHERE StageName = 'Closed Won' AND \n(CALENDAR_YEAR(Contract_End_Date__c) > ${moment().format(\"YYYY\")} OR \n(CALENDAR_YEAR(Contract_End_Date__c) = ${moment().format(\"YYYY\")} AND CALENDAR_MONTH(Contract_End_Date__c) >= ${moment().format(\"M\")})) Order By LastModifiedDate Desc`"
     ],
-    "userSetOnLoad": false,
+    "userSetOnLoad": true,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": [],
