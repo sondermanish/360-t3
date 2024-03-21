@@ -2,7 +2,7 @@ export default {
 	issues: {},
 	getAllIssues: () => this.issues,
 	onPageLoad: () => {
-		getSegmentSFOpportunities.run(() => {
+		getSalesforceOpportunities.run(() => {
 			let list = Utils.getProductDependanciesGithub().filter(item => item.issueIds?.length > 0).map(item => item.issueIds);
 			this.issues = {};
 			_.uniq(_.flatten(list)).forEach((item) => {

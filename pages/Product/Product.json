@@ -37,12 +37,10 @@
               "confirmBeforeExecute": false,
               "pluginType": "JS",
               "jsonPathKeys": [
-                "() => {\n  getSegmentSFOpportunities.run(() => {\n    let list = Utils.getProductDependanciesGithub().filter(item => item.issueIds?.length > 0).map(item => item.issueIds);\n    Actions.issues = {};\n    _.uniq(_.flatten(list)).forEach(item => {\n      getGithubIssue.run({\n        issueId: item\n      }).then(response => {\n        Actions.issues[item] = {\n          ..._.pick(response, [\"number\", \"title\", \"created_at\", \"state\", \"closed_at\"]),\n          url: Utils.formatGithubUrl(response.url),\n          label: response.labels.map(item => _.pick(item, [\"url\", \"name\", \"color\", \"description\"]))\n        };\n      });\n    });\n  });\n}"
+                "() => {\n  getSalesforceOpportunities.run(() => {\n    let list = Utils.getProductDependanciesGithub().filter(item => item.issueIds?.length > 0).map(item => item.issueIds);\n    Actions.issues = {};\n    _.uniq(_.flatten(list)).forEach(item => {\n      getGithubIssue.run({\n        issueId: item\n      }).then(response => {\n        Actions.issues[item] = {\n          ..._.pick(response, [\"number\", \"title\", \"created_at\", \"state\", \"closed_at\"]),\n          url: Utils.formatGithubUrl(response.url),\n          label: response.labels.map(item => _.pick(item, [\"url\", \"name\", \"color\", \"description\"]))\n        };\n      });\n    });\n  });\n}"
               ],
               "timeoutInMillisecond": 10000
-            }
-          ],
-          [
+            },
             {
               "id": "Product_getSegmentSFUsers",
               "name": "getSegmentSFUsers",
