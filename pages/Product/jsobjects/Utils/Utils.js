@@ -16,7 +16,7 @@ export default {
 			let dependancy = item.product_dependency_detail_c;
 			let issueIds = this.extractGitHubIssueIds(dependancy);
 			return {
-				id: item.Id,
+				id: item.id,
 				product_dependency_detail_c: item.product_dependency_detail_c,
 				product_dependency_priority_c: item.product_dependency_priority_c,
 				amount: item.amount,
