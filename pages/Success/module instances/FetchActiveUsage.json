@@ -9,7 +9,7 @@
     "pageId": "Success",
     "inputs": {
       "endDate": "{{Stats_v2.getUsageInputs().currentDate}}",
-      "entity": "CUSTOMER_ID",
+      "entity": "ACCOUNT_ID",
       "metric": "{{Stats_v2.getUsageInputs().usage_metric}}",
       "period": "MONTH",
       "startDate": "{{Stats_v2.getUsageInputs().pastDate}}",

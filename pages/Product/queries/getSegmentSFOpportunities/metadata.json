@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "SELECT {{Constants.OpportunityQueryFields.join(\", \")}} FROM salesforce.opportunities  where product_dependency_detail_c IS NOT NULL",
+      "body": "SELECT {{SegmentConstants.OpportunityQueryFields.join(\", \")}} FROM salesforce.opportunities  where product_dependency_priority_c IS NOT NULL",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -26,7 +26,7 @@
         }
       ]
     },
-    "executeOnLoad": true,
+    "executeOnLoad": false,
     "dynamicBindingPathList": [
       {
         "key": "body"
@@ -36,9 +36,9 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "Constants.OpportunityQueryFields.join(\", \")"
+      "SegmentConstants.OpportunityQueryFields.join(\", \")"
     ],
-    "userSetOnLoad": false,
+    "userSetOnLoad": true,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": [],

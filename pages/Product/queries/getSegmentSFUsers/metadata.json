@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "Select {{Constants.UserQueryFields.join(\", \")}} from salesforce.users",
+      "body": "SELECT {{SegmentConstants.UserQueryFields.join(\", \")}} FROM salesforce.users",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -36,15 +36,15 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "Constants.UserQueryFields.join(\", \")"
+      "SegmentConstants.UserQueryFields.join(\", \")"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": [],
-    "createdAt": "2023-11-20T20:54:39Z"
+    "createdAt": "2024-03-21T02:47:38Z"
   },
   "id": "Product_getSegmentSFUsers",
   "deleted": false,
-  "gitSyncId": "655b663c44c3196dff1b331d_655bc78f44c3196dff1b3c05"
+  "gitSyncId": "655b663c44c3196dff1b331d_65fb9fca57825011f7814994"
 }
