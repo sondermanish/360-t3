@@ -372,7 +372,7 @@
     "textSize": "0.875rem",
     "widgetId": "1h17e0k03e",
     "minWidth": 450,
-    "tableData": "{{Appsmith_Customers_Table.tableData}}",
+    "tableData": "{{Appsmith_Customers_Table.tableData.filter((item => !!item.Cases))}}",
     "label": "Data",
     "searchKey": "",
     "parentId": "0137bre9b7",

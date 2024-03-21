@@ -3,14 +3,14 @@
     "widgetName": "Input1Copy1",
     "iconSVG": "/static/media/icon.f2c34197dbcf03595098986de898928f.svg",
     "displayName": "Input",
-    "topRow": 5.2,
+    "topRow": 5,
     "searchTags": [
         "form",
         "text input",
         "number",
         "textarea"
     ],
-    "bottomRow": 12.2,
+    "bottomRow": 12,
     "parentRowSpace": 10,
     "labelWidth": 5,
     "autoFocus": false,

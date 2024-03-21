@@ -86,7 +86,7 @@
     "currentItemsView": "{{[]}}",
     "triggeredItemView": "{{{}}}",
     "widgetName": "List1",
-    "listData": "{{Utils.getGithubIssueOpps().filter((item) => item.issueId === Table2.selectedRow.issueId && !!item.id)}}",
+    "listData": "{{Utils.getGithubIssueOpps().filter((item) => item.issueId === Table2.selectedRow.issueId && !!item.name)}}",
     "dynamicPropertyPathList": [{"key": "primaryKeys"}],
     "displayName": "List",
     "bottomRow": 55,

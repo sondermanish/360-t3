@@ -11,18 +11,18 @@ export default {
 		return issueIds;
 	},
 	getProductDependanciesGithub: () => {
-		return getSalesforceOpportunities.data.records
+		return getSegmentSFOpportunities.data
 		.map((item) => {
-			let dependancy = item.Product_dependency_detail__c;
+			let dependancy = item.product_dependency_detail_c;
 			let issueIds = this.extractGitHubIssueIds(dependancy);
 			return {
 				id: item.Id,
-				product_dependency_detail_c: item.Product_dependency_detail__c,
-				product_dependency_priority_c: item.Product_Dependency_Priority__c,
-				amount: item.Amount,
-				name: item.Name,
-				stage_name: item.StageName,
-				owner_id: item.OwnerId,
+				product_dependency_detail_c: item.product_dependency_detail_c,
+				product_dependency_priority_c: item.product_dependency_priority_c,
+				amount: item.amount,
+				name: item.name,
+				stage_name: item.stage_name,
+				owner_id: item.owner_id,
 				issueIds
 			}
 		})
