@@ -28,7 +28,7 @@
     ],
     "isLoading": false,
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "originalBottomRow": 10,
+    "originalBottomRow": 19,
     "widgetName": "ProductDependancyDetails",
     "dynamicPropertyPathList": [],
     "displayName": "Input",
@@ -38,7 +38,7 @@
         "number",
         "textarea"
     ],
-    "bottomRow": 10,
+    "bottomRow": 19,
     "parentRowSpace": 10,
     "autoFocus": false,
     "hideCard": false,
@@ -60,6 +60,6 @@
     "maxDynamicHeight": 9000,
     "shouldAllowAutofill": false,
     "iconAlign": "left",
-    "defaultText": "{{getSegmentSFOpportunities.data.filter(item => item.account_id === SFTableData.selectedRow.Id).map(item => `${item.product_dependency_detail_c || \"\"}${item.product_dependency_priority_c || \"\"}`).join(\"\\n\")}}",
+    "defaultText": "{{getSegmentSFOpportunities.data.filter(item => item.account_id === SFTableData.selectedRow.Id).map(item => item.product_dependency_detail_c ? `Opp Name: ${item.name} (Created: ${moment(item.created_date).format(\"DD/MM/YYYY\")}) \\n ⦿ Product Dependancies: ${item.product_dependency_detail_c}\\n ⦿ Priority: ${item.product_dependency_priority_c || \"\"}` : \"\").join(\"\\n\")}}",
     "minDynamicHeight": 4
 }

@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 1371.9843749979168,
+          "bottomRow": 1403.999999999592,
           "containerStyle": "none",
           "snapRows": 124,
           "parentRowSpace": 1,
@@ -58,6 +58,18 @@
               "pluginType": "DB",
               "jsonPathKeys": [
                 "getSegmentSFUsers.inputs.columns"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "Success_getSegmentSFOpportunities",
+              "name": "getSegmentSFOpportunities",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "SegmentConstants.OpportunityQueryFields.join(\", \")"
               ],
               "timeoutInMillisecond": 10000
             }
