@@ -18,7 +18,7 @@
         "submit"
     ],
     "topRow": 4,
-    "bottomRow": 8,
+    "bottomRow": 10,
     "parentRowSpace": 10,
     "type": "BUTTON_GROUP_WIDGET",
     "groupButtons": {
@@ -109,6 +109,6 @@
     "originalTopRow": 4,
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
     "mobileLeftColumn": 39,
-    "originalBottomRow": 8,
+    "originalBottomRow": 10,
     "buttonVariant": "PRIMARY"
 }

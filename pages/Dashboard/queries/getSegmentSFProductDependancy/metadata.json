@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "postgres-plugin",
   "unpublishedAction": {
-    "name": "getSegmentSFOpportunities",
+    "name": "getSegmentSFProductDependancy",
     "datasource": {
       "name": "Analytics",
       "pluginId": "postgres-plugin",
@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "SELECT {{SegmentConstants.OpportunityQueryFields.join(\", \")}} FROM salesforce.opportunities WHERE stage_name = 'Closed Won' AND \n(EXTRACT(YEAR FROM contract_end_date_c) > {{moment().format(\"YYYY\")}} OR \n(EXTRACT(YEAR FROM contract_end_date_c) = {{moment().format(\"YYYY\")}} AND EXTRACT(MONTH FROM contract_end_date_c) >= {{moment().format(\"M\")}})) Order By last_modified_date Desc",
+      "body": "Select {{SegmentConstants.OpportunityQueryFields.join(\", \")}} from salesforce.opportunities where account_id in ({{SalesforceUtils.getAccounts().map(item => `'${item.Account.Id}'`).join(\", \")}}) AND product_dependency_detail_c is not NULL",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -26,7 +26,7 @@
         }
       ]
     },
-    "executeOnLoad": true,
+    "executeOnLoad": false,
     "dynamicBindingPathList": [
       {
         "key": "body"
@@ -36,17 +36,16 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "SegmentConstants.OpportunityQueryFields.join(\", \")",
-      "moment().format(\"M\")",
-      "moment().format(\"YYYY\")"
+      "SalesforceUtils.getAccounts().map(item => `'${item.Account.Id}'`).join(\", \")",
+      "SegmentConstants.OpportunityQueryFields.join(\", \")"
     ],
     "userSetOnLoad": true,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": [],
-    "createdAt": "2024-03-21T04:02:59Z"
+    "createdAt": "2024-03-21T09:19:30Z"
   },
-  "id": "Dashboard_getSegmentSFOpportunities",
+  "id": "Dashboard_getSegmentSFProductDependancy",
   "deleted": false,
-  "gitSyncId": "655b663c44c3196dff1b331d_65fbb17357825011f7814adf"
+  "gitSyncId": "655b663c44c3196dff1b331d_65fbfba2427a0f605ee13f41"
 }

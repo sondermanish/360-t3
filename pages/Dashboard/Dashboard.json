@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 1930,
+          "bottomRow": 2120,
           "containerStyle": "none",
           "snapRows": 59,
           "parentRowSpace": 1,
@@ -27,6 +27,17 @@
         },
         "layoutOnLoadActions": [
           [
+            {
+              "id": "Dashboard_GithubActions.onPageLoad",
+              "name": "GithubActions.onPageLoad",
+              "collectionId": "Dashboard_GithubActions",
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "() => {\n  setTimeout(() => {\n    getSegmentSFProductDependancy.run().then(() => {\n      let list = GithubUtils.getProductDependanciesGithub().filter(item => item.issueIds?.length > 0).map(item => item.issueIds);\n      GithubActions.issues = {};\n      _.uniq(_.flatten(list)).forEach(item => {\n        getGithubIssue.run({\n          issueId: item\n        }).then(response => {\n          GithubActions.issues[item] = {\n            ..._.pick(response, [\"number\", \"title\", \"created_at\", \"state\", \"closed_at\"]),\n            url: GithubUtils.formatGithubUrl(response.url),\n            label: response.labels.map(item => _.pick(item, [\"name\", \"color\"]))\n          };\n        });\n      });\n    });\n  }, 5000);\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            },
             {
               "id": "Dashboard_getAllUsage",
               "name": "getAllUsage",
@@ -64,7 +75,9 @@
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [
-                "SegmentConstants.OpportunityQueryFields.join(\", \")"
+                "moment().format(\"M\")",
+                "SegmentConstants.OpportunityQueryFields.join(\", \")",
+                "moment().format(\"YYYY\")"
               ],
               "timeoutInMillisecond": 10000
             }

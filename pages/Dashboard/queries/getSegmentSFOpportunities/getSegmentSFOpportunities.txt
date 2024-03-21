@@ -1,3 +1,3 @@
 SELECT {{SegmentConstants.OpportunityQueryFields.join(", ")}} FROM salesforce.opportunities WHERE stage_name = 'Closed Won' AND 
-(EXTRACT(YEAR FROM contract_end_date_c) > 2024 OR 
-(EXTRACT(YEAR FROM contract_end_date_c) = 2024 AND EXTRACT(MONTH FROM contract_end_date_c) >= 3)) Order By last_modified_date Desc
+(EXTRACT(YEAR FROM contract_end_date_c) > {{moment().format("YYYY")}} OR 
+(EXTRACT(YEAR FROM contract_end_date_c) = {{moment().format("YYYY")}} AND EXTRACT(MONTH FROM contract_end_date_c) >= {{moment().format("M")}})) Order By last_modified_date Desc

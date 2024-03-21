@@ -21,15 +21,15 @@
       "isDefault": false
     },
     {
-      "id": "Solutions",
-      "isDefault": false
-    },
-    {
       "id": "Revenue",
       "isDefault": false
     },
     {
       "id": "Stability",
+      "isDefault": false
+    },
+    {
+      "id": "Solutions",
       "isDefault": false
     }
   ],
@@ -44,10 +44,10 @@
     "navigationSetting": {
       "showNavbar": true,
       "orientation": "top",
-      "navStyle": "stacked",
+      "navStyle": "inline",
       "position": "static",
       "itemStyle": "text",
-      "colorStyle": "light",
+      "colorStyle": "theme",
       "logoAssetId": "",
       "logoConfiguration": "logoAndApplicationTitle",
       "showSignIn": true

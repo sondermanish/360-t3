@@ -1,0 +1,1 @@
+Select {{SegmentConstants.OpportunityQueryFields.join(", ")}} from salesforce.opportunities where account_id in ({{SalesforceUtils.getAccounts().map(item => `'${item.Account.Id}'`).join(", ")}}) AND product_dependency_detail_c is not NULL
