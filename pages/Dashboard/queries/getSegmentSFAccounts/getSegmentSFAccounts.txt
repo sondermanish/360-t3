@@ -1,3 +1,5 @@
 SELECT {{SegmentConstants.AccountQueryFields.join(", ")}}
 FROM salesforce.accounts
-Where id in (Select account_id from salesforce.opportunities where stage_name = 'Closed Won')
+Where id in (Select account_id from salesforce.opportunities where stage_name = 'Closed Won' AND 
+(EXTRACT(YEAR FROM contract_end_date_c) > {{moment().format("YYYY")}} OR 
+(EXTRACT(YEAR FROM contract_end_date_c) = {{moment().format("YYYY")}} AND EXTRACT(MONTH FROM contract_end_date_c) >= {{moment().format("M")}})))

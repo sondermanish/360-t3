@@ -1,0 +1,26 @@
+SELECT 
+    stripe_customer_id,
+    CONCAT('{', STRING_AGG(months, ','), '}') AS months
+FROM (
+    SELECT 
+        stripe_customer_id,
+        CONCAT(
+            '"', TO_CHAR(month, 'Month'), '":', 
+            SUM(billed_sessions)
+        ) AS months
+    FROM (
+        SELECT 
+            stripe_customer_id,
+            DATE_TRUNC('month', CAST(date AS TIMESTAMP)) AS month,
+            billed_sessions
+        FROM 
+            cloud_services.usage_daily_stats
+				where stripe_customer_id in (Select stripe_id_c from salesforce.accounts where id in (Select account_id from salesforce.opportunities where stage_name = 'Closed Won')) and date between '{{"2021-01-01"}}' AND '{{moment().format("YYYY-MM-DD")}}'
+    ) AS subquery
+    GROUP BY 
+        stripe_customer_id, TO_CHAR(month, 'Month')
+) AS subquery2
+GROUP BY 
+    stripe_customer_id
+ORDER BY 
+    stripe_customer_id;

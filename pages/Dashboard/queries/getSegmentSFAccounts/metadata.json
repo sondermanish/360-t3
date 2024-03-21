@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "SELECT {{SegmentConstants.AccountQueryFields.join(\", \")}}\nFROM salesforce.accounts\nWhere id in (Select account_id from salesforce.opportunities where stage_name = 'Closed Won')",
+      "body": "SELECT {{SegmentConstants.AccountQueryFields.join(\", \")}}\nFROM salesforce.accounts\nWhere id in (Select account_id from salesforce.opportunities where stage_name = 'Closed Won' AND \n(EXTRACT(YEAR FROM contract_end_date_c) > {{moment().format(\"YYYY\")}} OR \n(EXTRACT(YEAR FROM contract_end_date_c) = {{moment().format(\"YYYY\")}} AND EXTRACT(MONTH FROM contract_end_date_c) >= {{moment().format(\"M\")}})))",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -36,7 +36,9 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "SegmentConstants.AccountQueryFields.join(\", \")"
+      "SegmentConstants.AccountQueryFields.join(\", \")",
+      "moment().format(\"M\")",
+      "moment().format(\"YYYY\")"
     ],
     "userSetOnLoad": true,
     "confirmBeforeExecute": false,

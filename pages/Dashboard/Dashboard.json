@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 2120,
+          "bottomRow": 1750,
           "containerStyle": "none",
           "snapRows": 59,
           "parentRowSpace": 1,
@@ -55,7 +55,9 @@
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [
-                "SegmentConstants.AccountQueryFields.join(\", \")"
+                "moment().format(\"M\")",
+                "SegmentConstants.AccountQueryFields.join(\", \")",
+                "moment().format(\"YYYY\")"
               ],
               "timeoutInMillisecond": 10000
             },
@@ -83,6 +85,17 @@
             }
           ],
           [
+            {
+              "id": "Dashboard_Query1",
+              "name": "Query1",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "moment().format(\"YYYY-MM-DD\")",
+                "\"2021-01-01\""
+              ],
+              "timeoutInMillisecond": 10000
+            },
             {
               "id": "Dashboard_getSegmentSFUsers",
               "name": "getSegmentSFUsers",

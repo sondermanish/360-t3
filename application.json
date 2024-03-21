@@ -56,7 +56,7 @@
   "color": "#D6D1F2",
   "icon": "basketball",
   "unpublishedAppLayout": {
-    "type": "FLUID"
+    "type": "DESKTOP"
   },
   "publishedAppLayout": {
     "type": "FLUID"
