@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 1850,
+          "bottomRow": 1930,
           "containerStyle": "none",
           "snapRows": 59,
           "parentRowSpace": 1,
@@ -28,13 +28,55 @@
         "layoutOnLoadActions": [
           [
             {
-              "id": "Dashboard_Actions.onPageLoad",
-              "name": "Actions.onPageLoad",
-              "collectionId": "Dashboard_Actions",
+              "id": "Dashboard_getAllUsage",
+              "name": "getAllUsage",
               "confirmBeforeExecute": false,
-              "pluginType": "JS",
+              "pluginType": "DB",
               "jsonPathKeys": [
-                "() => {\n  getSalesforceOpportunities.run().then(() => {\n    getAllUsage.run();\n    getSalesforceZendeskCases.run();\n  });\n}"
+                "From_Date.formattedDate",
+                "To_Date.formattedDate"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Dashboard_getSegmentSFAccounts",
+              "name": "getSegmentSFAccounts",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "SegmentConstants.AccountQueryFields.join(\", \")"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Dashboard_getSegmentSFCases",
+              "name": "getSegmentSFCases",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "SegmentConstants.CaseQueryFields.join(\", \")"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Dashboard_getSegmentSFOpportunities",
+              "name": "getSegmentSFOpportunities",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "SegmentConstants.OpportunityQueryFields.join(\", \")"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "Dashboard_getSegmentSFUsers",
+              "name": "getSegmentSFUsers",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "SegmentConstants.UserQueryFields.join(\", \")"
               ],
               "timeoutInMillisecond": 10000
             }

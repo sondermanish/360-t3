@@ -37,6 +37,16 @@
               "pluginType": "DB",
               "jsonPathKeys": [],
               "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Sales_getSegmentSFUsers",
+              "name": "getSegmentSFUsers",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "Constants.UserQueryFields.join(\", \")"
+              ],
+              "timeoutInMillisecond": 10000
             }
           ],
           [
@@ -54,33 +64,12 @@
           ],
           [
             {
-              "id": "Sales_getSegmentSFAccounts",
-              "name": "getSegmentSFAccounts",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "`'${Utils.getAllAccountIds()?.join(`', '`)}'`",
-                "Constants.AccountQueryFields.join(\", \")"
-              ],
-              "timeoutInMillisecond": 10000
-            },
-            {
               "id": "Sales_getSegmentSFEventsByOppId",
               "name": "getSegmentSFEventsByOppId",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [
                 "SFTableData.selectedRow.Id"
-              ],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "Sales_getSegmentSFUsers",
-              "name": "getSegmentSFUsers",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "Constants.UserQueryFields.join(\", \")"
               ],
               "timeoutInMillisecond": 10000
             }
@@ -94,6 +83,19 @@
               "jsonPathKeys": [
                 "`'${Utils.getAllAccountIds()?.join(`', '`)}'`",
                 "Constants.ContactQueryFields.join(\", \")"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "Sales_getSegmentSFAccounts",
+              "name": "getSegmentSFAccounts",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "`'${Utils.getAllAccountIds()?.join(`', '`)}'`",
+                "Constants.AccountQueryFields.join(\", \")"
               ],
               "timeoutInMillisecond": 10000
             }

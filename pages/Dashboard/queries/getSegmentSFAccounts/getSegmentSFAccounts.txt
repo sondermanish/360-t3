@@ -1,0 +1,3 @@
+SELECT {{SegmentConstants.AccountQueryFields.join(", ")}}
+FROM salesforce.accounts
+Where id in (Select account_id from salesforce.opportunities where stage_name = 'Closed Won')

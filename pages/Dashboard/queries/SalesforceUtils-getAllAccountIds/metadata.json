@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "getCustomerEmailDomain",
-    "fullyQualifiedName": "Utils.getCustomerEmailDomain",
+    "name": "getAllAccountIds",
+    "fullyQualifiedName": "SalesforceUtils.getAllAccountIds",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -14,17 +14,13 @@
       "userPermissions": []
     },
     "pageId": "Dashboard",
-    "collectionId": "Dashboard_Utils",
+    "collectionId": "Dashboard_SalesforceUtils",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "selfReferencingDataPaths": [],
-      "jsArguments": [
-        {
-          "name": "email"
-        }
-      ]
+      "jsArguments": []
     },
     "executeOnLoad": false,
     "dynamicBindingPathList": [
@@ -39,9 +35,9 @@
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": [],
-    "createdAt": "2024-03-20T10:42:00Z"
+    "createdAt": "2024-03-21T04:07:10Z"
   },
-  "id": "Dashboard_Utils.getCustomerEmailDomain",
+  "id": "Dashboard_SalesforceUtils.getAllAccountIds",
   "deleted": false,
-  "gitSyncId": "655b663c44c3196dff1b331d_65fabd78c443cd0c8dfad3b3"
+  "gitSyncId": "655b663c44c3196dff1b331d_65fbb26e427a0f605ee1378c"
 }

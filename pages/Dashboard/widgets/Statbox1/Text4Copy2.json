@@ -8,8 +8,8 @@
         "paragraph",
         "label"
     ],
-    "topRow": 20,
-    "bottomRow": 24,
+    "topRow": 22,
+    "bottomRow": 28,
     "type": "TEXT_WIDGET",
     "hideCard": false,
     "mobileRightColumn": 37,
@@ -26,7 +26,7 @@
     ],
     "shouldTruncate": false,
     "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-    "text": "{{SalesforceUtils.getAccounts().find(item => item.Account.Stripe_ID__c === _.orderBy(getAllUsage.data, \"total_sessions\", \"asc\")[0].stripe_customer_id).Account.Name}}",
+    "text": "{{_.orderBy( Appsmith_Customers_Table.tableData, \"Usage\", \"asc\")[0].Account.Name}}",
     "key": "jvpulytzov",
     "isDeprecated": false,
     "rightColumn": 42,
@@ -51,7 +51,7 @@
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
     "mobileLeftColumn": 1,
     "maxDynamicHeight": 9000,
-    "originalBottomRow": 26,
+    "originalBottomRow": 28,
     "fontSize": "1.25rem",
     "minDynamicHeight": 4
 }

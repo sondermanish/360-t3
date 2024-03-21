@@ -18,7 +18,7 @@
     "hideCard": false,
     "mobileRightColumn": 64,
     "chartData": {"qod40leqx5": {
-        "data": "{{_.orderBy(SalesforceUtils.getAccounts().map(item => ({ x: item.Account.Name, y: getAllUsage.data.find(usage => usage.stripe_customer_id === item.Account.Stripe_ID__c)?.total_sessions || 0 })), \"y\", \"asc\")}}",
+        "data": "{{_.orderBy(Appsmith_Customers_Table.tableData.map(item => ({ x: item.Account.Name, y: item.Usage })), \"y\", \"asc\")}}",
         "seriesName": ""
     }},
     "animateLoading": true,

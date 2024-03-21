@@ -2,8 +2,7 @@
   "pluginType": "DB",
   "pluginId": "postgres-plugin",
   "unpublishedAction": {
-    "name": "getAllUsage",
-    "fullyQualifiedName": "getAllUsage",
+    "name": "getSegmentSFCases",
     "datasource": {
       "name": "Analytics",
       "pluginId": "postgres-plugin",
@@ -19,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "SELECT stripe_customer_id, SUM(billed_sessions) as total_sessions FROM cloud_services.\"usage_daily_stats\" where stripe_customer_id in (Select stripe_id_c from salesforce.accounts where id in (Select account_id from salesforce.opportunities where stage_name = 'Closed Won')) and date between '{{From_Date.formattedDate}}' AND '{{To_Date.formattedDate}}' GROUP By stripe_customer_id",
+      "body": "SELECT {{SegmentConstants.CaseQueryFields.join(\", \")}}\nFROM salesforce.cases\nWhere account_id in (Select account_id from salesforce.opportunities where stage_name = 'Closed Won')\nAND status = 'Open'",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -37,16 +36,15 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "From_Date.formattedDate",
-      "To_Date.formattedDate"
+      "SegmentConstants.CaseQueryFields.join(\", \")"
     ],
     "userSetOnLoad": true,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": [],
-    "createdAt": "2024-03-20T10:41:57Z"
+    "createdAt": "2024-03-21T07:07:11Z"
   },
-  "id": "Dashboard_getAllUsage",
+  "id": "Dashboard_getSegmentSFCases",
   "deleted": false,
-  "gitSyncId": "655b663c44c3196dff1b331d_65fabd75c443cd0c8dfad3aa"
+  "gitSyncId": "655b663c44c3196dff1b331d_65fbdc9f57825011f7814e12"
 }

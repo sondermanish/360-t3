@@ -1,0 +1,4 @@
+SELECT {{SegmentConstants.CaseQueryFields.join(", ")}}
+FROM salesforce.cases
+Where account_id in (Select account_id from salesforce.opportunities where stage_name = 'Closed Won')
+AND status = 'Open'

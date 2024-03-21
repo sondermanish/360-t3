@@ -26,7 +26,7 @@
     ],
     "shouldTruncate": false,
     "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-    "text": "{{_.orderBy(getAllUsage.data, \"total_sessions\", \"desc\")[0].total_sessions}}",
+    "text": "{{_.orderBy( Appsmith_Customers_Table.tableData, \"Usage\", \"desc\")[0].Usage}}",
     "key": "jvpulytzov",
     "isDeprecated": false,
     "rightColumn": 64,
