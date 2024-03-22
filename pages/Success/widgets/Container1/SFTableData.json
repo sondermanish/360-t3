@@ -716,7 +716,7 @@
             "verticalAlignment": "CENTER"
         }
     },
-    "onRowSelected": "{{getSegmentSFTasksByAccountId.run();\ngetSegmentSFCasesByAccountId.run();\ngetSegmentSFContactsByAccId.run().then(() => {});\nfetchLicenses.run().then(() => {\n  Stats_v2.calculateUsageInputs();\n}).catch(() => {\n  showAlert('Failed to run fetch licenses API', '');\n});}}",
+    "onRowSelected": "{{getSegmentSFTasksByAccountId.run();\ngetSegmentSFCasesByAccountId.run();\ngetSegmentSFContactsByAccId.run().then(() => {});\nfetchLicenses.run().then(() => {\n  Stats_v2.calculateUsageInputs();\n}).catch(() => {\n  showAlert('Failed to run fetch licenses API', '');\n});\ngetSegmentSFProductData.run()}}",
     "defaultSearchText": "{{appsmith.URL.queryParams.searchValue}}",
     "key": "xf1brqv5pz",
     "canFreezeColumn": true,

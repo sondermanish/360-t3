@@ -371,7 +371,7 @@
             "verticalAlignment": "CENTER"
         }
     },
-    "onRowSelected": "{{navigateTo('Support', {\n  searchValue: SupportIssues.selectedRow.Account\n}, 'SAME_WINDOW');}}",
+    "onRowSelected": "",
     "key": "xhjle2f473",
     "canFreezeColumn": true,
     "isDeprecated": false,

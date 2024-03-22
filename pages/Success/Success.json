@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 1403.999999999592,
+          "bottomRow": 1863.9843749999268,
           "containerStyle": "none",
           "snapRows": 124,
           "parentRowSpace": 1,
@@ -52,6 +52,16 @@
           ],
           [
             {
+              "id": "Success__$getSegmentSFOpportunities$_getSegmentSFOpportunitiesModule",
+              "name": "_$getSegmentSFOpportunities$_getSegmentSFOpportunitiesModule",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "getSegmentSFOpportunities.inputs.columns"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
               "id": "Success__$getSegmentSFUsers$_getSegmentSFUsersModule",
               "name": "_$getSegmentSFUsers$_getSegmentSFUsersModule",
               "confirmBeforeExecute": false,
@@ -64,12 +74,12 @@
           ],
           [
             {
-              "id": "Success_getSegmentSFOpportunities",
-              "name": "getSegmentSFOpportunities",
+              "id": "Success_getSegmentSFProductData",
+              "name": "getSegmentSFProductData",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [
-                "SegmentConstants.OpportunityQueryFields.join(\", \")"
+                "SFTableData.selectedRow.Id"
               ],
               "timeoutInMillisecond": 10000
             }

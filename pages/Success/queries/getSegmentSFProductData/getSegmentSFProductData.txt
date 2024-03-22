@@ -1,0 +1,1 @@
+SELECT name, stage_name, created_date, product_dependency_c, product_dependency_detail_c, product_dependency_priority_c, loss_reason_c, loss_reason_detail_c, closed_won_details_c FROM salesforce.opportunities where account_id = '{{SFTableData.selectedRow.Id}}'
