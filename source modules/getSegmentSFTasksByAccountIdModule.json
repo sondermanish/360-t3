@@ -3,5 +3,5 @@
   "packageName": "Segments Package",
   "moduleUUID": "65f3efefc577b61ea87bddae",
   "moduleName": "getSegmentSFTasksByAccountIdModule",
-  "version": "0.0.13"
+  "version": "0.0.15"
 }

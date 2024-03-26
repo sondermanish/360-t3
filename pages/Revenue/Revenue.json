@@ -28,18 +28,6 @@
         "layoutOnLoadActions": [
           [
             {
-              "id": "Revenue_getSegmentSFOpportunities",
-              "name": "getSegmentSFOpportunities",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "Constants.OpportunityQueryFields.join(\", \")"
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
               "id": "Revenue_Utils.writeToStore",
               "name": "Utils.writeToStore",
               "collectionId": "Revenue_Utils",
@@ -47,6 +35,18 @@
               "pluginType": "JS",
               "jsonPathKeys": [
                 "() => {\n  const currentARR = Utils.getMRRARRChartData(moment().format(\"MMMM YYYY\"));\n  storeValue(\"EnterpriseARR\", currentARR);\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "Revenue_getSegmentSFOpportunities",
+              "name": "getSegmentSFOpportunities",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "Constants.OpportunityQueryFields.join(\", \")"
               ],
               "timeoutInMillisecond": 10000
             }

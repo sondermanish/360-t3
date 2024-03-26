@@ -11,9 +11,9 @@
     "dynamicBindingPathList": [
         {"key": "accentColor"},
         {"key": "borderRadius"},
+        {"key": "tableData"},
         {"key": "primaryColumns.Name.computedValue"},
-        {"key": "primaryColumns.Renewal.computedValue"},
-        {"key": "tableData"}
+        {"key": "primaryColumns.Renewal.computedValue"}
     ],
     "needsHeightForContent": true,
     "leftColumn": 0,
@@ -86,7 +86,6 @@
             "id": "Renewal",
             "isDisabled": false,
             "allowSameOptionsInNewRow": true,
-            "outputFormat": "Do MMM YYYY",
             "validation": {},
             "isCellVisible": true,
             "isDerived": false,
@@ -96,7 +95,9 @@
             "isDiscardVisible": true,
             "isVisible": true,
             "label": "Renewal",
-            "columnType": "date",
+            "fontStyle": "",
+            "textColor": "",
+            "columnType": "text",
             "thousandSeparator": true,
             "horizontalAlignment": "LEFT",
             "isCellEditable": false,
@@ -106,6 +107,7 @@
             "sticky": "",
             "originalId": "Renewal",
             "currencyCode": "USD",
+            "cellBackground": "",
             "verticalAlignment": "CENTER"
         },
         "Name": {
@@ -127,6 +129,8 @@
             "isDiscardVisible": true,
             "isVisible": true,
             "label": "Name",
+            "fontStyle": "",
+            "textColor": "",
             "columnType": "text",
             "thousandSeparator": true,
             "horizontalAlignment": "LEFT",
@@ -137,6 +141,7 @@
             "sticky": "",
             "originalId": "Name",
             "currencyCode": "USD",
+            "cellBackground": "",
             "verticalAlignment": "CENTER"
         }
     },

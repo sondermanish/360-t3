@@ -28,7 +28,7 @@
       "encodeParamsToggle": true,
       "queryParameters": [
         {
-          "key": "customerId",
+          "key": "customerIds",
           "value": "{{getSegmentSFAccounts.data.find(item => item.id === SFTableData.selectedRow.Id)?.stripe_id_c}}"
         }
       ],

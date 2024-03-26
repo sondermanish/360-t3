@@ -3,5 +3,5 @@
   "packageName": "Segments Package",
   "moduleUUID": "65f3efbdc577b61ea87bdd25",
   "moduleName": "getSegmentSFCasesByAccountIdModule",
-  "version": "0.0.13"
+  "version": "0.0.15"
 }
