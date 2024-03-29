@@ -3,7 +3,7 @@
   "moduleUUID": "65f3efe5c577b61ea87bdd83",
   "type": "QUERY_MODULE",
   "unpublishedModuleInstance": {
-    "version": "0.0.15",
+    "version": "0.0.18",
     "name": "getSegmentSFOpportunities",
     "contextType": "PAGE",
     "pageId": "Success",
@@ -22,14 +22,8 @@
     "jsonPathKeys": [
       "SegmentConstants.OpportunityQueryFields.join(\", \")"
     ],
-    "isValid": false,
-    "invalids": [
-      "Module instance does not have a valid module reference in the workspace. Please import package \"Segments Package\" to your current workspace to resolve this issue."
-    ],
-    "invalidState": {
-      "packageName": "Segments Package",
-      "moduleName": "getSegmentSFOpportunitiesModule"
-    },
+    "isValid": true,
+    "invalids": [],
     "userPermissions": []
   },
   "id": "Success_getSegmentSFOpportunities",

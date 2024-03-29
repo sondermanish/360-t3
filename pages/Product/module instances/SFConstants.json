@@ -3,20 +3,14 @@
   "moduleUUID": "65ef241d12244e5a68238ab1",
   "type": "JS_MODULE",
   "unpublishedModuleInstance": {
-    "version": "0.0.33",
+    "version": "0.0.35",
     "name": "SFConstants",
     "contextType": "PAGE",
     "pageId": "Product",
     "inputs": {},
     "jsonPathKeys": [],
-    "isValid": false,
-    "invalids": [
-      "Module instance does not have a valid module reference in the workspace. Please import package \"Constants Package\" to your current workspace to resolve this issue."
-    ],
-    "invalidState": {
-      "packageName": "Constants Package",
-      "moduleName": "SalesforceConstants"
-    },
+    "isValid": true,
+    "invalids": [],
     "userPermissions": []
   },
   "id": "Product_SFConstants",

@@ -3,7 +3,7 @@
   "moduleUUID": "65f3efc86f79c902d95404c1",
   "type": "QUERY_MODULE",
   "unpublishedModuleInstance": {
-    "version": "0.0.15",
+    "version": "0.0.18",
     "name": "getSegmentSFAccounts",
     "contextType": "PAGE",
     "pageId": "Success",
@@ -40,14 +40,8 @@
       "SegmentConstants.AccountQueryFields.join(\", \")",
       "`'${Utils.getAllAccountIds()?.join(`', '`)}'`"
     ],
-    "isValid": false,
-    "invalids": [
-      "Module instance does not have a valid module reference in the workspace. Please import package \"Segments Package\" to your current workspace to resolve this issue."
-    ],
-    "invalidState": {
-      "packageName": "Segments Package",
-      "moduleName": "getSegmentSFAccountsModule"
-    },
+    "isValid": true,
+    "invalids": [],
     "userPermissions": []
   },
   "id": "Success_getSegmentSFAccounts",

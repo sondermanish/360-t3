@@ -29,7 +29,7 @@
       "queryParameters": [
         {
           "key": "customerIds",
-          "value": "{{getSegmentSFAccounts.data.find(item => item.id === SFTableData.selectedRow.Id)?.stripe_id_c}}"
+          "value": "{{\"cus_PdmiBsMgapmdYA\" || getSegmentSFAccounts.data.find(item => item.id === SFTableData.selectedRow.Id)?.stripe_id_c}}"
         }
       ],
       "bodyFormData": [],
@@ -57,7 +57,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "getSegmentSFAccounts.data.find(item => item.id === SFTableData.selectedRow.Id)?.stripe_id_c"
+      "\"cus_PdmiBsMgapmdYA\" || getSegmentSFAccounts.data.find(item => item.id === SFTableData.selectedRow.Id)?.stripe_id_c"
     ],
     "userSetOnLoad": true,
     "confirmBeforeExecute": false,

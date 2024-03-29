@@ -3,5 +3,5 @@
   "packageName": "Segments Package",
   "moduleUUID": "65f3efd4c577b61ea87bdd3c",
   "moduleName": "getSegmentSFContactsByAccIdModule",
-  "version": "0.0.15"
+  "version": "0.0.18"
 }
