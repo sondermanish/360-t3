@@ -3,21 +3,15 @@
   "moduleUUID": "65f3ee1ac577b61ea87bdbc9",
   "type": "QUERY_MODULE",
   "unpublishedModuleInstance": {
-    "version": "0.0.18",
+    "version": "0.0.19",
     "name": "getAllCustomerSegments",
     "contextType": "PAGE",
     "pageId": "Success",
     "inputs": {},
     "moduleInputs": {},
     "jsonPathKeys": [],
-    "isValid": false,
-    "invalids": [
-      "Module instance does not have a valid module reference in the workspace. Please import package \"Segments Package\" to your current workspace to resolve this issue."
-    ],
-    "invalidState": {
-      "packageName": "Segments Package",
-      "moduleName": "getSegmentSFCustomerSegments"
-    },
+    "isValid": true,
+    "invalids": [],
     "userPermissions": []
   },
   "id": "Success_getAllCustomerSegments",

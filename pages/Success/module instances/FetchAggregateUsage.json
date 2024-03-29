@@ -3,7 +3,7 @@
   "moduleUUID": "65f2bdc9410c3b7264152c79",
   "type": "QUERY_MODULE",
   "unpublishedModuleInstance": {
-    "version": "0.0.11",
+    "version": "0.0.12",
     "name": "FetchAggregateUsage",
     "contextType": "PAGE",
     "pageId": "Success",
@@ -73,14 +73,8 @@
       "Stats_v2.getUsageInputs().startDate",
       "Stats_v2.getUsageInputs().usage_metric"
     ],
-    "isValid": false,
-    "invalids": [
-      "Module instance does not have a valid module reference in the workspace. Please import package \"Togai Package\" to your current workspace to resolve this issue."
-    ],
-    "invalidState": {
-      "packageName": "Togai Package",
-      "moduleName": "TogaiUsageMetrics"
-    },
+    "isValid": true,
+    "invalids": [],
     "userPermissions": []
   },
   "id": "Success_FetchAggregateUsage",
