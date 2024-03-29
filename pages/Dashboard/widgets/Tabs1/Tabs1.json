@@ -7,7 +7,7 @@
     "displayName": "Tabs",
     "iconSVG": "/static/media/icon.9e3d67c0af9c0bd092dc56240314e18a.svg",
     "topRow": 7,
-    "bottomRow": 68,
+    "bottomRow": 64,
     "parentRowSpace": 10,
     "type": "TABS_WIDGET",
     "hideCard": false,
@@ -28,7 +28,7 @@
             "mobileBottomRow": 150,
             "widgetName": "Canvas7",
             "displayName": "Canvas",
-            "bottomRow": 610,
+            "bottomRow": 590,
             "topRow": 0,
             "parentRowSpace": 1,
             "type": "CANVAS_WIDGET",
@@ -38,6 +38,7 @@
             "minHeight": 150,
             "mobileRightColumn": 454.125,
             "parentColumnSpace": 1,
+            "dynamicTriggerPathList": [],
             "leftColumn": 0,
             "dynamicBindingPathList": [
                 {"key": "borderRadius"},
@@ -46,7 +47,7 @@
             "isDisabled": false,
             "key": "c6z6off4vw",
             "isDeprecated": false,
-            "tabName": "Tab 1",
+            "tabName": "Dashboard",
             "rightColumn": 454.125,
             "detachFromLayout": true,
             "dynamicHeight": "AUTO_HEIGHT",
@@ -71,7 +72,7 @@
             "mobileBottomRow": 150,
             "widgetName": "Canvas8",
             "displayName": "Canvas",
-            "bottomRow": 610,
+            "bottomRow": 530,
             "topRow": 0,
             "parentRowSpace": 1,
             "type": "CANVAS_WIDGET",
@@ -81,6 +82,7 @@
             "minHeight": 150,
             "mobileRightColumn": 454.125,
             "parentColumnSpace": 1,
+            "dynamicTriggerPathList": [],
             "leftColumn": 0,
             "dynamicBindingPathList": [
                 {"key": "borderRadius"},
@@ -89,7 +91,7 @@
             "isDisabled": false,
             "key": "c6z6off4vw",
             "isDeprecated": false,
-            "tabName": "Tab 2",
+            "tabName": "List View",
             "rightColumn": 454.125,
             "detachFromLayout": true,
             "dynamicHeight": "AUTO_HEIGHT",
@@ -118,15 +120,15 @@
     "dynamicHeight": "AUTO_HEIGHT",
     "widgetId": "7wsky4ljm8",
     "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-    "defaultTab": "Tab 1",
-    "shouldShowTabs": false,
+    "defaultTab": "Dashboard",
+    "shouldShowTabs": true,
     "minWidth": 450,
     "tabsObj": {
         "tab1": {
             "widgetId": "nq63v3axfa",
             "positioning": "vertical",
             "index": 0,
-            "label": "Tab 1",
+            "label": "Dashboard",
             "id": "tab1",
             "isVisible": true
         },
@@ -134,9 +136,9 @@
             "widgetId": "wyc65c8co7",
             "positioning": "vertical",
             "index": 1,
-            "label": "Tab 2",
+            "label": "List View",
             "id": "tab2",
-            "isVisible": false
+            "isVisible": true
         }
     },
     "isVisible": true,
@@ -151,6 +153,6 @@
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
     "mobileLeftColumn": 1,
     "maxDynamicHeight": 9000,
-    "originalBottomRow": 68,
+    "originalBottomRow": 64,
     "minDynamicHeight": 10
 }

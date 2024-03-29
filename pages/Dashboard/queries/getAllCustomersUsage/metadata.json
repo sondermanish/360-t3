@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "postgres-plugin",
   "unpublishedAction": {
-    "name": "Query1",
+    "name": "getAllCustomersUsage",
     "datasource": {
       "name": "Analytics",
       "pluginId": "postgres-plugin",
@@ -45,7 +45,7 @@
     "userPermissions": [],
     "createdAt": "2024-03-21T12:01:02Z"
   },
-  "id": "Dashboard_Query1",
+  "id": "Dashboard_getAllCustomersUsage",
   "deleted": false,
   "gitSyncId": "655b663c44c3196dff1b331d_65fc217ec38d6065dfc0dacb"
 }

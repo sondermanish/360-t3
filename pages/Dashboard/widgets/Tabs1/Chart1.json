@@ -18,7 +18,7 @@
     "hideCard": false,
     "mobileRightColumn": 64,
     "chartData": {"qod40leqx5": {
-        "data": "{{_.orderBy(Appsmith_Customers_Table.tableData.map(item => ({ x: item.Account.Name, y: item.Usage })), \"y\", \"asc\")}}",
+        "data": "{{LicenseActions.licenses.filter(item => Object.entries(item.purchasedUsage || {}).length > 0).map((item) => ({ x: item. customerEmail, y: ((item.usedUsage.users || item.usedUsage.sessions || 0)/(item.purchasedUsage.users || item.purchasedUsage.sessions || 1)).toFixed(2) * 100 }))}}",
         "seriesName": ""
     }},
     "animateLoading": true,
@@ -31,7 +31,6 @@
         {"key": "boxShadow"},
         {"key": "accentColor"},
         {"key": "fontFamily"},
-        {"key": "chartName"},
         {"key": "chartData.qod40leqx5.data"}
     ],
     "leftColumn": 19,
@@ -87,7 +86,7 @@
     "showDataPointLabel": false,
     "key": "s1gy17jjur",
     "isDeprecated": false,
-    "rightColumn": 37,
+    "rightColumn": 43,
     "accentColor": "{{appsmith.theme.colors.primaryColor}}",
     "widgetId": "0gg820n6ic",
     "minWidth": 450,
@@ -100,12 +99,12 @@
     "renderMode": "CANVAS",
     "mobileTopRow": 25,
     "responsiveBehavior": "fill",
-    "yAxisName": "Account",
+    "yAxisName": "Utilization %",
     "originalTopRow": 9,
-    "chartName": "{{Variables.selectedPeriod}} Usage",
+    "chartName": "Customer Usage Utilization",
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
     "mobileLeftColumn": 42,
-    "xAxisName": "Sessions",
+    "xAxisName": "Customer",
     "originalBottomRow": 52,
-    "chartType": "PIE_CHART"
+    "chartType": "COLUMN_CHART"
 }

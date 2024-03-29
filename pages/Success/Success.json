@@ -56,9 +56,7 @@
               "name": "_$getSegmentSFOpportunities$_getSegmentSFOpportunitiesModule",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
-              "jsonPathKeys": [
-                "getSegmentSFOpportunities.inputs.columns"
-              ],
+              "jsonPathKeys": [],
               "timeoutInMillisecond": 10000
             },
             {
@@ -66,9 +64,7 @@
               "name": "_$getSegmentSFUsers$_getSegmentSFUsersModule",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
-              "jsonPathKeys": [
-                "getSegmentSFUsers.inputs.columns"
-              ],
+              "jsonPathKeys": [],
               "timeoutInMillisecond": 10000
             }
           ],
