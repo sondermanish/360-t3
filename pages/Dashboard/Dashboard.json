@@ -28,6 +28,15 @@
         "layoutOnLoadActions": [
           [
             {
+              "id": "Dashboard_LicenseActions.onPageLoad",
+              "name": "LicenseActions.onPageLoad",
+              "collectionId": "Dashboard_LicenseActions",
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            },
+            {
               "id": "Dashboard_getSegmentSFAccounts",
               "name": "getSegmentSFAccounts",
               "confirmBeforeExecute": false,
@@ -103,19 +112,6 @@
               "pluginType": "DB",
               "jsonPathKeys": [
                 "SegmentConstants.UserQueryFields.join(\", \")"
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
-              "id": "Dashboard_LicenseActions.onPageLoad",
-              "name": "LicenseActions.onPageLoad",
-              "collectionId": "Dashboard_LicenseActions",
-              "confirmBeforeExecute": false,
-              "pluginType": "JS",
-              "jsonPathKeys": [
-                "() => {\n  LicenseActions.licenses = [];\n  setTimeout(() => {\n    let stripeIds = getSegmentSFAccounts.data.filter(item => !!item.stripe_id_c).map(item => item.stripe_id_c);\n    let numberOfRuns = Math.ceil(stripeIds.length / 17);\n    new Array(numberOfRuns).fill(0).forEach((item, index) => {\n      fetchLicense.run({\n        stripeIds: stripeIds.slice(index * 17, 17 * (index + 1)).join(\",\")\n      }).then(response => {\n        let data = response.data.data.filter(item => !!item.subscription && !!item.subscription.purchasedUsage).map(item => _.pick(item.subscription, [\"customerEmail\", \"customerId\", \"purchasedUsage\", \"usedUsage\"]));\n        LicenseActions.licenses = LicenseActions.licenses.concat(data);\n      });\n    });\n  }, 5000);\n}"
               ],
               "timeoutInMillisecond": 10000
             }

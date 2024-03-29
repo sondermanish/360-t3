@@ -9,8 +9,14 @@
     "pageId": "Dashboard",
     "inputs": {},
     "jsonPathKeys": [],
-    "isValid": true,
-    "invalids": [],
+    "isValid": false,
+    "invalids": [
+      "Module instance does not have a valid module reference in the workspace. Please import package \"Constants Package\" to your current workspace to resolve this issue."
+    ],
+    "invalidState": {
+      "packageName": "Constants Package",
+      "moduleName": "SalesforceConstants"
+    },
     "userPermissions": []
   },
   "id": "Dashboard_SFConstants",

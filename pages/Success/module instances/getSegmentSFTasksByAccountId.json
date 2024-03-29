@@ -22,8 +22,14 @@
     "jsonPathKeys": [
       "SFTableData.selectedRow.Id"
     ],
-    "isValid": true,
-    "invalids": [],
+    "isValid": false,
+    "invalids": [
+      "Module instance does not have a valid module reference in the workspace. Please import package \"Segments Package\" to your current workspace to resolve this issue."
+    ],
+    "invalidState": {
+      "packageName": "Segments Package",
+      "moduleName": "getSegmentSFTasksByAccountIdModule"
+    },
     "userPermissions": []
   },
   "id": "Success_getSegmentSFTasksByAccountId",
