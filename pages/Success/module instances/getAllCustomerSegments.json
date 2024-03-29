@@ -3,7 +3,7 @@
   "moduleUUID": "65f3ee1ac577b61ea87bdbc9",
   "type": "QUERY_MODULE",
   "unpublishedModuleInstance": {
-    "version": "0.0.15",
+    "version": "0.0.18",
     "name": "getAllCustomerSegments",
     "contextType": "PAGE",
     "pageId": "Success",

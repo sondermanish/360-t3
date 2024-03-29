@@ -3,7 +3,7 @@
   "moduleUUID": "65eee92ccda3a1187b7da34f",
   "type": "JS_MODULE",
   "unpublishedModuleInstance": {
-    "version": "0.0.33",
+    "version": "0.0.35",
     "name": "SegmentConstants",
     "contextType": "PAGE",
     "pageId": "Success",

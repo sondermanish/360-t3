@@ -3,7 +3,7 @@
   "moduleUUID": "65f3efdcc577b61ea87bdd5d",
   "type": "QUERY_MODULE",
   "unpublishedModuleInstance": {
-    "version": "0.0.15",
+    "version": "0.0.18",
     "name": "getSegmentSFEventsByOppId",
     "contextType": "PAGE",
     "pageId": "Success",
