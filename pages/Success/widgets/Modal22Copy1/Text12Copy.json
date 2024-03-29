@@ -1,5 +1,5 @@
 {
-    "widgetName": "Text12",
+    "widgetName": "Text12Copy",
     "displayName": "Text",
     "iconSVG": "/static/media/icon.a47d6d5dbbb718c4dc4b2eb4f218c1b7.svg",
     "searchTags": [
@@ -24,19 +24,19 @@
     ],
     "shouldTruncate": false,
     "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-    "text": "{{SFTableData.selectedRow.name}} - App Viewer Breakdown",
+    "text": "{{SFTableData.selectedRow.name}} - Developer Breakdown",
     "key": "fu28987v0b",
     "isDeprecated": false,
     "rightColumn": 60,
     "textAlign": "LEFT",
     "dynamicHeight": "AUTO_HEIGHT",
-    "widgetId": "cqghe18a9k",
+    "widgetId": "00f7tfaoq1",
     "minWidth": 450,
     "isVisible": true,
     "fontStyle": "BOLD",
     "textColor": "#231F20",
     "version": 1,
-    "parentId": "90m8m1npzl",
+    "parentId": "akdspj4q3b",
     "tags": [
         "Suggested",
         "Content"
