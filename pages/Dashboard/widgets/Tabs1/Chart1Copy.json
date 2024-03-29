@@ -6,7 +6,7 @@
     "topRow": 7,
     "type": "CHART_WIDGET",
     "chartData": {"qod40leqx5": {
-        "data": "{{Object.entries(JSON.parse(Query1.data.find(item => item.stripe_customer_id === Select1.selectedOptionValue).months)).map(([entry, value]) => ({ x: entry, y: value }))}}",
+        "data": "{{Object.entries(JSON.parse(getAllCustomersUsage.data.find(item => item.stripe_customer_id === Select1.selectedOptionValue).months)).map(([entry, value]) => ({ x: entry, y: value }))}}",
         "seriesName": ""
     }},
     "animateLoading": true,
@@ -20,7 +20,7 @@
         {"key": "customEChartConfig"},
         {"key": "chartName"}
     ],
-    "leftColumn": 37,
+    "leftColumn": 43,
     "customEChartConfig": "{{ ((chartType) => ( Utils.getChartData(Select1.selectedOptionValue)))(Chart1Copy.chartType) }}",
     "flexVerticalAlignment": "start",
     "accentColor": "{{appsmith.theme.colors.primaryColor}}",

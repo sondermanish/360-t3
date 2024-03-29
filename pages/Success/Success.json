@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 1863.9843749999268,
+          "bottomRow": 1403.999999999512,
           "containerStyle": "none",
           "snapRows": 124,
           "parentRowSpace": 1,
@@ -80,6 +80,30 @@
               "pluginType": "DB",
               "jsonPathKeys": [
                 "SFTableData.selectedRow.Id"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "Success_getDevelopersUsage",
+              "name": "getDevelopersUsage",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "getSegmentSFAccounts.data.find(item => item.id === SFTableData.selectedRow.Id)?.stripe_id_c"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "Success_getDeveloperUsageByMonth",
+              "name": "getDeveloperUsageByMonth",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "getSegmentSFAccounts.data.find(item => item.id === SFTableData.selectedRow.Id)?.stripe_id_c"
               ],
               "timeoutInMillisecond": 10000
             }
