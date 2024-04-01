@@ -3,7 +3,7 @@
   "pluginId": "js-plugin",
   "unpublishedAction": {
     "name": "onPageLoad",
-    "fullyQualifiedName": "GithubActions.onPageLoad",
+    "fullyQualifiedName": "SalesforceActions.onPageLoad",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -14,7 +14,7 @@
       "userPermissions": []
     },
     "pageId": "Dashboard",
-    "collectionId": "Dashboard_GithubActions",
+    "collectionId": "Dashboard_SalesforceActions",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -35,9 +35,9 @@
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": [],
-    "createdAt": "2024-03-21T08:00:35Z"
+    "createdAt": "2024-04-01T08:37:20Z"
   },
-  "id": "Dashboard_GithubActions.onPageLoad",
+  "id": "Dashboard_SalesforceActions.onPageLoad",
   "deleted": false,
-  "gitSyncId": "655b663c44c3196dff1b331d_65fbe923427a0f605ee13d8c"
+  "gitSyncId": "655b663c44c3196dff1b331d_660a7240f2024e7cb0d53678"
 }

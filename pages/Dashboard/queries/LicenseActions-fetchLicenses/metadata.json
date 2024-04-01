@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "onPageLoad",
-    "fullyQualifiedName": "LicenseActions.onPageLoad",
+    "name": "fetchLicenses",
+    "fullyQualifiedName": "LicenseActions.fetchLicenses",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -22,7 +22,7 @@
       "selfReferencingDataPaths": [],
       "jsArguments": []
     },
-    "executeOnLoad": true,
+    "executeOnLoad": false,
     "dynamicBindingPathList": [
       {
         "key": "body"
@@ -37,7 +37,7 @@
     "userPermissions": [],
     "createdAt": "2024-03-27T07:02:30Z"
   },
-  "id": "Dashboard_LicenseActions.onPageLoad",
+  "id": "Dashboard_LicenseActions.fetchLicenses",
   "deleted": false,
   "gitSyncId": "655b663c44c3196dff1b331d_6603c486a5de042b845dd04c"
 }
