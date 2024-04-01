@@ -100,7 +100,7 @@
             "index": 0,
             "isDiscardVisible": true,
             "isVisible": true,
-            "label": "Usage (hrs)",
+            "label": "Usage (pulses)",
             "columnType": "number",
             "thousandSeparator": true,
             "horizontalAlignment": "LEFT",

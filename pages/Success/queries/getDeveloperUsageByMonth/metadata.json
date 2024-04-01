@@ -25,7 +25,7 @@
             "data": "10"
           },
           "arrayPipelines": {
-            "data": "[\n  {\n    $match: {\n      viewMode: false,\n\t\t\tisSubscribed: true,\n\t\t\tstripeCustomerId: '{{getSegmentSFAccounts.data.find(item => item.id === SFTableData.selectedRow.Id)?.stripe_id_c}}'\n    }\n  },\n  {\n    $group: {\n      _id: {\n        year: { $year: { $toDate: \"$timestamp\" } },\n        month: { $month: { $toDate: \"$timestamp\" } }        \n      },\n      uniqueInstanceUserIds: { $addToSet: \"$instanceUserId\" }\n    }\n  },\n  {\n    $project: {\n      _id: 0,\n      year: \"$_id.year\",\n      month: \"$_id.month\",\n      uniqueInstanceUserIdsCount: { $size: \"$uniqueInstanceUserIds\" }\n    }\n  }, {\n\t\t$sort: {\n\t\t\tyear: -1,\n\t\t\tmonth: -1\n\t\t}\n\t}\n]"
+            "data": "[\n  {\n    $match: {\n      viewMode: false,\n\t\t\tisSubscribed: true,\n\t\t\tstripeCustomerId: '{{getSegmentSFAccounts.data.find(item => item.id === SFTableData.selectedRow.Id)?.stripe_id_c}}',\n\t\t\t$expr: {\n        $eq: [{ $strLenCP: \"$instanceUserId\" }, 64]\n      }\n    }\n  },\n  {\n    $group: {\n      _id: {\n        year: { $year: { $toDate: \"$timestamp\" } },\n        month: { $month: { $toDate: \"$timestamp\" } }        \n      },\n      uniqueInstanceUserIds: { $addToSet: \"$instanceUserId\" }\n    }\n  },\n  {\n    $project: {\n      _id: 0,\n      year: \"$_id.year\",\n      month: \"$_id.month\",\n      uniqueInstanceUserIdsCount: { $size: \"$uniqueInstanceUserIds\" }\n    }\n  }, {\n\t\t$sort: {\n\t\t\tyear: -1,\n\t\t\tmonth: -1\n\t\t}\n\t}\n]"
           }
         },
         "collection": {
@@ -79,7 +79,7 @@
         },
         "misc": {
           "formToNativeQuery": {
-            "data": "{\n  \"aggregate\": \"usagePulse\",\n  \"pipeline\": [\n  {\n    $match: {\n      viewMode: false,\n\t\t\tisSubscribed: true,\n\t\t\tstripeCustomerId: '{{getSegmentSFAccounts.data.find(item => item.id === SFTableData.selectedRow.Id)?.stripe_id_c}}'\n    }\n  },\n  {\n    $group: {\n      _id: {\n        year: { $year: { $toDate: \"$timestamp\" } },\n        month: { $month: { $toDate: \"$timestamp\" } }        \n      },\n      uniqueInstanceUserIds: { $addToSet: \"$instanceUserId\" }\n    }\n  },\n  {\n    $project: {\n      _id: 0,\n      year: \"$_id.year\",\n      month: \"$_id.month\",\n      uniqueInstanceUserIdsCount: { $size: \"$uniqueInstanceUserIds\" }\n    }\n  }, {\n\t\t$sort: {\n\t\t\tyear: -1,\n\t\t\tmonth: -1\n\t\t}\n\t}\n],\n  \"cursor\": {}\n}\n",
+            "data": "{\n  \"aggregate\": \"usagePulse\",\n  \"pipeline\": [\n  {\n    $match: {\n      viewMode: false,\n\t\t\tisSubscribed: true,\n\t\t\tstripeCustomerId: '{{getSegmentSFAccounts.data.find(item => item.id === SFTableData.selectedRow.Id)?.stripe_id_c}}',\n\t\t\t$expr: {\n        $eq: [{ $strLenCP: \"$instanceUserId\" }, 64]\n      }\n    }\n  },\n  {\n    $group: {\n      _id: {\n        year: { $year: { $toDate: \"$timestamp\" } },\n        month: { $month: { $toDate: \"$timestamp\" } }        \n      },\n      uniqueInstanceUserIds: { $addToSet: \"$instanceUserId\" }\n    }\n  },\n  {\n    $project: {\n      _id: 0,\n      year: \"$_id.year\",\n      month: \"$_id.month\",\n      uniqueInstanceUserIdsCount: { $size: \"$uniqueInstanceUserIds\" }\n    }\n  }, {\n\t\t$sort: {\n\t\t\tyear: -1,\n\t\t\tmonth: -1\n\t\t}\n\t}\n],\n  \"cursor\": {}\n}\n",
             "status": "SUCCESS"
           }
         },
