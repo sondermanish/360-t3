@@ -77,7 +77,10 @@
         "Contract_End_Date__c",
         "ARR__c"
     ],
-    "dynamicPropertyPathList": [{"key": "tableData"}],
+    "dynamicPropertyPathList": [
+        {"key": "tableData"},
+        {"key": "onRowSelected"}
+    ],
     "displayName": "Table",
     "bottomRow": 27,
     "columnWidthMap": {
