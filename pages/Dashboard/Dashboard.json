@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 720,
+          "bottomRow": 1070,
           "containerStyle": "none",
           "snapRows": 59,
           "parentRowSpace": 1,
@@ -94,6 +94,29 @@
                 "SegmentConstants.UserQueryFields.join(\", \")"
               ],
               "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "Dashboard_getTop10AccountsOfAppViewers",
+              "name": "getTop10AccountsOfAppViewers",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "[\n  {\n    $match: {\n      viewMode: false,\n\t\t\tisSubscribed: true,\n\t\t\tstripeCustomerId: {\n\t\t\t\t$in: getSegmentSFAccounts.data.map(item => item.stripe_id_c)\n\t\t\t},\n\t\t\ttimestamp: {\n\t\t\t\t$gte: `ISODate(${moment().subtract(1, 'month').toISOString()})`\n\t\t\t},\n\t\t\t$expr: {\n        $eq: [{ $strLenCP: \"$instanceUserId\" }, 64]\n      }\n    }\n  },\n  {\n    $group: {\n      _id: {\n\t\t\t\tcustomerId: \"$stripeCustomerId\"\n\t\t\t},\n\t\t\tuniqueInstanceUsers: { \"$addToSet\": \"$instanceUserId\" },\n      count: { $sum: 1 }\n    }\n  },\n  {\n    \"$project\": {\n      \"_id\": 0,\n      \"customerId\": \"$_id.customerId\",\n      \"uniqueInstanceUserCount\": { \"$size\": \"$uniqueInstanceUsers\" },\n    }\n  },\n\t{\n\t\t$sort: {\n\t\t\tuniqueInstanceUserCount: -1\n\t\t}\n\t}\n]",
+                "[\n  {\n    $match: {\n      viewMode: true,\n\t\t\tisSubscribed: true,\n\t\t\tstripeCustomerId: {\n\t\t\t\t$in: getSegmentSFAccounts.data.map(item => item.stripe_id_c)\n\t\t\t},\n\t\t\ttimestamp: {\n\t\t\t\t$gte: `ISODate(${moment().subtract(1, 'month').toISOString()})`\n\t\t\t},\n\t\t\t$expr: {\n        $eq: [{ $strLenCP: \"$instanceUserId\" }, 64]\n      }\n    }\n  },\n  {\n    $group: {\n      _id: {\n\t\t\t\tcustomerId: \"$stripeCustomerId\"\n\t\t\t},\n\t\t\tuniqueInstanceUsers: { \"$addToSet\": \"$instanceUserId\" },\n      count: { $sum: 1 }\n    }\n  },\n  {\n    \"$project\": {\n      \"_id\": 0,\n      \"customerId\": \"$_id.customerId\",\n      \"uniqueInstanceUserCount\": { \"$size\": \"$uniqueInstanceUsers\" },\n    }\n  },\n\t{\n\t\t$sort: {\n\t\t\tuniqueInstanceUserCount: -1\n\t\t}\n\t}\n]"
+              ],
+              "timeoutInMillisecond": 20000
+            },
+            {
+              "id": "Dashboard_getTop10AccountsOfDevelopers",
+              "name": "getTop10AccountsOfDevelopers",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "[\n  {\n    $match: {\n      viewMode: false,\n\t\t\tisSubscribed: true,\n\t\t\tstripeCustomerId: {\n\t\t\t\t$in: getSegmentSFAccounts.data.map(item => item.stripe_id_c)\n\t\t\t},\n\t\t\ttimestamp: {\n\t\t\t\t$gte: `ISODate(${moment().subtract(1, 'month').toISOString()})`\n\t\t\t},\n\t\t\t$expr: {\n        $eq: [{ $strLenCP: \"$instanceUserId\" }, 64]\n      }\n    }\n  },\n  {\n    $group: {\n      _id: {\n\t\t\t\tcustomerId: \"$stripeCustomerId\"\n\t\t\t},\n\t\t\tuniqueInstanceUsers: { \"$addToSet\": \"$instanceUserId\" },\n      count: { $sum: 1 }\n    }\n  },\n  {\n    \"$project\": {\n      \"_id\": 0,\n      \"customerId\": \"$_id.customerId\",\n      \"uniqueInstanceUserCount\": { \"$size\": \"$uniqueInstanceUsers\" },\n    }\n  },\n\t{\n\t\t$sort: {\n\t\t\tuniqueInstanceUserCount: -1\n\t\t}\n\t}\n]"
+              ],
+              "timeoutInMillisecond": 20000
             }
           ],
           [

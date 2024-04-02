@@ -7,7 +7,7 @@
     "type": "DATE_PICKER_WIDGET2",
     "topRowBeforeCollapse": 46,
     "animateLoading": true,
-    "leftColumn": 0,
+    "leftColumn": 8,
     "dynamicBindingPathList": [
         {"key": "accentColor"},
         {"key": "borderRadius"},
@@ -46,7 +46,7 @@
     "labelTextSize": "0.875rem",
     "defaultDate": "{{moment()}}",
     "isDeprecated": false,
-    "rightColumn": 10,
+    "rightColumn": 18,
     "widgetId": "tojcwzbp80",
     "minWidth": 450,
     "label": "To Date",

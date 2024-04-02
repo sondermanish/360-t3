@@ -3,7 +3,7 @@
   "moduleUUID": "65f3efefc577b61ea87bddae",
   "type": "QUERY_MODULE",
   "unpublishedModuleInstance": {
-    "version": "0.0.19",
+    "version": "0.0.20",
     "name": "getSegmentSFTasksByAccountId",
     "contextType": "PAGE",
     "pageId": "Success",

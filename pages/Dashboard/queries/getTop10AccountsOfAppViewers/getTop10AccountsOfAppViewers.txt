@@ -1,0 +1,42 @@
+{
+  "aggregate": "usagePulse",
+  "pipeline": {{[
+  {
+    $match: {
+      viewMode: false,
+			isSubscribed: true,
+			stripeCustomerId: {
+				$in: getSegmentSFAccounts.data.map(item => item.stripe_id_c)
+			},
+			timestamp: {
+				$gte: `ISODate(${moment().subtract(1, 'month').toISOString()})`
+			},
+			$expr: {
+        $eq: [{ $strLenCP: "$instanceUserId" }, 64]
+      }
+    }
+  },
+  {
+    $group: {
+      _id: {
+				customerId: "$stripeCustomerId"
+			},
+			uniqueInstanceUsers: { "$addToSet": "$instanceUserId" },
+      count: { $sum: 1 }
+    }
+  },
+  {
+    "$project": {
+      "_id": 0,
+      "customerId": "$_id.customerId",
+      "uniqueInstanceUserCount": { "$size": "$uniqueInstanceUsers" },
+    }
+  },
+	{
+		$sort: {
+			uniqueInstanceUserCount: -1
+		}
+	}
+]}},
+  "cursor": {}
+}

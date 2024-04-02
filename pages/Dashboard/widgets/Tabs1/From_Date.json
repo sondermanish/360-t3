@@ -7,7 +7,7 @@
     "type": "DATE_PICKER_WIDGET2",
     "topRowBeforeCollapse": 46,
     "animateLoading": true,
-    "leftColumn": 11,
+    "leftColumn": 0,
     "dynamicBindingPathList": [
         {"key": "accentColor"},
         {"key": "borderRadius"},
@@ -46,7 +46,7 @@
     "labelTextSize": "0.875rem",
     "defaultDate": "{{moment().subtract(1, 'week')}}",
     "isDeprecated": false,
-    "rightColumn": 19,
+    "rightColumn": 8,
     "widgetId": "bcvbj6atzu",
     "minWidth": 450,
     "label": "From Date",

@@ -6,24 +6,24 @@
     "allowScroll": false,
     "iconSVG": "/static/media/icon.8eea39845729f7f4bfadeecd3810a09d.svg",
     "displayName": "Chart",
-    "topRow": 1,
+    "topRow": 2,
     "searchTags": [
         "graph",
         "visuals",
         "visualisations"
     ],
-    "bottomRow": 30,
+    "bottomRow": 32,
     "parentRowSpace": 10,
     "type": "CHART_WIDGET",
     "hideCard": false,
     "mobileRightColumn": 64,
     "chartData": {"qod40leqx5": {
-        "data": "{{LicenseActions.licenses.filter(item => Object.entries(item.purchasedUsage || {}).length > 0).map((item) => ({ x: item. customerEmail, y: ((item.usedUsage.users || item.usedUsage.sessions || 0)/(item.purchasedUsage.users || item.purchasedUsage.sessions || 1)).toFixed(2) * 100 }))}}",
+        "data": "{{LicenseActions.licenses.filter(item => Object.entries(item.purchasedUsage || {}).length > 0).map((item) => ({ x: item.customerEmail, y: LicenseUtils.calculateUtilisation(item)}))}}",
         "seriesName": ""
     }},
     "animateLoading": true,
     "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
-    "parentColumnSpace": 19.5,
+    "parentColumnSpace": 3.4453125,
     "dynamicTriggerPathList": [],
     "dynamicBindingPathList": [
         {"key": "customEChartConfig"},
@@ -33,7 +33,7 @@
         {"key": "fontFamily"},
         {"key": "chartData.qod40leqx5.data"}
     ],
-    "leftColumn": 19,
+    "leftColumn": 0,
     "customFusionChartConfig": {
         "type": "column2d",
         "dataSource": {
@@ -86,13 +86,13 @@
     "showDataPointLabel": false,
     "key": "s1gy17jjur",
     "isDeprecated": false,
-    "rightColumn": 43,
+    "rightColumn": 35.265306122448976,
     "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-    "widgetId": "0gg820n6ic",
+    "widgetId": "6k5ogurk2c",
     "minWidth": 450,
     "isVisible": true,
     "version": 1,
-    "parentId": "nq63v3axfa",
+    "parentId": "9pbznikv32",
     "tags": ["Display"],
     "labelOrientation": "auto",
     "isLoading": false,
@@ -100,11 +100,11 @@
     "mobileTopRow": 25,
     "responsiveBehavior": "fill",
     "yAxisName": "Utilization %",
-    "originalTopRow": 9,
+    "originalTopRow": 78,
     "chartName": "Customer Usage Utilization",
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
     "mobileLeftColumn": 42,
     "xAxisName": "Customer",
-    "originalBottomRow": 52,
+    "originalBottomRow": 108,
     "chartType": "COLUMN_CHART"
 }

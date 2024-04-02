@@ -6,8 +6,8 @@
     "isCanvas": true,
     "displayName": "Tabs",
     "iconSVG": "/static/media/icon.9e3d67c0af9c0bd092dc56240314e18a.svg",
-    "topRow": 7,
-    "bottomRow": 72,
+    "topRow": 6,
+    "bottomRow": 71,
     "parentRowSpace": 10,
     "type": "TABS_WIDGET",
     "hideCard": false,
@@ -149,10 +149,10 @@
     "isLoading": false,
     "mobileTopRow": 57,
     "responsiveBehavior": "fill",
-    "originalTopRow": 7,
+    "originalTopRow": 6,
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
     "mobileLeftColumn": 1,
     "maxDynamicHeight": 9000,
-    "originalBottomRow": 72,
+    "originalBottomRow": 71,
     "minDynamicHeight": 10
 }

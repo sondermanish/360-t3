@@ -3,7 +3,7 @@
   "moduleUUID": "65f2bdc9410c3b7264152c79",
   "type": "QUERY_MODULE",
   "unpublishedModuleInstance": {
-    "version": "0.0.12",
+    "version": "0.0.13",
     "name": "FetchUsageReport",
     "contextType": "PAGE",
     "pageId": "Success",
