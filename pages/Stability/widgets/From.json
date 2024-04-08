@@ -29,7 +29,10 @@
     "mobileBottomRow": 7,
     "widgetName": "From",
     "minDate": "1920-12-31T18:30:00.000Z",
-    "dynamicPropertyPathList": [{"key": "defaultDate"}],
+    "dynamicPropertyPathList": [
+        {"key": "defaultDate"},
+        {"key": "onDateSelected"}
+    ],
     "displayName": "DatePicker",
     "searchTags": ["calendar"],
     "bottomRow": 58,

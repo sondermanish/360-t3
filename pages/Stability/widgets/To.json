@@ -13,6 +13,7 @@
         {"key": "defaultDate"}
     ],
     "isDisabled": false,
+    "onDateSelected": "{{getSegmentSFAllCases.run()}}",
     "isRequired": false,
     "dynamicHeight": "FIXED",
     "accentColor": "{{appsmith.theme.colors.primaryColor}}",
@@ -28,7 +29,10 @@
     "mobileBottomRow": 7,
     "widgetName": "To",
     "minDate": "1920-12-31T18:30:00.000Z",
-    "dynamicPropertyPathList": [{"key": "defaultDate"}],
+    "dynamicPropertyPathList": [
+        {"key": "defaultDate"},
+        {"key": "onDateSelected"}
+    ],
     "displayName": "DatePicker",
     "searchTags": ["calendar"],
     "bottomRow": 58,
@@ -37,7 +41,7 @@
     "hideCard": false,
     "mobileRightColumn": 20,
     "parentColumnSpace": 15.640625,
-    "dynamicTriggerPathList": [],
+    "dynamicTriggerPathList": [{"key": "onDateSelected"}],
     "labelPosition": "Top",
     "key": "rap7onh0pv",
     "labelTextSize": "0.875rem",
