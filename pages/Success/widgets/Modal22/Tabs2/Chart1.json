@@ -18,7 +18,7 @@
     "mobileRightColumn": 17,
     "chartData": {
         "vt9fozw0ql": {
-            "data": "{{Object.entries(Stats_v2.UserCountBreakdown(FetchAggregateUsage.data).loggedIn.monthlyUsers).map(([month, users]) => ({ x: month, y: users }))}}",
+            "data": "{{Object.entries(Stats_v2.UserCountBreakdown(FetchAggregateUsage.data).loggedIn.monthlyUsers).map(([month, users]) => ({ x: month, y: users })).sort((a, b) => moment(a.x).unix() - moment(b.x).unix())}}",
             "color": "#86efac",
             "seriesName": "Logged In"
         },

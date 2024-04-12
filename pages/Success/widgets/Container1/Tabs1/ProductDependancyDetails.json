@@ -28,7 +28,7 @@
     ],
     "isLoading": false,
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "originalBottomRow": 19,
+    "originalBottomRow": 10,
     "widgetName": "ProductDependancyDetails",
     "dynamicPropertyPathList": [],
     "displayName": "Input",
