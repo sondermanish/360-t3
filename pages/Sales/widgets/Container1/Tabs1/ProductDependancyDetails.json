@@ -52,7 +52,7 @@
     "rightColumn": 64,
     "widgetId": "ar7xqgx75p",
     "minWidth": 450,
-    "label": "Product Dependancy Details",
+    "label": "Product Dependency Details",
     "parentId": "fcpr7gyx4n",
     "labelAlignment": "left",
     "renderMode": "CANVAS",

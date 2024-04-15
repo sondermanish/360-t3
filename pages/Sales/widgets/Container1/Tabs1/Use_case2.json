@@ -28,7 +28,7 @@
     ],
     "isLoading": false,
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "originalBottomRow": 26.400000000001455,
+    "originalBottomRow": 47.400000000001455,
     "widgetName": "Use_case2",
     "displayName": "Input",
     "searchTags": [
@@ -37,7 +37,7 @@
         "number",
         "textarea"
     ],
-    "bottomRow": 47.4,
+    "bottomRow": 26.4,
     "parentRowSpace": 10,
     "autoFocus": false,
     "hideCard": false,
