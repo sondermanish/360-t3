@@ -1,0 +1,13 @@
+name: Daily Job
+
+on:
+   schedule:
+     - cron: '30 23 * * 5'  # Runs every Friday at 11:30pm UTC
+
+jobs:
+  run-job:
+    name: Run Daily Job
+    runs-on: ubuntu-latest
+
+    steps:
+      - run: "curl -f --location --request POST https://internal.appsmith.com/api/v1/workflows/trigger/6633bc9574af28656a9c489d?api-key=b4b59b886941d9c0e9b1bd88259b185af9f4cd1340ad57d9ab3c08cf976417734e266fdedcb44b173232e61f618a0170438e96013a78fa0358ec709b3d7aaac1c79becd37a8b638524c7679c71f27538b86d5268f119083df8cb7f67e897b54b9c1fae7eba90aca7053404bee09aff1e5230cf57e0d209933e993134ae132f0d409021baee2b7bbe3369c762f1f278d94ae220227f995eab6a54f70aa7798ba3608c7e7bb023e4448942a6748e0d3f8de209bf3e0c0f02da8c93fe6906a7dd1a921a67de09a36d0f38db3facda7c6339fe083e580d5cf06fa65767543014c16b"
