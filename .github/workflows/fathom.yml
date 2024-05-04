@@ -1,4 +1,4 @@
-name: Daily Job
+name: Fathom Refresh
 
 on:
    schedule:
