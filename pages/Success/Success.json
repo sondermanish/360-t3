@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 1403.9999999994393,
+          "bottomRow": 1403.999999999432,
           "containerStyle": "none",
           "snapRows": 124,
           "parentRowSpace": 1,
@@ -103,7 +103,8 @@
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [
-                "getSegmentSFAccounts.data.find(item => item.id === SFTableData.selectedRow.Id)?.stripe_id_c"
+                "getSegmentSFAccounts.data.find(item => item.id === SFTableData.selectedRow.Id)?.stripe_id_c",
+                "getSegmentSFAccounts.data.find(item => item.id === SFTableData.selectedRow.Id)?.stripe_id_c || \"cus_NwsYWhoRN283m3\""
               ],
               "timeoutInMillisecond": 10000
             }

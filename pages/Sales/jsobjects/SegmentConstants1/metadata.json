@@ -1,0 +1,18 @@
+{
+  "moduleInstanceId": "Sales_SegmentConstants1",
+  "isPublic": true,
+  "rootModuleInstanceId": "Sales_SegmentConstants1",
+  "unpublishedCollection": {
+    "name": "_$SegmentConstants1$_SegmentConstants",
+    "pageId": "Sales",
+    "contextType": "PAGE",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "userPermissions": []
+  },
+  "id": "Sales__$SegmentConstants1$_SegmentConstants",
+  "deleted": false,
+  "gitSyncId": "655b663c44c3196dff1b331d_b9b74d3c-9f14-4960-9d87-cdedc317a905"
+}

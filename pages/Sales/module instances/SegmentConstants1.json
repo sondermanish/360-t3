@@ -4,16 +4,16 @@
   "type": "JS_MODULE",
   "unpublishedModuleInstance": {
     "version": "0.0.38",
-    "name": "SegmentConstants",
+    "name": "SegmentConstants1",
     "contextType": "PAGE",
-    "pageId": "Dashboard",
+    "pageId": "Sales",
     "inputs": {},
     "jsonPathKeys": [],
     "isValid": true,
     "invalids": [],
     "userPermissions": []
   },
-  "id": "Dashboard_SegmentConstants",
+  "id": "Sales_SegmentConstants1",
   "deleted": false,
-  "gitSyncId": "655b663c44c3196dff1b331d_65fbb18757825011f7814aea"
+  "gitSyncId": "655b663c44c3196dff1b331d_e05d497c-3ea4-4bb0-9edf-2072dac8fe43"
 }

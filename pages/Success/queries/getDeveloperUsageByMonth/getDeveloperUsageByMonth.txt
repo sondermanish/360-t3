@@ -1,0 +1,38 @@
+{
+  "aggregate": "usagePulse",
+  "pipeline": [
+  {
+    $match: {
+      viewMode: false,
+			isSubscribed: true,
+			stripeCustomerId: '{{getSegmentSFAccounts.data.find(item => item.id === SFTableData.selectedRow.Id)?.stripe_id_c || "cus_NwsYWhoRN283m3"}}',
+			$expr: {
+        $eq: [{ $strLenCP: "$instanceUserId" }, 64]
+      }
+    }
+  },
+  {
+    $group: {
+      _id: {
+        year: { $year: { $toDate: "$timestamp" } },
+        month: { $month: { $toDate: "$timestamp" } }        
+      },
+      uniqueInstanceUserIds: { $addToSet: "$instanceUserId" }
+    }
+  },
+  {
+    $project: {
+      _id: 0,
+      year: "$_id.year",
+      month: "$_id.month",
+      uniqueInstanceUserIdsCount: { $size: "$uniqueInstanceUserIds" }
+    }
+  }, {
+		$sort: {
+			year: 1,
+			month: 1
+		}
+	}
+],
+  "cursor": {}
+}
