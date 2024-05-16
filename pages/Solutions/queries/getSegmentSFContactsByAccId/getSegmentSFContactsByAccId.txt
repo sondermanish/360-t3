@@ -1,1 +1,0 @@
-SELECT {{Constants.ContactQueryFields.join(", ")}} FROM salesforce.contacts where account_id = '{{SFTableData.selectedRow.Id}}'

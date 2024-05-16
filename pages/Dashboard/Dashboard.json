@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 1070,
+          "bottomRow": 710,
           "containerStyle": "none",
           "snapRows": 59,
           "parentRowSpace": 1,
@@ -63,17 +63,6 @@
             }
           ],
           [
-            {
-              "id": "Dashboard_getAllCustomersUsage",
-              "name": "getAllCustomersUsage",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "moment().format(\"YYYY-MM-DD\")",
-                "\"2021-01-01\""
-              ],
-              "timeoutInMillisecond": 10000
-            },
             {
               "id": "Dashboard_getAllUsage",
               "name": "getAllUsage",

@@ -1,1 +1,0 @@
-SELECT subject, created_date, activity_date, description, id, who_id, what_id, account_id, priority, owner_id, task_subtype from salesforce.tasks where what_id = '{{SFTableData.selectedRow.Id}}' ORDER BY created_date DESC

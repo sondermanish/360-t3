@@ -27,10 +27,6 @@
     {
       "id": "Stability",
       "isDefault": false
-    },
-    {
-      "id": "Solutions",
-      "isDefault": false
     }
   ],
   "viewMode": false,

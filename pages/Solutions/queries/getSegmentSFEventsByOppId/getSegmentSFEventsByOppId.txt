@@ -1,1 +1,0 @@
-SELECT account_id, id, who_id, what_id, subject, location, event_subtype, activity_date, owner_id FROM salesforce.events where what_id = '{{SFTableData.selectedRow.Id}}' ORDER BY activity_date DESC

@@ -1,1 +1,0 @@
-SELECT {{Constants.OpportunityQueryFields.join(", ")}} FROM salesforce.opportunities where stage_name != 'Closed Won' AND stage_name != 'Closed Lost' ORDER BY created_date DESC;

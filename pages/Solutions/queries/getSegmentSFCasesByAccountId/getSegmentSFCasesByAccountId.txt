@@ -1,1 +1,0 @@
-SELECT id, contact_email, contact_id, account_id, description, subject, is_closed, created_date, status, case_number, origin, zendesk_support_ticket_tags_c, zendesk_support_ticket_id_c, zendesk_support_ticket_updated_at_c, zendesk_support_ticket_assignee_name_c, priority from salesforce.cases where account_id = '{{SFTableData.selectedRow.Id}}' ORDER BY created_date DESC
