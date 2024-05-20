@@ -37,6 +37,9 @@ export default {
 			case '6_months':
 				reportDate.setMonth(currentDate.getMonth() - 6);
 				break;
+			case '12_months':
+				reportDate.setMonth(currentDate.getMonth() - 12);
+				break;
 			default:
 				throw new Error('Invalid date range');
 		}
