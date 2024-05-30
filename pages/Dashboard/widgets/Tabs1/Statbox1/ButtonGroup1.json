@@ -1,114 +1,148 @@
 {
-    "boxShadow": "none",
-    "mobileBottomRow": 4,
-    "widgetName": "ButtonGroup1",
-    "isCanvas": false,
-    "dynamicPropertyPathList": [
-        {"key": "groupButtons.groupButton1.onClick"},
-        {"key": "groupButtons.groupButton2.onClick"},
-        {"key": "groupButtons.groupButton3.onClick"},
-        {"key": "groupButtons.groupButton1.buttonColor"},
-        {"key": "groupButtons.groupButton2.buttonColor"},
-        {"key": "groupButtons.groupButton3.buttonColor"}
-    ],
-    "displayName": "Button Group",
-    "iconSVG": "/static/media/icon.bb8db4853027d74a78963c3375841e4b.svg",
-    "searchTags": [
-        "click",
-        "submit"
-    ],
-    "topRow": 4,
-    "bottomRow": 10,
-    "parentRowSpace": 10,
-    "type": "BUTTON_GROUP_WIDGET",
-    "groupButtons": {
-        "groupButton3": {
-            "onClick": "{{From_Date.setValue(moment(\"2021\"));\nTo_Date.setValue(moment()); getAllUsage.run();\nVariables.selectedPeriod = \"All Time\";}}",
-            "buttonType": "SIMPLE",
-            "buttonColor": "{{Variables.selectedPeriod === \"All Time\" ? appsmith.theme.colors.primaryColor : appsmith.theme.colors.backgroundColor}}",
-            "widgetId": "",
-            "menuItems": {"menuItem3": {
-                "backgroundColor": "#DD4B34",
-                "onClick": "",
-                "iconName": "trash",
-                "widgetId": "",
-                "iconColor": "#FFFFFF",
-                "iconAlign": "right",
-                "index": 0,
-                "label": "Delete",
-                "id": "menuItem3",
-                "isVisible": true,
-                "isDisabled": false,
-                "textColor": "#FFFFFF"
-            }},
-            "index": 2,
-            "label": "All Time",
-            "id": "groupButton3",
-            "placement": "CENTER",
-            "isVisible": true,
-            "isDisabled": false
-        },
-        "groupButton1": {
-            "onClick": "{{From_Date.setValue(moment().subtract(1, \"week\"));\nTo_Date.setValue(moment()); getAllUsage.run();\nVariables.selectedPeriod = \"Last Week\";}}",
-            "buttonType": "SIMPLE",
-            "buttonColor": "{{Variables.selectedPeriod === \"Last Week\" ? appsmith.theme.colors.primaryColor : appsmith.theme.colors.backgroundColor}}",
-            "widgetId": "",
-            "menuItems": {},
-            "index": 0,
-            "label": "Last Week",
-            "id": "groupButton1",
-            "placement": "CENTER",
-            "isVisible": true,
-            "isDisabled": false
-        },
-        "groupButton2": {
-            "onClick": "{{From_Date.setValue(moment().subtract(1, \"month\"));\nTo_Date.setValue(moment()); getAllUsage.run();\nVariables.selectedPeriod = \"Last Month\";}}",
-            "buttonType": "SIMPLE",
-            "buttonColor": "{{Variables.selectedPeriod === \"Last Month\" ? appsmith.theme.colors.primaryColor : appsmith.theme.colors.backgroundColor}}",
-            "widgetId": "",
-            "menuItems": {},
-            "index": 1,
-            "label": "Last Month",
-            "id": "groupButton2",
-            "placement": "CENTER",
-            "isVisible": true,
-            "isDisabled": false
-        }
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 10,
+  "boxShadow": "none",
+  "buttonVariant": "PRIMARY",
+  "childStylesheet": {
+    "button": {
+      "buttonColor": "{{appsmith.theme.colors.primaryColor}}"
+    }
+  },
+  "displayName": "Button Group",
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
     },
-    "hideCard": false,
-    "mobileRightColumn": 63,
-    "animateLoading": true,
-    "parentColumnSpace": 4.41796875,
-    "dynamicTriggerPathList": [
-        {"key": "groupButtons.groupButton1.onClick"},
-        {"key": "groupButtons.groupButton2.onClick"},
-        {"key": "groupButtons.groupButton3.onClick"}
-    ],
-    "leftColumn": 0,
-    "dynamicBindingPathList": [
-        {"key": "borderRadius"},
-        {"key": "groupButtons.groupButton1.buttonColor"},
-        {"key": "groupButtons.groupButton2.buttonColor"},
-        {"key": "groupButtons.groupButton3.buttonColor"}
-    ],
-    "key": "vas7vhgy2r",
-    "orientation": "horizontal",
-    "isDeprecated": false,
-    "rightColumn": 64,
-    "widgetId": "6uf7tg05mw",
-    "minWidth": 450,
-    "isVisible": true,
-    "version": 1,
-    "parentId": "9z8q66cp0j",
-    "tags": ["Buttons"],
-    "renderMode": "CANVAS",
-    "isLoading": false,
-    "mobileTopRow": 0,
-    "responsiveBehavior": "fill",
-    "childStylesheet": {"button": {"buttonColor": "{{appsmith.theme.colors.primaryColor}}"}},
-    "originalTopRow": 4,
-    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "mobileLeftColumn": 39,
-    "originalBottomRow": 10,
-    "buttonVariant": "PRIMARY"
+    {
+      "key": "groupButtons.groupButton1.buttonColor"
+    },
+    {
+      "key": "groupButtons.groupButton2.buttonColor"
+    },
+    {
+      "key": "groupButtons.groupButton3.buttonColor"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "groupButtons.groupButton1.onClick"
+    },
+    {
+      "key": "groupButtons.groupButton2.onClick"
+    },
+    {
+      "key": "groupButtons.groupButton3.onClick"
+    },
+    {
+      "key": "groupButtons.groupButton1.buttonColor"
+    },
+    {
+      "key": "groupButtons.groupButton2.buttonColor"
+    },
+    {
+      "key": "groupButtons.groupButton3.buttonColor"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "groupButtons.groupButton1.onClick"
+    },
+    {
+      "key": "groupButtons.groupButton2.onClick"
+    },
+    {
+      "key": "groupButtons.groupButton3.onClick"
+    }
+  ],
+  "groupButtons": {
+    "groupButton1": {
+      "buttonColor": "{{Variables.selectedPeriod === \"Last Week\" ? appsmith.theme.colors.primaryColor : appsmith.theme.colors.backgroundColor}}",
+      "buttonType": "SIMPLE",
+      "id": "groupButton1",
+      "index": 0,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "Last Week",
+      "menuItems": {},
+      "onClick": "{{From_Date.setValue(moment().subtract(1, \"week\"));\nTo_Date.setValue(moment()); getAllUsage.run();\nVariables.selectedPeriod = \"Last Week\";}}",
+      "placement": "CENTER",
+      "widgetId": ""
+    },
+    "groupButton2": {
+      "buttonColor": "{{Variables.selectedPeriod === \"Last Month\" ? appsmith.theme.colors.primaryColor : appsmith.theme.colors.backgroundColor}}",
+      "buttonType": "SIMPLE",
+      "id": "groupButton2",
+      "index": 1,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "Last Month",
+      "menuItems": {},
+      "onClick": "{{From_Date.setValue(moment().subtract(1, \"month\"));\nTo_Date.setValue(moment()); getAllUsage.run();\nVariables.selectedPeriod = \"Last Month\";}}",
+      "placement": "CENTER",
+      "widgetId": ""
+    },
+    "groupButton3": {
+      "buttonColor": "{{Variables.selectedPeriod === \"All Time\" ? appsmith.theme.colors.primaryColor : appsmith.theme.colors.backgroundColor}}",
+      "buttonType": "SIMPLE",
+      "id": "groupButton3",
+      "index": 2,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "All Time",
+      "menuItems": {
+        "menuItem3": {
+          "backgroundColor": "#DD4B34",
+          "iconAlign": "right",
+          "iconColor": "#FFFFFF",
+          "iconName": "trash",
+          "id": "menuItem3",
+          "index": 0,
+          "isDisabled": false,
+          "isVisible": true,
+          "label": "Delete",
+          "onClick": "",
+          "textColor": "#FFFFFF",
+          "widgetId": ""
+        }
+      },
+      "onClick": "{{From_Date.setValue(moment(\"2021\"));\nTo_Date.setValue(moment()); getAllUsage.run();\nVariables.selectedPeriod = \"All Time\";}}",
+      "placement": "CENTER",
+      "widgetId": ""
+    }
+  },
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.bb8db4853027d74a78963c3375841e4b.svg",
+  "isCanvas": false,
+  "isDeprecated": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "vas7vhgy2r",
+  "leftColumn": 0,
+  "minWidth": 450,
+  "mobileBottomRow": 4,
+  "mobileLeftColumn": 39,
+  "mobileRightColumn": 63,
+  "mobileTopRow": 0,
+  "orientation": "horizontal",
+  "originalBottomRow": 10,
+  "originalTopRow": 4,
+  "parentColumnSpace": 4.41796875,
+  "parentId": "9z8q66cp0j",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 64,
+  "searchTags": [
+    "click",
+    "submit"
+  ],
+  "tags": [
+    "Buttons"
+  ],
+  "topRow": 4,
+  "type": "BUTTON_GROUP_WIDGET",
+  "version": 1,
+  "widgetId": "6uf7tg05mw",
+  "widgetName": "ButtonGroup1"
 }

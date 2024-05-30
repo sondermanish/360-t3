@@ -1,18 +1,14 @@
 {
-  "moduleInstanceId": "Dashboard_SegmentConstants",
+  "gitSyncId": "655b663c44c3196dff1b331d_65fbb18757825011f7814aec",
+  "id": "Dashboard__$SegmentConstants$_SegmentConstants",
   "isPublic": true,
+  "moduleInstanceId": "Dashboard_SegmentConstants",
   "rootModuleInstanceId": "Dashboard_SegmentConstants",
   "unpublishedCollection": {
+    "contextType": "PAGE",
     "name": "_$SegmentConstants$_SegmentConstants",
     "pageId": "Dashboard",
-    "contextType": "PAGE",
     "pluginId": "js-plugin",
-    "pluginType": "JS",
-    "actions": [],
-    "archivedActions": [],
-    "userPermissions": []
-  },
-  "id": "Dashboard__$SegmentConstants$_SegmentConstants",
-  "deleted": false,
-  "gitSyncId": "655b663c44c3196dff1b331d_65fbb18757825011f7814aec"
+    "pluginType": "JS"
+  }
 }

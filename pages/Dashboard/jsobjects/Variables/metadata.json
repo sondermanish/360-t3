@@ -1,20 +1,16 @@
 {
+  "gitSyncId": "655b663c44c3196dff1b331d_65fabd75c443cd0c8dfad3b2",
+  "id": "Dashboard_Variables",
   "unpublishedCollection": {
     "name": "Variables",
     "pageId": "Dashboard",
     "pluginId": "js-plugin",
     "pluginType": "JS",
-    "actions": [],
-    "archivedActions": [],
     "variables": [
       {
         "name": "selectedPeriod",
         "value": "\"Last Week\""
       }
-    ],
-    "userPermissions": []
-  },
-  "id": "Dashboard_Variables",
-  "deleted": false,
-  "gitSyncId": "655b663c44c3196dff1b331d_65fabd75c443cd0c8dfad3b2"
+    ]
+  }
 }

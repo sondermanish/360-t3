@@ -1,20 +1,16 @@
 {
+  "gitSyncId": "655b663c44c3196dff1b331d_65e824f1eb9a6e271ab31010",
+  "id": "Stability_RevenueUtils",
   "unpublishedCollection": {
     "name": "RevenueUtils",
     "pageId": "Stability",
     "pluginId": "js-plugin",
     "pluginType": "JS",
-    "actions": [],
-    "archivedActions": [],
     "variables": [
       {
         "name": "revenueByAccount",
         "value": "null"
       }
-    ],
-    "userPermissions": []
-  },
-  "id": "Stability_RevenueUtils",
-  "deleted": false,
-  "gitSyncId": "655b663c44c3196dff1b331d_65e824f1eb9a6e271ab31010"
+    ]
+  }
 }

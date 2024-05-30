@@ -1,167 +1,187 @@
 {
-    "boxShadow": "none",
-    "borderColor": "#E0DEDE",
-    "isVisibleDownload": false,
-    "iconSVG": "/static/media/icon.e6911f8bb94dc6c4a102a74740c41763.svg",
-    "topRow": 4,
-    "isSortable": true,
-    "type": "TABLE_WIDGET_V2",
-    "inlineEditingSaveOption": "ROW_LEVEL",
-    "animateLoading": true,
-    "dynamicBindingPathList": [
-        {"key": "accentColor"},
-        {"key": "borderRadius"},
-        {"key": "tableData"},
-        {"key": "primaryColumns.uniqueInstanceUserCount.computedValue"},
-        {"key": "primaryColumns.customerId.computedValue"}
-    ],
-    "needsHeightForContent": true,
-    "leftColumn": 0,
-    "delimiter": ",",
-    "defaultSelectedRowIndex": "-1",
-    "flexVerticalAlignment": "start",
-    "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-    "isVisibleFilters": false,
-    "isVisible": true,
-    "enableClientSideSearch": true,
-    "version": 2,
-    "totalRecordsCount": "0",
-    "tags": [
-        "Suggested",
-        "Display"
-    ],
-    "isLoading": false,
-    "childStylesheet": {
-        "button": {
-            "boxShadow": "none",
-            "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-            "buttonColor": "{{appsmith.theme.colors.primaryColor}}"
-        },
-        "iconButton": {
-            "boxShadow": "none",
-            "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-            "buttonColor": "{{appsmith.theme.colors.primaryColor}}"
-        },
-        "menuButton": {
-            "boxShadow": "none",
-            "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-            "menuColor": "{{appsmith.theme.colors.primaryColor}}"
-        },
-        "editActions": {
-            "saveButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-            "saveBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-            "discardBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-            "discardButtonColor": "{{appsmith.theme.colors.primaryColor}}"
-        }
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderColor": "#E0DEDE",
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "borderWidth": "0",
+  "bottomRow": 24,
+  "boxShadow": "none",
+  "canFreezeColumn": true,
+  "childStylesheet": {
+    "button": {
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none",
+      "buttonColor": "{{appsmith.theme.colors.primaryColor}}"
     },
-    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "columnUpdatedAt": 1712045935077,
-    "originalBottomRow": 27,
-    "defaultSelectedRowIndices": [0],
-    "mobileBottomRow": 33,
-    "widgetName": "AccountAppViewerTable",
-    "defaultPageSize": 0,
-    "columnOrder": [
-        "customerId",
-        "uniqueInstanceUserCount"
-    ],
-    "dynamicPropertyPathList": [{"key": "tableData"}],
-    "displayName": "Table",
-    "bottomRow": 24,
-    "columnWidthMap": {
-        "customerId": 157,
-        "Name": 137
+    "editActions": {
+      "discardBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "discardButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+      "saveBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "saveButtonColor": "{{appsmith.theme.colors.primaryColor}}"
     },
-    "parentRowSpace": 10,
-    "hideCard": false,
-    "mobileRightColumn": 34,
-    "parentColumnSpace": 4.5625,
-    "dynamicTriggerPathList": [{"key": "onRowSelected"}],
-    "borderWidth": "0",
-    "primaryColumns": {
-        "uniqueInstanceUserCount": {
-            "computedValue": "{{AccountAppViewerTable.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"uniqueInstanceUserCount\"]))}}",
-            "isEditable": false,
-            "notation": "standard",
-            "alias": "uniqueInstanceUserCount",
-            "enableSort": true,
-            "isSaveVisible": true,
-            "id": "uniqueInstanceUserCount",
-            "isDisabled": false,
-            "allowSameOptionsInNewRow": true,
-            "validation": {},
-            "isCellVisible": true,
-            "isDerived": false,
-            "textSize": "0.875rem",
-            "allowCellWrapping": false,
-            "index": 0,
-            "isDiscardVisible": true,
-            "isVisible": true,
-            "label": "App Viewers",
-            "columnType": "number",
-            "thousandSeparator": true,
-            "horizontalAlignment": "RIGHT",
-            "isCellEditable": false,
-            "decimals": 0,
-            "width": 150,
-            "enableFilter": true,
-            "sticky": "",
-            "originalId": "uniqueInstanceUserCount",
-            "currencyCode": "USD",
-            "verticalAlignment": "CENTER"
-        },
-        "customerId": {
-            "computedValue": "{{AccountAppViewerTable.processedTableData.map((currentRow, currentIndex) => ( getSegmentSFAccounts.data.find(item => item.stripe_id_c === currentRow[\"customerId\"]).name))}}",
-            "isEditable": false,
-            "notation": "standard",
-            "alias": "customerId",
-            "enableSort": true,
-            "isSaveVisible": true,
-            "id": "customerId",
-            "isDisabled": false,
-            "allowSameOptionsInNewRow": true,
-            "validation": {},
-            "isCellVisible": true,
-            "isDerived": false,
-            "textSize": "0.875rem",
-            "allowCellWrapping": true,
-            "index": 1,
-            "isDiscardVisible": true,
-            "isVisible": true,
-            "label": "Account",
-            "columnType": "text",
-            "thousandSeparator": true,
-            "horizontalAlignment": "LEFT",
-            "isCellEditable": false,
-            "decimals": 0,
-            "width": 150,
-            "enableFilter": true,
-            "sticky": "",
-            "originalId": "customerId",
-            "currencyCode": "USD",
-            "verticalAlignment": "CENTER"
-        }
+    "iconButton": {
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none",
+      "buttonColor": "{{appsmith.theme.colors.primaryColor}}"
     },
-    "onRowSelected": "{{navigateTo('Success', {\n  searchValue: AccountAppViewerTable.selectedRow.customerId\n}, 'SAME_WINDOW');}}",
-    "key": "xhjle2f473",
-    "canFreezeColumn": true,
-    "isDeprecated": false,
-    "rightColumn": 64,
-    "textSize": "0.875rem",
-    "widgetId": "s6tdo410t7",
-    "minWidth": 450,
-    "tableData": "{{getTop10AccountsOfAppViewers.data}}",
-    "label": "Data",
-    "searchKey": "",
-    "parentId": "67a16fidy4",
-    "serverSidePaginationEnabled": true,
-    "renderMode": "CANVAS",
-    "mobileTopRow": 5,
-    "horizontalAlignment": "LEFT",
-    "isVisibleSearch": false,
-    "responsiveBehavior": "fill",
-    "originalTopRow": 4,
-    "mobileLeftColumn": 0,
-    "isVisiblePagination": false,
-    "verticalAlignment": "CENTER"
+    "menuButton": {
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none",
+      "menuColor": "{{appsmith.theme.colors.primaryColor}}"
+    }
+  },
+  "columnOrder": [
+    "customerId",
+    "uniqueInstanceUserCount"
+  ],
+  "columnUpdatedAt": 1712045935077,
+  "columnWidthMap": {
+    "Name": 137,
+    "customerId": 157
+  },
+  "defaultPageSize": 0,
+  "defaultSelectedRowIndex": "-1",
+  "defaultSelectedRowIndices": [
+    0
+  ],
+  "delimiter": ",",
+  "displayName": "Table",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "tableData"
+    },
+    {
+      "key": "primaryColumns.uniqueInstanceUserCount.computedValue"
+    },
+    {
+      "key": "primaryColumns.customerId.computedValue"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "tableData"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onRowSelected"
+    }
+  ],
+  "enableClientSideSearch": true,
+  "flexVerticalAlignment": "start",
+  "hideCard": false,
+  "horizontalAlignment": "LEFT",
+  "iconSVG": "/static/media/icon.e6911f8bb94dc6c4a102a74740c41763.svg",
+  "inlineEditingSaveOption": "ROW_LEVEL",
+  "isDeprecated": false,
+  "isLoading": false,
+  "isSortable": true,
+  "isVisible": true,
+  "isVisibleDownload": false,
+  "isVisibleFilters": false,
+  "isVisiblePagination": false,
+  "isVisibleSearch": false,
+  "key": "xhjle2f473",
+  "label": "Data",
+  "leftColumn": 0,
+  "minWidth": 450,
+  "mobileBottomRow": 33,
+  "mobileLeftColumn": 0,
+  "mobileRightColumn": 34,
+  "mobileTopRow": 5,
+  "needsHeightForContent": true,
+  "onRowSelected": "{{navigateTo('Success', {\n  searchValue: AccountAppViewerTable.selectedRow.customerId\n}, 'SAME_WINDOW');}}",
+  "originalBottomRow": 27,
+  "originalTopRow": 4,
+  "parentColumnSpace": 4.5625,
+  "parentId": "67a16fidy4",
+  "parentRowSpace": 10,
+  "primaryColumns": {
+    "customerId": {
+      "alias": "customerId",
+      "allowCellWrapping": true,
+      "allowSameOptionsInNewRow": true,
+      "columnType": "text",
+      "computedValue": "{{AccountAppViewerTable.processedTableData.map((currentRow, currentIndex) => ( getSegmentSFAccounts.data.find(item => item.stripe_id_c === currentRow[\"customerId\"]).name))}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "customerId",
+      "index": 1,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "Account",
+      "notation": "standard",
+      "originalId": "customerId",
+      "sticky": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "uniqueInstanceUserCount": {
+      "alias": "uniqueInstanceUserCount",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "columnType": "number",
+      "computedValue": "{{AccountAppViewerTable.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"uniqueInstanceUserCount\"]))}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "RIGHT",
+      "id": "uniqueInstanceUserCount",
+      "index": 0,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "App Viewers",
+      "notation": "standard",
+      "originalId": "uniqueInstanceUserCount",
+      "sticky": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    }
+  },
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 64,
+  "searchKey": "",
+  "serverSidePaginationEnabled": true,
+  "tableData": "{{getTop10AccountsOfAppViewers.data}}",
+  "tags": [
+    "Suggested",
+    "Display"
+  ],
+  "textSize": "0.875rem",
+  "topRow": 4,
+  "totalRecordsCount": "0",
+  "type": "TABLE_WIDGET_V2",
+  "version": 2,
+  "verticalAlignment": "CENTER",
+  "widgetId": "s6tdo410t7",
+  "widgetName": "AccountAppViewerTable"
 }

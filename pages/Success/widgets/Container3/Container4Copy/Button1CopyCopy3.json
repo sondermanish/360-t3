@@ -1,50 +1,62 @@
 {
-    "resetFormOnClick": false,
-    "boxShadow": "none",
-    "widgetName": "Button1CopyCopy3",
-    "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-    "dynamicPropertyPathList": [{"key": "iconName"}],
-    "iconSVG": "/static/media/icon.05d209fafeb13a8569e3b4e97069d9ee.svg",
-    "displayName": "Button",
-    "topRow": 0,
-    "searchTags": [
-        "click",
-        "submit"
-    ],
-    "bottomRow": 4,
-    "parentRowSpace": 10,
-    "type": "BUTTON_WIDGET",
-    "hideCard": false,
-    "animateLoading": true,
-    "parentColumnSpace": 4.9300994873046875,
-    "dynamicTriggerPathList": [],
-    "leftColumn": 0,
-    "dynamicBindingPathList": [
-        {"key": "buttonColor"},
-        {"key": "borderRadius"},
-        {"key": "iconName"}
-    ],
-    "text": "Salesforce Opportunities",
-    "isDisabled": false,
-    "key": "3m0v0yytmj",
-    "isDeprecated": false,
-    "rightColumn": 18,
-    "isDefaultClickDisabled": true,
-    "iconName": "{{!!getSegmentSFOpportunities.isLoading && \"circle-arrow-right\"}}",
-    "widgetId": "n5yac8o891",
-    "minWidth": 120,
-    "isVisible": true,
-    "version": 1,
-    "recaptchaType": "V3",
-    "parentId": "iz8s6wjdd6",
-    "tags": ["Buttons"],
-    "isLoading": false,
-    "renderMode": "CANVAS",
-    "originalTopRow": 65,
-    "disabledWhenInvalid": false,
-    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "originalBottomRow": 69,
-    "buttonVariant": "PRIMARY",
-    "iconAlign": "right",
-    "placement": "CENTER"
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 4,
+  "boxShadow": "none",
+  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "buttonVariant": "PRIMARY",
+  "disabledWhenInvalid": false,
+  "displayName": "Button",
+  "dynamicBindingPathList": [
+    {
+      "key": "buttonColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "iconName"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "iconName"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "hideCard": false,
+  "iconAlign": "right",
+  "iconName": "{{!!getSegmentSFOpportunities.isLoading && \"circle-arrow-right\"}}",
+  "iconSVG": "/static/media/icon.05d209fafeb13a8569e3b4e97069d9ee.svg",
+  "isDefaultClickDisabled": true,
+  "isDeprecated": false,
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "3m0v0yytmj",
+  "leftColumn": 0,
+  "minWidth": 120,
+  "originalBottomRow": 69,
+  "originalTopRow": 65,
+  "parentColumnSpace": 4.9300994873046875,
+  "parentId": "iz8s6wjdd6",
+  "parentRowSpace": 10,
+  "placement": "CENTER",
+  "recaptchaType": "V3",
+  "renderMode": "CANVAS",
+  "resetFormOnClick": false,
+  "rightColumn": 18,
+  "searchTags": [
+    "click",
+    "submit"
+  ],
+  "tags": [
+    "Buttons"
+  ],
+  "text": "Salesforce Opportunities",
+  "topRow": 0,
+  "type": "BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "n5yac8o891",
+  "widgetName": "Button1CopyCopy3"
 }

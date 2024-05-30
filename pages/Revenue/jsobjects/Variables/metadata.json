@@ -1,20 +1,16 @@
 {
+  "gitSyncId": "655b663c44c3196dff1b331d_65a98942647afb48db3f743d",
+  "id": "Revenue_Variables",
   "unpublishedCollection": {
     "name": "Variables",
     "pageId": "Revenue",
     "pluginId": "js-plugin",
     "pluginType": "JS",
-    "actions": [],
-    "archivedActions": [],
     "variables": [
       {
         "name": "selectedTab",
         "value": "\"MRR & ARR\""
       }
-    ],
-    "userPermissions": []
-  },
-  "id": "Revenue_Variables",
-  "deleted": false,
-  "gitSyncId": "655b663c44c3196dff1b331d_65a98942647afb48db3f743d"
+    ]
+  }
 }

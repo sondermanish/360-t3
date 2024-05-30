@@ -1,15 +1,11 @@
 {
+  "gitSyncId": "655b663c44c3196dff1b331d_656f0515a6e25d536f06db83",
+  "id": "Support_Utils",
   "unpublishedCollection": {
     "name": "Utils",
     "pageId": "Support",
     "pluginId": "js-plugin",
     "pluginType": "JS",
-    "actions": [],
-    "archivedActions": [],
-    "variables": [],
-    "userPermissions": []
-  },
-  "id": "Support_Utils",
-  "deleted": false,
-  "gitSyncId": "655b663c44c3196dff1b331d_656f0515a6e25d536f06db83"
+    "variables": []
+  }
 }

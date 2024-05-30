@@ -1,64 +1,76 @@
 {
-    "boxShadow": "none",
-    "iconSVG": "/static/media/icon.f2c34197dbcf03595098986de898928f.svg",
-    "topRow": 42.400000000000006,
-    "labelWidth": 5,
-    "type": "INPUT_WIDGET_V2",
-    "animateLoading": true,
-    "resetOnSubmit": true,
-    "leftColumn": 0,
-    "dynamicBindingPathList": [
-        {"key": "accentColor"},
-        {"key": "borderRadius"},
-        {"key": "defaultText"},
-        {"key": "isVisible"}
-    ],
-    "labelStyle": "",
-    "inputType": "MULTI_LINE_TEXT",
-    "isDisabled": false,
-    "isRequired": false,
-    "dynamicHeight": "AUTO_HEIGHT",
-    "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-    "showStepArrows": false,
-    "isVisible": "{{!!ActivityTable.selectedRow.description}}",
-    "version": 2,
-    "tags": [
-        "Suggested",
-        "Inputs"
-    ],
-    "isLoading": false,
-    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "originalBottomRow": 52.400000000001455,
-    "widgetName": "ActivityDescription",
-    "dynamicPropertyPathList": [{"key": "isVisible"}],
-    "displayName": "Input",
-    "searchTags": [
-        "form",
-        "text input",
-        "number",
-        "textarea"
-    ],
-    "bottomRow": 42.400000000000006,
-    "parentRowSpace": 10,
-    "autoFocus": false,
-    "hideCard": false,
-    "parentColumnSpace": 5.4296875,
-    "dynamicTriggerPathList": [],
-    "labelPosition": "Top",
-    "key": "s389rgbsie",
-    "labelTextSize": "0.875rem",
-    "isDeprecated": false,
-    "rightColumn": 64,
-    "widgetId": "vbavv2g1df",
-    "minWidth": 450,
-    "label": "Description",
-    "parentId": "9dovpbm88p",
-    "labelAlignment": "left",
-    "renderMode": "CANVAS",
-    "originalTopRow": 42.400000000000006,
-    "maxDynamicHeight": 9000,
-    "shouldAllowAutofill": false,
-    "iconAlign": "left",
-    "defaultText": "{{ActivityTable.selectedRow.description || \"\"}}",
-    "minDynamicHeight": 4
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "autoFocus": false,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 42.400000000000006,
+  "boxShadow": "none",
+  "defaultText": "{{ActivityTable.selectedRow.description || \"\"}}",
+  "displayName": "Input",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "defaultText"
+    },
+    {
+      "key": "isVisible"
+    }
+  ],
+  "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicPropertyPathList": [
+    {
+      "key": "isVisible"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "hideCard": false,
+  "iconAlign": "left",
+  "iconSVG": "/static/media/icon.f2c34197dbcf03595098986de898928f.svg",
+  "inputType": "MULTI_LINE_TEXT",
+  "isDeprecated": false,
+  "isDisabled": false,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": "{{!!ActivityTable.selectedRow.description}}",
+  "key": "s389rgbsie",
+  "label": "Description",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelStyle": "",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 0,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "originalBottomRow": 52.400000000001455,
+  "originalTopRow": 42.400000000000006,
+  "parentColumnSpace": 5.4296875,
+  "parentId": "9dovpbm88p",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "resetOnSubmit": true,
+  "rightColumn": 64,
+  "searchTags": [
+    "form",
+    "text input",
+    "number",
+    "textarea"
+  ],
+  "shouldAllowAutofill": false,
+  "showStepArrows": false,
+  "tags": [
+    "Suggested",
+    "Inputs"
+  ],
+  "topRow": 42.400000000000006,
+  "type": "INPUT_WIDGET_V2",
+  "version": 2,
+  "widgetId": "vbavv2g1df",
+  "widgetName": "ActivityDescription"
 }

@@ -1,66 +1,80 @@
 {
-    "boxShadow": "none",
-    "iconSVG": "/static/media/icon.f2c34197dbcf03595098986de898928f.svg",
-    "topRow": 12.399999999976785,
-    "labelWidth": 5,
-    "type": "INPUT_WIDGET_V2",
-    "animateLoading": true,
-    "resetOnSubmit": true,
-    "leftColumn": 0,
-    "dynamicBindingPathList": [
-        {"key": "accentColor"},
-        {"key": "borderRadius"},
-        {"key": "defaultText"},
-        {"key": "labelTextColor"},
-        {"key": "isVisible"}
-    ],
-    "labelStyle": "",
-    "inputType": "MULTI_LINE_TEXT",
-    "isDisabled": false,
-    "isRequired": false,
-    "dynamicHeight": "AUTO_HEIGHT",
-    "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-    "showStepArrows": false,
-    "isVisible": "{{!!getSegmentSFOpportunities.data.filter(item => item.account_id === SFTableData.selectedRow.Id).map(item => item.loss_reason_detail_c || \"\").filter(item => !!item).length}}",
-    "version": 2,
-    "tags": [
-        "Suggested",
-        "Inputs"
-    ],
-    "isLoading": false,
-    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "originalBottomRow": 32.39999999997963,
-    "widgetName": "Loss_Reason_Detail",
-    "dynamicPropertyPathList": [{"key": "isVisible"}],
-    "displayName": "Input",
-    "searchTags": [
-        "form",
-        "text input",
-        "number",
-        "textarea"
-    ],
-    "bottomRow": 12.399999999976785,
-    "parentRowSpace": 10,
-    "autoFocus": false,
-    "hideCard": false,
-    "parentColumnSpace": 11.171875,
-    "dynamicTriggerPathList": [],
-    "labelPosition": "Top",
-    "labelTextColor": "{{appsmith.theme.colors.primaryColor}}",
-    "key": "c1gm6lf2k5",
-    "labelTextSize": "0.875rem",
-    "isDeprecated": false,
-    "rightColumn": 64,
-    "widgetId": "7pgnkqhkx5",
-    "minWidth": 450,
-    "label": "Loss Reason Detail",
-    "parentId": "fcpr7gyx4n",
-    "labelAlignment": "left",
-    "renderMode": "CANVAS",
-    "originalTopRow": 22.399999999978235,
-    "maxDynamicHeight": 9000,
-    "shouldAllowAutofill": false,
-    "iconAlign": "left",
-    "defaultText": "{{getSegmentSFProductData.data.map(item => !!item.loss_reason_detail_c ? `Opp Name: ${item.name}: ${item.loss_reason_detail_c || \"N/A\"}` : \"\").join(\"\\n\")}}",
-    "minDynamicHeight": 4
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "autoFocus": false,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 12.399999999976785,
+  "boxShadow": "none",
+  "defaultText": "{{getSegmentSFProductData.data.map(item => !!item.loss_reason_detail_c ? `Opp Name: ${item.name}: ${item.loss_reason_detail_c || \"N/A\"}` : \"\").join(\"\\n\")}}",
+  "displayName": "Input",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "defaultText"
+    },
+    {
+      "key": "labelTextColor"
+    },
+    {
+      "key": "isVisible"
+    }
+  ],
+  "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicPropertyPathList": [
+    {
+      "key": "isVisible"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "hideCard": false,
+  "iconAlign": "left",
+  "iconSVG": "/static/media/icon.f2c34197dbcf03595098986de898928f.svg",
+  "inputType": "MULTI_LINE_TEXT",
+  "isDeprecated": false,
+  "isDisabled": false,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": "{{!!getSegmentSFOpportunities.data.filter(item => item.account_id === SFTableData.selectedRow.Id).map(item => item.loss_reason_detail_c || \"\").filter(item => !!item).length}}",
+  "key": "c1gm6lf2k5",
+  "label": "Loss Reason Detail",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelStyle": "",
+  "labelTextColor": "{{appsmith.theme.colors.primaryColor}}",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 0,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "originalBottomRow": 32.39999999997963,
+  "originalTopRow": 22.399999999978235,
+  "parentColumnSpace": 11.171875,
+  "parentId": "fcpr7gyx4n",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "resetOnSubmit": true,
+  "rightColumn": 64,
+  "searchTags": [
+    "form",
+    "text input",
+    "number",
+    "textarea"
+  ],
+  "shouldAllowAutofill": false,
+  "showStepArrows": false,
+  "tags": [
+    "Suggested",
+    "Inputs"
+  ],
+  "topRow": 12.399999999976785,
+  "type": "INPUT_WIDGET_V2",
+  "version": 2,
+  "widgetId": "7pgnkqhkx5",
+  "widgetName": "Loss_Reason_Detail"
 }

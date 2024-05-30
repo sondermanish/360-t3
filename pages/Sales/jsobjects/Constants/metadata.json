@@ -1,11 +1,11 @@
 {
+  "gitSyncId": "655b663c44c3196dff1b331d_655b664844c3196dff1b332f",
+  "id": "Sales_Constants",
   "unpublishedCollection": {
     "name": "Constants",
     "pageId": "Sales",
     "pluginId": "js-plugin",
     "pluginType": "JS",
-    "actions": [],
-    "archivedActions": [],
     "variables": [
       {
         "name": "OpportunityQueryFields",
@@ -23,10 +23,6 @@
         "name": "ContactQueryFields",
         "value": "[\"account_id\", \"id\", \"name\", \"title\", \"email\"]"
       }
-    ],
-    "userPermissions": []
-  },
-  "id": "Sales_Constants",
-  "deleted": false,
-  "gitSyncId": "655b663c44c3196dff1b331d_655b664844c3196dff1b332f"
+    ]
+  }
 }

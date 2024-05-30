@@ -1,32 +1,4 @@
 {
-  "packageUUID": "65ef3f10cda3a1187b7dc18d",
-  "moduleUUID": "65f3ee9ec577b61ea87bdca5",
-  "type": "QUERY_MODULE",
-  "unpublishedModuleInstance": {
-    "version": "0.0.22",
-    "name": "getSegmentSFUsers",
-    "contextType": "PAGE",
-    "pageId": "Success",
-    "inputs": {
-      "columns": "{{SegmentConstants.UserQueryFields.join(\", \")}}"
-    },
-    "moduleInputs": {
-      "pwutpyujpx": {
-        "id": "pwutpyujpx",
-        "label": "columns",
-        "propertyName": "inputs.columns",
-        "controlType": "INPUT_TEXT",
-        "defaultValue": "id, first_name, email"
-      }
-    },
-    "jsonPathKeys": [
-      "SegmentConstants.UserQueryFields.join(\", \")"
-    ],
-    "isValid": true,
-    "invalids": [],
-    "userPermissions": []
-  },
-  "id": "Success_getSegmentSFUsers",
-  "deleted": false,
-  "gitSyncId": "655b663c44c3196dff1b331d_65f3ee9fc577b61ea87bdcb4"
+  "gitSyncId": "655b663c44c3196dff1b331d_65f3ee9fc577b61ea87bdcb4",
+  "id": "Success_getSegmentSFUsers"
 }

@@ -1,11 +1,11 @@
 {
+  "gitSyncId": "655b663c44c3196dff1b331d_65e05b7364cc935991be650b",
+  "id": "Stability_Constants",
   "unpublishedCollection": {
     "name": "Constants",
     "pageId": "Stability",
     "pluginId": "js-plugin",
     "pluginType": "JS",
-    "actions": [],
-    "archivedActions": [],
     "variables": [
       {
         "name": "OpportunityQueryFields",
@@ -23,10 +23,6 @@
         "name": "ContactQueryFields",
         "value": "[\"account_id\", \"id\", \"name\", \"title\", \"email\"]"
       }
-    ],
-    "userPermissions": []
-  },
-  "id": "Stability_Constants",
-  "deleted": false,
-  "gitSyncId": "655b663c44c3196dff1b331d_65e05b7364cc935991be650b"
+    ]
+  }
 }

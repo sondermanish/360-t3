@@ -1,11 +1,10 @@
 {
-  "name": "emailAddresses",
-  "uidString": "emailAddresses_https://cdn.jsdelivr.net/npm/email-addresses@5.0.0/lib/email-addresses.min.js",
   "accessor": [
     "emailAddresses"
   ],
+  "defs": "{\"!name\":\"LIB/emailAddresses\",\"emailAddresses\":{\"!type\":\"fn()\",\"prototype\":{},\"parseOneAddress\":{\"!type\":\"fn()\",\"prototype\":{}},\"parseAddressList\":{\"!type\":\"fn()\",\"prototype\":{}},\"parseFrom\":{\"!type\":\"fn()\",\"prototype\":{}},\"parseSender\":{\"!type\":\"fn()\",\"prototype\":{}},\"parseReplyTo\":{\"!type\":\"fn()\",\"prototype\":{}}}}",
+  "name": "emailAddresses",
   "url": "https://cdn.jsdelivr.net/npm/email-addresses@5.0.0/lib/email-addresses.min.js",
   "version": "5.0.0",
-  "defs": "{\"!name\":\"LIB/emailAddresses\",\"emailAddresses\":{\"!type\":\"fn()\",\"prototype\":{},\"parseOneAddress\":{\"!type\":\"fn()\",\"prototype\":{}},\"parseAddressList\":{\"!type\":\"fn()\",\"prototype\":{}},\"parseFrom\":{\"!type\":\"fn()\",\"prototype\":{}},\"parseSender\":{\"!type\":\"fn()\",\"prototype\":{}},\"parseReplyTo\":{\"!type\":\"fn()\",\"prototype\":{}}}}",
-  "deleted": false
+  "uidString": "emailAddresses_https://cdn.jsdelivr.net/npm/email-addresses@5.0.0/lib/email-addresses.min.js"
 }

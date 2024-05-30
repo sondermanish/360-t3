@@ -1,11 +1,10 @@
 {
-  "name": "tldjs",
-  "uidString": "tldjs_https://cdn.jsdelivr.net/npm/tldjs@2.3.1/tld.min.js",
   "accessor": [
     "tldjs"
   ],
+  "defs": "{\"!name\":\"LIB/tldjs\",\"tldjs\":{\"extractHostname\":{\"!type\":\"fn()\",\"prototype\":{}},\"isValid\":{\"!type\":\"fn()\",\"prototype\":{}},\"parse\":{\"!type\":\"fn()\",\"prototype\":{}},\"tldExists\":{\"!type\":\"fn()\",\"prototype\":{}},\"getPublicSuffix\":{\"!type\":\"fn()\",\"prototype\":{}},\"getDomain\":{\"!type\":\"fn()\",\"prototype\":{}},\"getSubdomain\":{\"!type\":\"fn()\",\"prototype\":{}},\"fromUserSettings\":{\"!type\":\"fn()\",\"prototype\":{}}}}",
+  "name": "tldjs",
   "url": "https://cdn.jsdelivr.net/npm/tldjs@2.3.1/tld.min.js",
   "version": "2.3.1",
-  "defs": "{\"!name\":\"LIB/tldjs\",\"tldjs\":{\"extractHostname\":{\"!type\":\"fn()\",\"prototype\":{}},\"isValid\":{\"!type\":\"fn()\",\"prototype\":{}},\"parse\":{\"!type\":\"fn()\",\"prototype\":{}},\"tldExists\":{\"!type\":\"fn()\",\"prototype\":{}},\"getPublicSuffix\":{\"!type\":\"fn()\",\"prototype\":{}},\"getDomain\":{\"!type\":\"fn()\",\"prototype\":{}},\"getSubdomain\":{\"!type\":\"fn()\",\"prototype\":{}},\"fromUserSettings\":{\"!type\":\"fn()\",\"prototype\":{}}}}",
-  "deleted": false
+  "uidString": "tldjs_https://cdn.jsdelivr.net/npm/tldjs@2.3.1/tld.min.js"
 }

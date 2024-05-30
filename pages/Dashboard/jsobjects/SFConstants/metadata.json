@@ -1,18 +1,14 @@
 {
-  "moduleInstanceId": "Dashboard_SFConstants",
+  "gitSyncId": "655b663c44c3196dff1b331d_65fabd925e12647ece51d886",
+  "id": "Dashboard__$SFConstants$_SalesforceConstants",
   "isPublic": true,
+  "moduleInstanceId": "Dashboard_SFConstants",
   "rootModuleInstanceId": "Dashboard_SFConstants",
   "unpublishedCollection": {
+    "contextType": "PAGE",
     "name": "_$SFConstants$_SalesforceConstants",
     "pageId": "Dashboard",
-    "contextType": "PAGE",
     "pluginId": "js-plugin",
-    "pluginType": "JS",
-    "actions": [],
-    "archivedActions": [],
-    "userPermissions": []
-  },
-  "id": "Dashboard__$SFConstants$_SalesforceConstants",
-  "deleted": false,
-  "gitSyncId": "655b663c44c3196dff1b331d_65fabd925e12647ece51d886"
+    "pluginType": "JS"
+  }
 }

@@ -1,70 +1,34 @@
 {
+  "gitSyncId": "655b663c44c3196dff1b331d_655ba55a44c3196dff1b38bf",
   "unpublishedPage": {
-    "name": "Product",
-    "slug": "product",
     "layouts": [
       {
-        "viewMode": false,
         "dsl": {
-          "widgetName": "MainContainer",
           "backgroundColor": "none",
+          "bottomRow": 1002.0000000000073,
+          "canExtend": true,
+          "containerStyle": "none",
+          "detachFromLayout": true,
+          "dynamicBindingPathList": [],
+          "dynamicTriggerPathList": [],
+          "leftColumn": 0,
+          "minHeight": 1292,
+          "parentColumnSpace": 1,
+          "parentRowSpace": 1,
+          "positioning": "fixed",
           "rightColumn": 4896,
           "snapColumns": 64,
-          "detachFromLayout": true,
-          "widgetId": "0",
-          "topRow": 0,
-          "bottomRow": 1002.0000000000073,
-          "containerStyle": "none",
           "snapRows": 124,
-          "parentRowSpace": 1,
+          "topRow": 0,
           "type": "CANVAS_WIDGET",
-          "canExtend": true,
-          "version": 89,
-          "minHeight": 1292,
           "useAutoLayout": false,
-          "dynamicTriggerPathList": [],
-          "parentColumnSpace": 1,
-          "dynamicBindingPathList": [],
-          "leftColumn": 0,
-          "positioning": "fixed"
-        },
-        "layoutOnLoadActions": [
-          [
-            {
-              "id": "Product_Actions.onPageLoad",
-              "name": "Actions.onPageLoad",
-              "collectionId": "Product_Actions",
-              "confirmBeforeExecute": false,
-              "pluginType": "JS",
-              "jsonPathKeys": [
-                "() => {\n  getSegmentSFOpportunities.run(() => {\n    let list = Utils.getProductDependanciesGithub().filter(item => item.issueIds?.length > 0).map(item => item.issueIds);\n    Actions.issues = {};\n    _.uniq(_.flatten(list)).forEach(item => {\n      getGithubIssue.run({\n        issueId: item\n      }).then(response => {\n        Actions.issues[item] = {\n          ..._.pick(response, [\"number\", \"title\", \"created_at\", \"state\", \"closed_at\"]),\n          url: Utils.formatGithubUrl(response.url),\n          label: response.labels.map(item => _.pick(item, [\"url\", \"name\", \"color\", \"description\"]))\n        };\n      });\n    });\n  });\n}"
-              ],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "Product_getSegmentSFUsers",
-              "name": "getSegmentSFUsers",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "SegmentConstants.UserQueryFields.join(\", \")"
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ]
-        ],
-        "layoutOnLoadActionErrors": [],
-        "validOnPageLoadActions": true,
-        "id": "Product",
-        "deleted": false,
-        "policies": [],
-        "userPermissions": []
+          "version": 89,
+          "widgetId": "0",
+          "widgetName": "MainContainer"
+        }
       }
     ],
-    "userPermissions": [],
-    "policies": [],
-    "isHidden": false
-  },
-  "deleted": false,
-  "gitSyncId": "655b663c44c3196dff1b331d_655ba55a44c3196dff1b38bf"
+    "name": "Product",
+    "slug": "product"
+  }
 }

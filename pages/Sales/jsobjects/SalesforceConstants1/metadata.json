@@ -1,18 +1,14 @@
 {
-  "moduleInstanceId": "Sales_SalesforceConstants1",
+  "gitSyncId": "655b663c44c3196dff1b331d_d1e8ddb4-c867-4b82-9b3b-7a4370dd86fe",
+  "id": "Sales__$SalesforceConstants1$_SalesforceConstants",
   "isPublic": true,
+  "moduleInstanceId": "Sales_SalesforceConstants1",
   "rootModuleInstanceId": "Sales_SalesforceConstants1",
   "unpublishedCollection": {
+    "contextType": "PAGE",
     "name": "_$SalesforceConstants1$_SalesforceConstants",
     "pageId": "Sales",
-    "contextType": "PAGE",
     "pluginId": "js-plugin",
-    "pluginType": "JS",
-    "actions": [],
-    "archivedActions": [],
-    "userPermissions": []
-  },
-  "id": "Sales__$SalesforceConstants1$_SalesforceConstants",
-  "deleted": false,
-  "gitSyncId": "655b663c44c3196dff1b331d_d1e8ddb4-c867-4b82-9b3b-7a4370dd86fe"
+    "pluginType": "JS"
+  }
 }

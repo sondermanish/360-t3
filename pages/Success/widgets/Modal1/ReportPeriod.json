@@ -1,58 +1,74 @@
 {
-    "boxShadow": "none",
-    "iconSVG": "/static/media/icon.a7b19dc8b31d68fcff57f1d2c0084a18.svg",
-    "labelText": "Period",
-    "topRow": 5,
-    "labelWidth": 5,
-    "type": "SELECT_WIDGET",
-    "serverSideFiltering": false,
-    "defaultOptionValue": "3_months",
-    "animateLoading": true,
-    "leftColumn": 0,
-    "dynamicBindingPathList": [
-        {"key": "accentColor"},
-        {"key": "borderRadius"},
-        {"key": "labelTextColor"}
-    ],
-    "labelStyle": "BOLD",
-    "placeholderText": "Select option",
-    "isDisabled": false,
-    "isRequired": true,
-    "dynamicHeight": "FIXED",
-    "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-    "isVisible": true,
-    "version": 1,
-    "tags": [
-        "Suggested",
-        "Select"
-    ],
-    "isLoading": false,
-    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "widgetName": "ReportPeriod",
-    "isFilterable": true,
-    "dynamicPropertyPathList": [{"key": "sourceData"}],
-    "displayName": "Select",
-    "searchTags": ["dropdown"],
-    "bottomRow": 12,
-    "parentRowSpace": 10,
-    "hideCard": false,
-    "parentColumnSpace": 10.625,
-    "dynamicTriggerPathList": [{"key": "onOptionChange"}],
-    "labelPosition": "Top",
-    "labelTextColor": "{{appsmith.theme.colors.primaryColor}}",
-    "sourceData": "[\n  {\n    \"name\": \"30 days\",\n    \"code\": \"30_days\"\n  },\n  {\n    \"name\": \"3 months\",\n    \"code\": \"3_months\"\n  },\n  {\n    \"name\": \"6 months\",\n    \"code\": \"6_months\"\n  },\n\t{\n    \"name\": \"12 months\",\n    \"code\": \"12_months\"\n  }\n]",
-    "key": "jxknuugaei",
-    "labelTextSize": "0.875rem",
-    "isDeprecated": false,
-    "rightColumn": 32,
-    "widgetId": "dlq0ya368h",
-    "optionValue": "code",
-    "minWidth": 450,
-    "parentId": "hhpx1m0ux2",
-    "labelAlignment": "left",
-    "renderMode": "CANVAS",
-    "optionLabel": "name",
-    "maxDynamicHeight": 9000,
-    "onOptionChange": "{{Stats_v2.calculateUsageInputs();\nFetchUsageReport.run().catch(() => {\n  showAlert('Failed to fetch usage metrics', 'error');\n});}}",
-    "minDynamicHeight": 4
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 12,
+  "boxShadow": "none",
+  "defaultOptionValue": "3_months",
+  "displayName": "Select",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "labelTextColor"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "sourceData"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onOptionChange"
+    }
+  ],
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.a7b19dc8b31d68fcff57f1d2c0084a18.svg",
+  "isDeprecated": false,
+  "isDisabled": false,
+  "isFilterable": true,
+  "isLoading": false,
+  "isRequired": true,
+  "isVisible": true,
+  "key": "jxknuugaei",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelStyle": "BOLD",
+  "labelText": "Period",
+  "labelTextColor": "{{appsmith.theme.colors.primaryColor}}",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 0,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "onOptionChange": "{{Stats_v2.calculateUsageInputs();\nFetchUsageReport.run().catch(() => {\n  showAlert('Failed to fetch usage metrics', 'error');\n});}}",
+  "optionLabel": "name",
+  "optionValue": "code",
+  "parentColumnSpace": 10.625,
+  "parentId": "hhpx1m0ux2",
+  "parentRowSpace": 10,
+  "placeholderText": "Select option",
+  "renderMode": "CANVAS",
+  "rightColumn": 32,
+  "searchTags": [
+    "dropdown"
+  ],
+  "serverSideFiltering": false,
+  "sourceData": "[\n  {\n    \"name\": \"30 days\",\n    \"code\": \"30_days\"\n  },\n  {\n    \"name\": \"3 months\",\n    \"code\": \"3_months\"\n  },\n  {\n    \"name\": \"6 months\",\n    \"code\": \"6_months\"\n  },\n\t{\n    \"name\": \"12 months\",\n    \"code\": \"12_months\"\n  }\n]",
+  "tags": [
+    "Suggested",
+    "Select"
+  ],
+  "topRow": 5,
+  "type": "SELECT_WIDGET",
+  "version": 1,
+  "widgetId": "dlq0ya368h",
+  "widgetName": "ReportPeriod"
 }

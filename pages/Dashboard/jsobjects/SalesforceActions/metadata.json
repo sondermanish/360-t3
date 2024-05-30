@@ -1,15 +1,11 @@
 {
+  "gitSyncId": "655b663c44c3196dff1b331d_660a7227fae3e70e566afa50",
+  "id": "Dashboard_SalesforceActions",
   "unpublishedCollection": {
     "name": "SalesforceActions",
     "pageId": "Dashboard",
     "pluginId": "js-plugin",
     "pluginType": "JS",
-    "actions": [],
-    "archivedActions": [],
-    "variables": [],
-    "userPermissions": []
-  },
-  "id": "Dashboard_SalesforceActions",
-  "deleted": false,
-  "gitSyncId": "655b663c44c3196dff1b331d_660a7227fae3e70e566afa50"
+    "variables": []
+  }
 }

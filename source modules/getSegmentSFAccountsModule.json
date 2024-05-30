@@ -1,7 +1,7 @@
 {
-  "packageUUID": "65ef3f10cda3a1187b7dc18d",
-  "packageName": "Segments Package",
-  "moduleUUID": "65f3efc86f79c902d95404c1",
   "moduleName": "getSegmentSFAccountsModule",
+  "moduleUUID": "65f3efc86f79c902d95404c1",
+  "packageName": "Segments Package",
+  "packageUUID": "65ef3f10cda3a1187b7dc18d",
   "version": "0.0.22"
 }

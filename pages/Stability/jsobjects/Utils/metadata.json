@@ -1,15 +1,11 @@
 {
+  "gitSyncId": "655b663c44c3196dff1b331d_65e05b7364cc935991be650d",
+  "id": "Stability_Utils",
   "unpublishedCollection": {
     "name": "Utils",
     "pageId": "Stability",
     "pluginId": "js-plugin",
     "pluginType": "JS",
-    "actions": [],
-    "archivedActions": [],
-    "variables": [],
-    "userPermissions": []
-  },
-  "id": "Stability_Utils",
-  "deleted": false,
-  "gitSyncId": "655b663c44c3196dff1b331d_65e05b7364cc935991be650d"
+    "variables": []
+  }
 }

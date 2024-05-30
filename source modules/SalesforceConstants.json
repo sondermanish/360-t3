@@ -1,7 +1,7 @@
 {
-  "packageUUID": "65eee5e9cda3a1187b7da11b",
-  "packageName": "Constants Package",
-  "moduleUUID": "65ef241d12244e5a68238ab1",
   "moduleName": "SalesforceConstants",
+  "moduleUUID": "65ef241d12244e5a68238ab1",
+  "packageName": "Constants Package",
+  "packageUUID": "65eee5e9cda3a1187b7da11b",
   "version": "0.0.38"
 }

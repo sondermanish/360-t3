@@ -1,15 +1,11 @@
 {
+  "gitSyncId": "655b663c44c3196dff1b331d_65a9892a647afb48db3f7429",
+  "id": "Revenue_Utils",
   "unpublishedCollection": {
     "name": "Utils",
     "pageId": "Revenue",
     "pluginId": "js-plugin",
     "pluginType": "JS",
-    "actions": [],
-    "archivedActions": [],
-    "variables": [],
-    "userPermissions": []
-  },
-  "id": "Revenue_Utils",
-  "deleted": false,
-  "gitSyncId": "655b663c44c3196dff1b331d_65a9892a647afb48db3f7429"
+    "variables": []
+  }
 }

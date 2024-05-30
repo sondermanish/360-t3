@@ -1,20 +1,16 @@
 {
+  "gitSyncId": "655b663c44c3196dff1b331d_6603c45aa5de042b845dd037",
+  "id": "Dashboard_LicenseActions",
   "unpublishedCollection": {
     "name": "LicenseActions",
     "pageId": "Dashboard",
     "pluginId": "js-plugin",
     "pluginType": "JS",
-    "actions": [],
-    "archivedActions": [],
     "variables": [
       {
         "name": "licenses",
         "value": "[]"
       }
-    ],
-    "userPermissions": []
-  },
-  "id": "Dashboard_LicenseActions",
-  "deleted": false,
-  "gitSyncId": "655b663c44c3196dff1b331d_6603c45aa5de042b845dd037"
+    ]
+  }
 }

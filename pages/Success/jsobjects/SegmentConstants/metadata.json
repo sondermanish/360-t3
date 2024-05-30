@@ -1,18 +1,14 @@
 {
-  "moduleInstanceId": "Success_SegmentConstants",
+  "gitSyncId": "655b663c44c3196dff1b331d_65ef248512244e5a68238b0e",
+  "id": "Success__$SegmentConstants$_SegmentConstants",
   "isPublic": true,
+  "moduleInstanceId": "Success_SegmentConstants",
   "rootModuleInstanceId": "Success_SegmentConstants",
   "unpublishedCollection": {
+    "contextType": "PAGE",
     "name": "_$SegmentConstants$_SegmentConstants",
     "pageId": "Success",
-    "contextType": "PAGE",
     "pluginId": "js-plugin",
-    "pluginType": "JS",
-    "actions": [],
-    "archivedActions": [],
-    "userPermissions": []
-  },
-  "id": "Success__$SegmentConstants$_SegmentConstants",
-  "deleted": false,
-  "gitSyncId": "655b663c44c3196dff1b331d_65ef248512244e5a68238b0e"
+    "pluginType": "JS"
+  }
 }

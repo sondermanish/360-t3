@@ -1,82 +1,34 @@
 {
+  "gitSyncId": "655b663c44c3196dff1b331d_65e05b7264cc935991be64be",
   "unpublishedPage": {
-    "name": "Stability",
-    "slug": "stability",
     "layouts": [
       {
-        "viewMode": false,
         "dsl": {
-          "widgetName": "MainContainer",
           "backgroundColor": "none",
+          "bottomRow": 1390,
+          "canExtend": true,
+          "containerStyle": "none",
+          "detachFromLayout": true,
+          "dynamicBindingPathList": [],
+          "dynamicTriggerPathList": [],
+          "leftColumn": 0,
+          "minHeight": 1292,
+          "parentColumnSpace": 1,
+          "parentRowSpace": 1,
+          "positioning": "fixed",
           "rightColumn": 4896,
           "snapColumns": 64,
-          "detachFromLayout": true,
-          "widgetId": "0",
-          "topRow": 0,
-          "bottomRow": 1390,
-          "containerStyle": "none",
           "snapRows": 124,
-          "parentRowSpace": 1,
+          "topRow": 0,
           "type": "CANVAS_WIDGET",
-          "canExtend": true,
-          "version": 89,
-          "minHeight": 1292,
           "useAutoLayout": false,
-          "dynamicTriggerPathList": [],
-          "parentColumnSpace": 1,
-          "dynamicBindingPathList": [],
-          "leftColumn": 0,
-          "positioning": "fixed"
-        },
-        "layoutOnLoadActions": [
-          [
-            {
-              "id": "Stability_Actions.onPageLoad",
-              "name": "Actions.onPageLoad",
-              "collectionId": "Stability_Actions",
-              "confirmBeforeExecute": false,
-              "pluginType": "JS",
-              "jsonPathKeys": [
-                "() => {\n  getSegmentSFOpportunities.run().then(() => {\n    getSegmentSFAllCases.run();\n    getSegmentSFAccounts.run();\n    getSegmentSFContacts.run();\n  });\n}"
-              ],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "Stability_getSegmentSFOpportunities",
-              "name": "getSegmentSFOpportunities",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "Constants.OpportunityQueryFields.join(\", \")"
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
-              "id": "Stability_getSegmentSFAllCasesChart",
-              "name": "getSegmentSFAllCasesChart",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "`'${Utils.getAllAccountIds()?.join(`', '`)}'`"
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ]
-        ],
-        "layoutOnLoadActionErrors": [],
-        "validOnPageLoadActions": true,
-        "id": "Stability",
-        "deleted": false,
-        "policies": [],
-        "userPermissions": []
+          "version": 89,
+          "widgetId": "0",
+          "widgetName": "MainContainer"
+        }
       }
     ],
-    "userPermissions": [],
-    "policies": [],
-    "isHidden": false
-  },
-  "deleted": false,
-  "gitSyncId": "655b663c44c3196dff1b331d_65e05b7264cc935991be64be"
+    "name": "Stability",
+    "slug": "stability"
+  }
 }

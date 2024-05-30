@@ -1,19 +1,4 @@
 {
-  "packageUUID": "65eee5e9cda3a1187b7da11b",
-  "moduleUUID": "65ef241d12244e5a68238ab1",
-  "type": "JS_MODULE",
-  "unpublishedModuleInstance": {
-    "version": "0.0.38",
-    "name": "SalesforceConstants1",
-    "contextType": "PAGE",
-    "pageId": "Sales",
-    "inputs": {},
-    "jsonPathKeys": [],
-    "isValid": true,
-    "invalids": [],
-    "userPermissions": []
-  },
-  "id": "Sales_SalesforceConstants1",
-  "deleted": false,
-  "gitSyncId": "655b663c44c3196dff1b331d_0ccf431f-fab3-4a68-8553-57c0260e5464"
+  "gitSyncId": "655b663c44c3196dff1b331d_0ccf431f-fab3-4a68-8553-57c0260e5464",
+  "id": "Sales_SalesforceConstants1"
 }

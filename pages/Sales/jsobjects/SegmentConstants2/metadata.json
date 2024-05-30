@@ -1,18 +1,14 @@
 {
-  "moduleInstanceId": "Sales_SegmentConstants2",
+  "gitSyncId": "655b663c44c3196dff1b331d_fef9d6a2-252b-4630-b19f-0168e15f4ae6",
+  "id": "Sales__$SegmentConstants2$_SegmentConstants",
   "isPublic": true,
+  "moduleInstanceId": "Sales_SegmentConstants2",
   "rootModuleInstanceId": "Sales_SegmentConstants2",
   "unpublishedCollection": {
+    "contextType": "PAGE",
     "name": "_$SegmentConstants2$_SegmentConstants",
     "pageId": "Sales",
-    "contextType": "PAGE",
     "pluginId": "js-plugin",
-    "pluginType": "JS",
-    "actions": [],
-    "archivedActions": [],
-    "userPermissions": []
-  },
-  "id": "Sales__$SegmentConstants2$_SegmentConstants",
-  "deleted": false,
-  "gitSyncId": "655b663c44c3196dff1b331d_fef9d6a2-252b-4630-b19f-0168e15f4ae6"
+    "pluginType": "JS"
+  }
 }

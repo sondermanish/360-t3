@@ -1,7 +1,7 @@
 {
-  "packageUUID": "65f2bd3b044689431f7b87e4",
-  "packageName": "Togai Package",
-  "moduleUUID": "65f2bdc9410c3b7264152c79",
   "moduleName": "TogaiUsageMetrics",
+  "moduleUUID": "65f2bdc9410c3b7264152c79",
+  "packageName": "Togai Package",
+  "packageUUID": "65f2bd3b044689431f7b87e4",
   "version": "0.0.13"
 }

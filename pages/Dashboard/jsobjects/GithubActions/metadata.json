@@ -1,20 +1,16 @@
 {
+  "gitSyncId": "655b663c44c3196dff1b331d_65fbe91b57825011f78151b5",
+  "id": "Dashboard_GithubActions",
   "unpublishedCollection": {
     "name": "GithubActions",
     "pageId": "Dashboard",
     "pluginId": "js-plugin",
     "pluginType": "JS",
-    "actions": [],
-    "archivedActions": [],
     "variables": [
       {
         "name": "issues",
         "value": "[]"
       }
-    ],
-    "userPermissions": []
-  },
-  "id": "Dashboard_GithubActions",
-  "deleted": false,
-  "gitSyncId": "655b663c44c3196dff1b331d_65fbe91b57825011f78151b5"
+    ]
+  }
 }

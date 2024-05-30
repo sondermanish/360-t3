@@ -1,59 +1,75 @@
 {
-    "boxShadow": "none",
-    "iconSVG": "/static/media/icon.a7b19dc8b31d68fcff57f1d2c0084a18.svg",
-    "labelText": "Sales Categories",
-    "topRow": 0,
-    "labelWidth": 5,
-    "type": "SELECT_WIDGET",
-    "serverSideFiltering": false,
-    "defaultOptionValue": "All",
-    "animateLoading": true,
-    "leftColumn": 0,
-    "dynamicBindingPathList": [
-        {"key": "accentColor"},
-        {"key": "borderRadius"},
-        {"key": "labelTextColor"}
-    ],
-    "placeholderText": "Select option",
-    "isDisabled": false,
-    "isRequired": false,
-    "dynamicHeight": "FIXED",
-    "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-    "isVisible": true,
-    "version": 1,
-    "tags": [
-        "Suggested",
-        "Select"
-    ],
-    "isLoading": false,
-    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "originalBottomRow": 24,
-    "widgetName": "Select1",
-    "isFilterable": true,
-    "dynamicPropertyPathList": [{"key": "sourceData"}],
-    "displayName": "Select",
-    "searchTags": ["dropdown"],
-    "bottomRow": 6.5984375,
-    "parentRowSpace": 10,
-    "hideCard": false,
-    "parentColumnSpace": 4.5,
-    "dynamicTriggerPathList": [{"key": "onOptionChange"}],
-    "labelPosition": "Top",
-    "labelTextColor": "{{appsmith.theme.colors.primaryColor}}",
-    "sourceData": "[\n  {\n    \"name\": \"All\",\n    \"code\": \"All\"\n  },\n  {\n    \"name\": \"Pipeline\",\n    \"code\": \"Pipeline\"\n  },\n  {\n    \"name\": \"Closed Won\",\n    \"code\": \"Closed Won\"\n  },\n  {\n    \"name\": \"Closed Lost\",\n    \"code\": \"Closed Lost\"\n  }\n]",
-    "key": "n5ejl4mxpy",
-    "labelTextSize": "0.875rem",
-    "isDeprecated": false,
-    "rightColumn": 21,
-    "widgetId": "0tvv2p24c3",
-    "optionValue": "code",
-    "minWidth": 450,
-    "parentId": "l31jkio3f6",
-    "labelAlignment": "left",
-    "renderMode": "CANVAS",
-    "optionLabel": "name",
-    "originalTopRow": 17,
-    "maxDynamicHeight": 9000,
-    "onOptionChange": "{{getSegmentSFOpportunities.run();\nresetWidget(\"Select2\", true);}}",
-    "minDynamicHeight": 4
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 6.5984375,
+  "boxShadow": "none",
+  "defaultOptionValue": "All",
+  "displayName": "Select",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "labelTextColor"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "sourceData"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onOptionChange"
+    }
+  ],
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.a7b19dc8b31d68fcff57f1d2c0084a18.svg",
+  "isDeprecated": false,
+  "isDisabled": false,
+  "isFilterable": true,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": true,
+  "key": "n5ejl4mxpy",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelText": "Sales Categories",
+  "labelTextColor": "{{appsmith.theme.colors.primaryColor}}",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 0,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "onOptionChange": "{{getSegmentSFOpportunities.run();\nresetWidget(\"Select2\", true);}}",
+  "optionLabel": "name",
+  "optionValue": "code",
+  "originalBottomRow": 24,
+  "originalTopRow": 17,
+  "parentColumnSpace": 4.5,
+  "parentId": "l31jkio3f6",
+  "parentRowSpace": 10,
+  "placeholderText": "Select option",
+  "renderMode": "CANVAS",
+  "rightColumn": 21,
+  "searchTags": [
+    "dropdown"
+  ],
+  "serverSideFiltering": false,
+  "sourceData": "[\n  {\n    \"name\": \"All\",\n    \"code\": \"All\"\n  },\n  {\n    \"name\": \"Pipeline\",\n    \"code\": \"Pipeline\"\n  },\n  {\n    \"name\": \"Closed Won\",\n    \"code\": \"Closed Won\"\n  },\n  {\n    \"name\": \"Closed Lost\",\n    \"code\": \"Closed Lost\"\n  }\n]",
+  "tags": [
+    "Suggested",
+    "Select"
+  ],
+  "topRow": 0,
+  "type": "SELECT_WIDGET",
+  "version": 1,
+  "widgetId": "0tvv2p24c3",
+  "widgetName": "Select1"
 }

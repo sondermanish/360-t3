@@ -1,127 +1,34 @@
 {
+  "gitSyncId": "655b663c44c3196dff1b331d_65673a08f3547d5f6e30fc13",
   "unpublishedPage": {
-    "name": "Success",
-    "slug": "success",
     "layouts": [
       {
-        "viewMode": false,
         "dsl": {
-          "widgetName": "MainContainer",
           "backgroundColor": "none",
+          "bottomRow": 1403.9999999994245,
+          "canExtend": true,
+          "containerStyle": "none",
+          "detachFromLayout": true,
+          "dynamicBindingPathList": [],
+          "dynamicTriggerPathList": [],
+          "leftColumn": 0,
+          "minHeight": 1863.9843749999268,
+          "parentColumnSpace": 1,
+          "parentRowSpace": 1,
+          "positioning": "fixed",
           "rightColumn": 4896,
           "snapColumns": 64,
-          "detachFromLayout": true,
-          "widgetId": "0",
-          "topRow": 0,
-          "bottomRow": 1403.9999999994245,
-          "containerStyle": "none",
           "snapRows": 124,
-          "parentRowSpace": 1,
+          "topRow": 0,
           "type": "CANVAS_WIDGET",
-          "canExtend": true,
-          "version": 89,
-          "minHeight": 1863.9843749999268,
           "useAutoLayout": false,
-          "dynamicTriggerPathList": [],
-          "parentColumnSpace": 1,
-          "dynamicBindingPathList": [],
-          "leftColumn": 0,
-          "positioning": "fixed"
-        },
-        "layoutOnLoadActions": [
-          [
-            {
-              "id": "Success_Actions.onPageLoad",
-              "name": "Actions.onPageLoad",
-              "collectionId": "Success_Actions",
-              "confirmBeforeExecute": false,
-              "pluginType": "JS",
-              "jsonPathKeys": [
-                "() => {\n  getSegmentSFOpportunities.run().then(() => {\n    getSegmentSFAccounts.run();\n  });\n}"
-              ],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "Success__$getAllCustomerSegments$_getSegmentSFCustomerSegments",
-              "name": "_$getAllCustomerSegments$_getSegmentSFCustomerSegments",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
-              "id": "Success__$getSegmentSFOpportunities$_getSegmentSFOpportunitiesModule",
-              "name": "_$getSegmentSFOpportunities$_getSegmentSFOpportunitiesModule",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "getSegmentSFOpportunities.inputs.columns"
-              ],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "Success__$getSegmentSFUsers$_getSegmentSFUsersModule",
-              "name": "_$getSegmentSFUsers$_getSegmentSFUsersModule",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "getSegmentSFUsers.inputs.columns"
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
-              "id": "Success_getSegmentSFProductData",
-              "name": "getSegmentSFProductData",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "SFTableData.selectedRow.Id"
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
-              "id": "Success_getDevelopersUsage",
-              "name": "getDevelopersUsage",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "getSegmentSFAccounts.data.find(item => item.id === SFTableData.selectedRow.Id)?.stripe_id_c"
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
-              "id": "Success_getDeveloperUsageByMonth",
-              "name": "getDeveloperUsageByMonth",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "getSegmentSFAccounts.data.find(item => item.id === SFTableData.selectedRow.Id)?.stripe_id_c",
-                "getSegmentSFAccounts.data.find(item => item.id === SFTableData.selectedRow.Id)?.stripe_id_c || \"cus_NwsYWhoRN283m3\""
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ]
-        ],
-        "layoutOnLoadActionErrors": [],
-        "validOnPageLoadActions": true,
-        "id": "Success",
-        "deleted": false,
-        "policies": [],
-        "userPermissions": []
+          "version": 89,
+          "widgetId": "0",
+          "widgetName": "MainContainer"
+        }
       }
     ],
-    "userPermissions": [],
-    "policies": [],
-    "isHidden": false
-  },
-  "deleted": false,
-  "gitSyncId": "655b663c44c3196dff1b331d_65673a08f3547d5f6e30fc13"
+    "name": "Success",
+    "slug": "success"
+  }
 }

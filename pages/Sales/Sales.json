@@ -1,118 +1,34 @@
 {
+  "gitSyncId": "655b663c44c3196dff1b331d_655b663c44c3196dff1b3320",
   "unpublishedPage": {
-    "name": "Sales",
-    "slug": "sales",
     "layouts": [
       {
-        "viewMode": false,
         "dsl": {
-          "widgetName": "MainContainer",
           "backgroundColor": "none",
+          "bottomRow": 1253.9843749998545,
+          "canExtend": true,
+          "containerStyle": "none",
+          "detachFromLayout": true,
+          "dynamicBindingPathList": [],
+          "dynamicTriggerPathList": [],
+          "leftColumn": 0,
+          "minHeight": 1292,
+          "parentColumnSpace": 1,
+          "parentRowSpace": 1,
+          "positioning": "fixed",
           "rightColumn": 4896,
           "snapColumns": 64,
-          "detachFromLayout": true,
-          "widgetId": "0",
-          "topRow": 0,
-          "bottomRow": 1253.9843749998545,
-          "containerStyle": "none",
           "snapRows": 124,
-          "parentRowSpace": 1,
+          "topRow": 0,
           "type": "CANVAS_WIDGET",
-          "canExtend": true,
-          "version": 89,
-          "minHeight": 1292,
           "useAutoLayout": false,
-          "dynamicTriggerPathList": [],
-          "parentColumnSpace": 1,
-          "dynamicBindingPathList": [],
-          "leftColumn": 0,
-          "positioning": "fixed"
-        },
-        "layoutOnLoadActions": [
-          [
-            {
-              "id": "Sales_getAllStageNames",
-              "name": "getAllStageNames",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "Sales_getSegmentSFUsers",
-              "name": "getSegmentSFUsers",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "Constants.UserQueryFields.join(\", \")"
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
-              "id": "Sales_getSegmentSFOpportunities",
-              "name": "getSegmentSFOpportunities",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "Constants.OpportunityQueryFields.join(\", \")",
-                "Select2.selectedOptionValues?.length > 0\n\t? `stage_name in ('${Select2.selectedOptionValues.join(`', '`)}')`\n\t\t: Select1.selectedOptionValue === \"All\"\n\t\t\t? `stage_name LIKE '%'`\n\t\t\t: Select1.selectedOptionValue === \"Pipeline\"\n\t\t\t\t? `stage_name NOT LIKE 'Closed%'`\n\t\t\t\t: `stage_name LIKE '${Select1.selectedOptionValue}%'`\n"
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
-              "id": "Sales_getSegmentSFEventsByOppId",
-              "name": "getSegmentSFEventsByOppId",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "SFTableData.selectedRow.Id"
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
-              "id": "Sales_getSegmentSFContacts",
-              "name": "getSegmentSFContacts",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "`'${Utils.getAllAccountIds()?.join(`', '`)}'`",
-                "Constants.ContactQueryFields.join(\", \")"
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
-              "id": "Sales_getSegmentSFAccounts",
-              "name": "getSegmentSFAccounts",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "`'${Utils.getAllAccountIds()?.join(`', '`)}'`",
-                "Constants.AccountQueryFields.join(\", \")"
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ]
-        ],
-        "layoutOnLoadActionErrors": [],
-        "validOnPageLoadActions": true,
-        "id": "Sales",
-        "deleted": false,
-        "policies": [],
-        "userPermissions": []
+          "version": 89,
+          "widgetId": "0",
+          "widgetName": "MainContainer"
+        }
       }
     ],
-    "userPermissions": [],
-    "policies": [],
-    "isHidden": false
-  },
-  "deleted": false,
-  "gitSyncId": "655b663c44c3196dff1b331d_655b663c44c3196dff1b3320"
+    "name": "Sales",
+    "slug": "sales"
+  }
 }
